@@ -1,0 +1,4 @@
+RewriteEngine on
+
+Rewriterule ^home index.php
+Rewriterule ^Contact-us contact-us.php

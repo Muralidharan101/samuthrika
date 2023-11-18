@@ -1,0 +1,487 @@
+$(document).ready(function () {
+
+    var queryParams = new URLSearchParams(window.location.search);
+
+    if (queryParams.has('id')) {
+        var product_id = queryParams.get('id');
+    }
+
+
+    function fetchdata() {
+        console.log("Product ID: " + product_id);
+
+        var fd = new FormData();
+
+        fd.append('id', product_id);
+
+        $.ajax({
+            url: 'dashboard/main/ajax/clothes/edit_list_clothes.php',
+            type: 'post',
+            contentType: false,
+            processData: false,
+            data: fd,
+
+            success: function (response) {
+                var result = JSON.parse(response);
+                console.log(result);
+
+                var dataToStore = JSON.stringify(response);
+
+                document.cookie = "Product_details=" + encodeURIComponent(dataToStore);
+
+                console.log("Data stored in cookie: " + dataToStore);
+
+                if (result.status == 'Success') {
+                    var data = result.data;
+
+                    data.map(function (value) {
+
+                        var productId = value.id,
+                            productImg = value.product_img,
+                            productName = value.product_name,
+                            productPrice = value.product_price,
+                            productCode = value.product_code;
+
+
+
+
+                        var product_img = document.getElementById('prod_img');
+                        var product_name = document.getElementById(
+                            'product_name');
+                        var product_price = document.getElementById(
+                            'product_price');
+                        var product_code = document.getElementById(
+                            'product_code');
+                        var submit_btn = document.getElementById('add-to-cart');
+
+
+                        product_img.src =
+                            `dashboard/main/product_clothes_images/${value.id}/${value.product_img}`;
+
+
+                        product_code.innerHTML = value.product_code;
+
+                        product_price.innerHTML = '₹' + value.product_price;
+
+                        product_name.innerHTML = value.product_name;
+
+
+                        let globalCart = [];
+
+                        // Function to add an item to the cart
+                        function addItemToCart(item) {
+                            // Check if the item with the same ID already exists in the cart
+                            const existingItem = globalCart.find(cartItem => cartItem.id === item.id);
+
+                            if (existingItem) {
+                                // Item already exists in the cart, update the quantity
+                                existingItem.quantity++;
+                                alert("Added to cart already");
+                            } else {
+                                // Item doesn't exist in the cart, add it to the cart array
+                                item.quantity = 1;
+                                globalCart.push(item);
+                            }
+
+                            // Update the cart in both memory and the cookie
+                            updateCart();
+                        }
+
+                        // Function to remove an item from the cart
+                        function removeItemFromCart(itemId) {
+                            const itemIndex = globalCart.findIndex(cartItem => cartItem.id === itemId);
+
+                            if (itemIndex !== -1) {
+                                const item = globalCart[itemIndex];
+                                if (item.quantity > 1) {
+                                    item.quantity--;
+                                } else {
+                                    globalCart.splice(itemIndex, 1);
+                                }
+                                updateCart();
+                            }
+                        }
+
+                        // Function to update the cart in memory and in the cookie
+                        function updateCart() {
+                            // Serialize the cart to a JSON string and save it in a cookie
+                            document.cookie = `cart=${JSON.stringify(globalCart)}; expires=Fri, 31 Dec 9999 23:59:59 GMT;`;
+                        }
+
+                        // Function to retrieve the cart from the cookie
+                        function getCartFromCookie() {
+                            const cookies = document.cookie.split(';');
+                            const cartCookie = cookies.find(cookie => cookie.trim().startsWith("cart="));
+
+                            if (cartCookie) {
+                                return JSON.parse(cartCookie.split('=')[1]);
+                            }
+
+                            return [];
+                        }
+
+                        // Load the cart from the cookie when the page loads
+                        globalCart = getCartFromCookie();
+                        // Usage example: Call this function when you want to add an item to the cart
+
+
+                        submit_btn.addEventListener("click", function (e) {
+
+                            e.preventDefault();
+
+                            const itemName = productName;
+                            const itemPrice = productPrice;
+                            const itemCode = productCode;
+                            const itemid = productId;
+                            const itemImage = productImg;
+
+                            //  console.log(itemCode);
+                            const item = {
+                                id: itemid,
+                                name: itemName,
+                                code: itemCode,
+                                price: itemPrice,
+                                image: itemImage
+                            };
+
+                            addItemToCart(item);
+
+
+
+
+                        })
+
+
+
+
+                        // var productData = [productId, productName, productCode,
+                        //     productPrice, productImg
+                        // ];
+                        // console.log(productData);
+
+
+
+                    });
+                }
+            }
+        })
+    }
+    fetchdata();
+
+})
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------- */
+<script>
+function getCookie(name) {
+    const cookieName = name + '=';
+    const cookies = document.cookie.split(';');
+    for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i].trim();
+        if (cookie.indexOf(cookieName) === 0) {
+            return cookie.substring(cookieName.length, cookie.length);
+        }
+    }
+    return '';
+}
+
+// Retrieve and display cart data from the cookie
+const cartData = getCookie('cart');
+let product_Grand_total;
+let globalCart = [];
+if (cartData) {
+    globalCart = JSON.parse(cartData);
+    var product_cart = document.getElementById('product-carts');
+    console.log(globalCart);
+    globalCart.forEach(item => {
+        let html = `
+<tr data-id="${item.id}">
+<td class="cart-delete text-center small-hide">
+<button class="removeCookieButton" data-id="${item.id}">
+<div class="cart-remove remove-icon position-static" data-bs-toggle="tooltip" data-bs-placement="top" title="Remove from Cart">
+  <i class="icon anm anm-times-r"></i>
+</div>
+</button>
+</td>
+<td class="cart-image cart-flex-item">
+<a href="product-layout1.html"><img class="cart-image rounded-0 blur-up lazyload" data-src="<?php echo $path; ?>assets/images/saree/${item.image}" src="<?php echo $path; ?>assets/images/saree/${item.image}" alt="" width="120" height="170" /></a>
+</td>
+<td class="cart-meta small-text-left cart-flex-item">
+<div class="list-view-item-title">
+<a href="product-layout1.html" class="Product_Name">${item.name}</a>
+</div>
+<div class="cart-meta-text">
+Code:${item.code}
+</div>
+<div class="cart-price d-md-none">
+<span class="money fw-500">₹${item.price}</span>
+</div>
+</td>
+<td class="cart-price cart-flex-item text-center small-hide">
+<span class="money" style="font-size:10px;">₹</span>${item.price}
+</td>
+<td class="cart-update-wrapper cart-flex-item text-end text-md-center">
+<div class="cart-qty d-flex justify-content-end justify-content-md-center">
+<div class="qtyField">
+  <button class="qtyBtn minus" data-id="${item.id}"><i class="icon anm anm-minus-r"></i></button>
+  <input class="cart-qty-input qty" type="text" value="${item.quantity}" min="1" max="10" data-id="${item.id}" />
+  <button class="qtyBtn plus" data-id="${item.id}"><i class="icon anm anm-plus-r"></i></button>
+</div>
+</div>
+<a href="#" title="Remove" class="removeMb d-md-none d-inline-block text-decoration-underline mt-2 me-3">Remove</a>
+</td>
+
+<td class="cart-price cart-flex-item text-center small-hide">
+<span class="money fw-500" id="money-view-${item.id}">₹${(item.price * item.quantity).toFixed(2)}</span>
+</td>
+</tr>
+`;
+
+
+        product_cart.insertAdjacentHTML('beforebegin', html);
+        let product_qty = item.quantity,
+            product_img = item.image,
+            product_name = item.name,
+            product_code = item.code,
+            product_total = (item.price * item.quantity).toFixed(2),
+
+
+            totalPrice = calculateTotalPrice();
+
+        product_Grand_total = totalPrice;
+        console.log('Total Price:', totalPrice);
+
+
+        console.log(product_name, product_code, product_qty, product_total, product_Grand_total +
+            ".00")
+    });
+    updateProductGrandTotal();
+}
+
+
+const plusButtons = document.querySelectorAll('.qtyBtn.plus');
+plusButtons.forEach(button => {
+    button.addEventListener('click', function (e) {
+        e.preventDefault();
+        const itemId = this.getAttribute('data-id');
+        increaseQuantity(itemId);
+    });
+});
+
+const minusButtons = document.querySelectorAll('.qtyBtn.minus');
+minusButtons.forEach(button => {
+    button.addEventListener('click', function (e) {
+        e.preventDefault();
+        const itemId = this.getAttribute('data-id');
+        decreaseQuantity(itemId);
+    });
+});
+
+const qtyInputs = document.querySelectorAll('.cart-qty-input');
+qtyInputs.forEach(input => {
+    input.addEventListener('change', function () {
+        const itemId = this.getAttribute('data-id');
+        const item = globalCart.find(item => item.id === Number(itemId));
+        const newQuantity = Number(this.value);
+
+        if (item && newQuantity >= 1 && newQuantity <= 10) {
+            item.quantity = newQuantity;
+
+            // Calculate and update the individual item's total price
+            const individualTotalPrice = item.price * newQuantity;
+            document.getElementById(`money-view-${itemId}`).textContent =
+                `₹${individualTotalPrice.toFixed(2)}`;
+
+            // Update the cart and total price
+            const totalPrice = calculateTotalPrice(globalCart);
+            totalDisplay.textContent = `₹${totalPrice.toFixed(2)}`;
+            updateCart(globalCart);
+        } else {
+            this.value = item.quantity; // Restore previous value
+        }
+    });
+});
+
+const deleteButtons = document.querySelectorAll('.removeCookieButton');
+deleteButtons.forEach(button => {
+    button.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent the default behavior of the button
+        const itemIdToRemove = this.getAttribute('data-id');
+        removeCartCookie(itemIdToRemove);
+    });
+});
+
+
+function updateProductGrandTotal() {
+    let print_Grand_total = calculateTotalPrice(globalCart);
+    console.log(print_Grand_total)
+
+    const totalPrice = calculateTotalPrice();
+    const totalDisplay = document.getElementById(
+        'total-price'); // Replace with the actual ID of your total price element
+    totalDisplay.textContent = `₹${totalPrice.toFixed(2)}`;
+}
+
+function increaseQuantity(itemId) {
+    const item = globalCart.find(item => item.id === itemId);
+
+    if (item) {
+        item.quantity++;
+        updateCart(globalCart); // Update the globalCart and the cart cookie
+        updateQuantityDisplay(itemId, item.quantity);
+
+        // Update the individual item's total price
+        const individualTotalPrice = item.price * item.quantity;
+        document.getElementById(`money-view-${itemId}`).textContent = `₹${individualTotalPrice.toFixed(2)}`;
+
+        // Update the overall total price
+        updateProductGrandTotal();
+    }
+}
+
+function decreaseQuantity(itemId) {
+    const item = globalCart.find(item => item.id === itemId);
+
+    if (item && item.quantity > 1) {
+        item.quantity--;
+        updateCart(globalCart); // Update the globalCart and the cart cookie
+        updateQuantityDisplay(itemId, item.quantity);
+
+        // Update the individual item's total price
+        const individualTotalPrice = item.price * item.quantity;
+        document.getElementById(`money-view-${itemId}`).textContent = `₹${individualTotalPrice.toFixed(2)}`;
+
+        // Update the overall total price
+        updateProductGrandTotal();
+    }
+}
+
+// Function to update the quantity display on the page
+function updateQuantityDisplay(itemId, quantity) {
+    // Update the quantity input for the item with itemId on the page
+    const quantityInput = document.querySelector(`input[data-id="${itemId}"]`);
+    if (quantityInput) {
+        quantityInput.value = quantity;
+    }
+}
+
+
+
+function calculateTotalPrice() {
+    let totalPrice = 0;
+
+    globalCart.forEach(item => {
+        totalPrice += item.price * item.quantity;
+    });
+
+
+    return totalPrice;
+}
+
+
+
+function updateProductRow(itemId) {
+    const item = globalCart.find((item) => item.id === itemId);
+
+    if (item) {
+        const row = document.querySelector(`tr[data-id="${itemId}"]`);
+
+        if (row) {
+            const quantityInput = row.querySelector('.cart-qty-input');
+            const moneyElement = row.querySelector('.money');
+
+            if (quantityInput && moneyElement) {
+                quantityInput.value = item.quantity;
+                moneyElement.textContent = `₹${(item.price * item.quantity).toFixed(2)}`;
+            } else {
+                console.error('Quantity input or money element not found in the row.');
+            }
+        } else {
+            console.error(`Row with data-id="${itemId}" not found.`);
+        }
+    } else {
+        console.error(`Item with id "${itemId}" not found in the cart.`);
+    }
+}
+
+
+function removeCartCookie(itemIdToRemove) {
+    // Retrieve the current cart cookie
+    const cartData = getCookie('cart');
+
+    if (cartData) {
+        const cart = JSON.parse(cartData);
+
+        // Find the index of the item to remove
+        const itemIndex = cart.findIndex(item => item.id === itemIdToRemove);
+
+        if (itemIndex !== -1) {
+            // Remove the item from the cart array
+            cart.splice(itemIndex, 1);
+
+            // Update the cart cookie with the modified cart data
+            document.cookie = `cart=${JSON.stringify(cart)}; expires=Fri, 31 Dec 9999 23:59:59 GMT;`;
+
+            // Remove the corresponding HTML element from the page
+            const buttonToRemove = document.querySelector(`button[data-id="${itemIdToRemove}"]`);
+            const rowToRemove = buttonToRemove.closest('tr');
+            rowToRemove.remove();
+
+            updateCart(cart); // Update the cart in memory
+        }
+    }
+}
+
+// Function to update the cart in memory and in the cookie
+function updateCart(cart) {
+    // Serialize the cart to a JSON string and save it in a cookie
+    document.cookie = `cart=${JSON.stringify(cart)}; expires=Fri, 31 Dec 9999 23:59:59 GMT;`;
+
+}
+
+
+
+$(document).ready(function () {
+    const cartData = getCookie('cart');
+    let globalCart = [];
+
+    if (cartData) {
+        globalCart = JSON.parse(cartData);
+
+        // Trigger the AJAX request when a button with ID 'cartCheckout' is clicked
+        $('#cartCheckout').on('click', function () {
+            sendDataToServer({
+                cart: globalCart,
+                grand_total: product_Grand_total
+            });
+        });
+    }
+
+    function sendDataToServer(data) {
+        $.ajax({
+            type: 'POST',
+            url: 'ajax',
+            data: data,
+            success: function (response) {
+                console.log('AJAX request successful', response);
+
+                // Update the cart cookie with the modified cart data
+                document.cookie =
+                    `cart=${JSON.stringify(globalCart)}; expires=Fri, 31 Dec 9999 23:59:59 GMT;`;
+                console.log('Cart cookie updated');
+
+                clearCartCookie(); // If needed
+            },
+            error: function (error) {
+                console.error('AJAX request error', error);
+            }
+        });
+    }
+
+    function clearCartCookie() {
+        // Optionally, you can clear the cart cookie after the checkout is complete
+        document.cookie = `cart=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+        console.log('Cart cookie cleared');
+    }
+});
+</script>
