@@ -581,10 +581,10 @@
                                 class="icon anm anm-angle-down-l"></i></a>
                         <ul class="dropdown">
 
-                            <li><a href="/samuthrika/main/Services/tailoring_service.php" class="site-nav">Tailoring service</a></li>
-                            <li><a href="/samuthrika/main/Services/beautitian.php" class="site-nav">Beautitian service</a></li>
-                            <li><a href="/samuthrika/main/Services/Event_management.php" class="site-nav">Event management</a></li>
-                            <li><a href="/samuthrika/main/Services/sch_&_clg_managemaent.php" class="site-nav">School/College Tie-ups </a></li>
+                            <li><a href="<?php echo $path ; ?>main/Services/tailoring_service.php" class="site-nav">Tailoring service</a></li>
+                            <li><a href="<?php echo $path ; ?>main/Services/beautitian.php" class="site-nav">Beautitian service</a></li>
+                            <li><a href="<?php echo $path ; ?>main/Services/Event_management.php" class="site-nav">Event management</a></li>
+                            <li><a href="<?php echo $path ; ?>main/Services/sch_&_clg_managemaent.php" class="site-nav">School/College Tie-ups </a></li>
                         </ul>
                     </li>
 
