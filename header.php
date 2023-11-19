@@ -43,13 +43,12 @@
                         <li class="lvl1 parent dropdown" id="list-texts"><a href="#">About Samuthrika<i
                                     class="icon anm anm-angle-down-l"></i></a>
                             <ul class="dropdown">
-                                <li><a href="lookbook-grid.html" class="site-nav">About Academy</a></li>
-                                <li><a href="<?php echo $path; ?>main/about_samuthrika_ceo.php" class="site-nav">About
-                                        CEO & Founder</a></li>
-                                <li><a href="lookbook-shop.html" class="site-nav">Awards & Achievements</a></li>
-                                <li><a href="lookbook-shop.html" class="site-nav">Recognitions</a></li>
-                                <li><a href="lookbook-shop.html" class="site-nav">Our Special Events</a></li>
-                                <li><a href="lookbook-shop.html" class="site-nav">Testimonials</a></li>
+                                <li><a href="about_academy.php" class="site-nav">About Academy</a></li>
+                                <li><a href="<?php echo $path; ?>main/about_samuthrika_ceo.php" class="site-nav">About CEO & Founder</a></li>
+                                <li><a href="Javascript:void(0)" class="site-nav">Awards & Achievements</a></li>
+                                <li><a href="Javascript:void(0)" class="site-nav">Recognitions</a></li>
+                                <li><a href="Javascript:void(0)" class="site-nav">Our Special Events</a></li>
+                                <li><a href="Javascript:void(0)" class="site-nav">Testimonials</a></li>
                             </ul>
                         </li>
 
@@ -391,8 +390,6 @@
                     </li>
 
                     </li>
-
-
                     </ul>
                     </li>
 
