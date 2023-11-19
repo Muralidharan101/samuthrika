@@ -355,6 +355,7 @@
                         var fd = new FormData();
 
                         // fd.append('customer_id',customer_id);
+                        fd.append("id","27");
                         fd.append('course_name', "Hindi Reading & Writing");
                         fd.append('age_grp', "adults");
                         fd.append('level', level);

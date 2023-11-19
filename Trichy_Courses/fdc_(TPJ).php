@@ -13,7 +13,7 @@
     <!--BootStrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Title Of Site -->
-    <title>Samuthrika Academy | Trichy</title>
+    <title>Samuthrika Academy Fashion Designing Courses Trichy</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?php echo $path; ?>assets/images/favicon.png" />
     <!-- Plugins CSS -->
@@ -55,7 +55,7 @@
                 <div class="container">
                     <div class="section-header">
                         <p class="mb-2 mt-0">Crafting careers, stitching success. [Samuthrika Academy] - Your Partner in Fashion Education.</p>
-                        <h1 style="font-size:2rem ; color:orange;" class="">FASHION DESIGNING COURSE IN
+                        <h1 style="font-size:2rem ; color:orange;" class="">FASHION DESIGNING COURSE -
                             TRICHY</h1>
                     </div>
 

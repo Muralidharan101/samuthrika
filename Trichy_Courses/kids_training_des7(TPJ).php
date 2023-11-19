@@ -357,7 +357,6 @@
 
                         // fd.append('customer_id',customer_id);
                         fd.append('id',"7");
-
                         fd.append('course_name', "English Reading & Writing");
                         fd.append('age_grp', "kids");
                         fd.append('level', level);

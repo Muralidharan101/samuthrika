@@ -315,6 +315,7 @@
                     var fd = new FormData();
 
                     // fd.append('customer_id',customer_id);
+                    fd.append("id","24");
                     fd.append('course_name', "Calligraphy");
                     fd.append('age_grp', "adults");
                     fd.append('price', price);

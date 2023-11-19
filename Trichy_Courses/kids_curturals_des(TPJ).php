@@ -11,7 +11,7 @@
     <meta name="description" content="description">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Title Of Site -->
-    <title>Samuthrika Academy Cultural classes Trichy</title>
+    <title>Samuthrika Academy Bharathanatyam Kids Trichy</title>
 
     <!--BootStrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -111,7 +111,7 @@
                             <!-- Product Details -->
                             <div class="product-single-meta">
                                 <h2 id="courseName" class="product-main-title" style="text-transform: capitalize;">
-                                    Bharathanatyam Class
+                                    Bharathanatyam
                                 </h2>
                                 <!-- Product Info -->
                                 <div class="product-info">
@@ -120,17 +120,18 @@
                                     <p class="product-cat"><i class="icon anm anm-clock-r"></i> Timing :
                                         <span>
                                             <div class="form-check basicAdvance">
-                                                <input id="twice" name="week" type="radio" value="weekly twice"  />
+                                                <input id="twice" name="week" type="radio" value="weekly twice" />
 
                                                 <label for="twice" class="me-3">Weekly - Twice</label>
-                                                <input id="thrice" name="week" class="ms-2" type="radio" value="weekly thrice" />
+                                                <input id="thrice" name="week" class="ms-2" type="radio"
+                                                    value="weekly thrice" />
 
                                                 <label for="thrice" class="me-5">Weekly - Thrice</label>
                                                 <br>
-                                                <input type="radio" name="week" id="fivedays" value="weekly fivedays" >
+                                                <input type="radio" name="week" id="fivedays" value="weekly fivedays">
                                                 <label for="fivedays" class="me-3">Weekly - 5 days</label>
 
-                                                <input type="radio" name="week" id="weekend" value="only weekend" >
+                                                <input type="radio" name="week" id="weekend" value="only weekend">
                                                 <label for="weekend">Only on Weekend</label>
                                             </div>
                                         </span>
@@ -213,18 +214,18 @@
                             <div class="product-description">
                                 <div class="row">
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-0 mb-md-0">
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the
-                                            1500s, when an unknown printer took a galley of type and scrambled it to
-                                            make a type specimen book. the majority have suffered alteration in some
-                                            form randomised words which don't look even slightly believable.</p>
+                                        <p>We encourage both kids and adults to learn bharatham and no age limits to
+                                            learn is our mantra. Both Mom and Daughter together can learn and we have
+                                            separate curriculum according to them.</p>
                                         <h4 class="mb-3">Features</h4>
                                         <ul class="checkmark-info">
-                                            <li>High quality fabric, very comfortable to touch and wear.</li>
-                                            <li>This cardigan sweater is cute for no reason,perfect for travel and
-                                                casual.</li>
-                                            <li>It can tie in front-is forgiving to you belly or tie behind.</li>
-                                            <li>Light weight and perfect for layering.</li>
+                                            <li>Available for both kids and adults</li>
+                                            <li>Weekly twice/thrice/5 days/ only weekends Batches are available</li>
+                                            <li>Salangai Pooja at the end of 2nd year and Arangetram at the end of 4th
+                                            year as per curriculum completion</li>
+                                            <li>Outside Shows are available for participation on interests</li>
+                                            <li>Demo Class available every 4 months</li>
+                                            <li>Schedule for Classes given and followed</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -356,84 +357,84 @@
                         })
                     });
 
-               
+
 
                     function getCookie(cookieName) {
-                var name = cookieName + "=";
-                var decodedCookie = decodeURIComponent(document.cookie);
-                var cookieArray = decodedCookie.split(';');
+                        var name = cookieName + "=";
+                        var decodedCookie = decodeURIComponent(document.cookie);
+                        var cookieArray = decodedCookie.split(';');
 
-                for (var i = 0; i < cookieArray.length; i++) {
-                    var cookie = cookieArray[i].trim();
-                    if (cookie.indexOf(name) == 0) {
-                        return cookie.substring(name.length, cookie.length);
-                    }
-                }
-                return null;
-            }
-            var cookieValue = getCookie('samuthrika_login_user_id');
-            console.log(cookieValue);
-
-            $("#submit").click(function () {
-
-                if (cookieValue === 0) {
-                    window.location.href = "../register.php";
-                } else {
-                    var week = $('input[name="week"]:checked').val();
-
-                    if (week == "weekly twice") {
-                        price = $(".tp").text();
-                    }
-                     if (week == "weekly thrice") {
-                        price = $(".thp").text();
-                    }
-                     if (week == "weekly fivedays") {
-                        price = $(".fp").text();
-                    }
-                     if (week == "only weekend") {
-                        price = $(".wp").text();
-                    }
-
-                    if (week == null) {
-                        toastr.error("Select Timing", "Empty")
-                    } else {
-
-                        var fd = new FormData();
-
-                        // fd.append('customer_id',customer_id);
-                        fd.append('course_name', "Bharathanatyam");
-                        fd.append('age_grp', "kids");
-                        fd.append('timing', week);
-                        fd.append('price', price);
-                        fd.append('location', "trichy");
-
-                        $.ajax({
-                            url: 'ajax',
-                            type: 'post',
-                            contentType: false,
-                            processData: false,
-                            data: fd,
-
-                            success: function (response) {
-                                var result = JSON.parse(response);
-
-                                if (result.status == 'Success') {
-                                    toastr.success("Course Successfully Added ", "Success")
-                                } else {
-                                    toastr.error("Unable to Add", "Error")
-
-                                }
+                        for (var i = 0; i < cookieArray.length; i++) {
+                            var cookie = cookieArray[i].trim();
+                            if (cookie.indexOf(name) == 0) {
+                                return cookie.substring(name.length, cookie.length);
                             }
-                        })
-
+                        }
+                        return null;
                     }
+                    var cookieValue = getCookie('samuthrika_login_user_id');
+                    console.log(cookieValue);
 
-                }
+                    $("#submit").click(function () {
+
+                        if (cookieValue === null) {
+                            window.location.href = "../register.php";
+                        } else {
+                            var week = $('input[name="week"]:checked').val();
+
+                            if (week == "weekly twice") {
+                                price = $(".tp").text();
+                            }
+                            if (week == "weekly thrice") {
+                                price = $(".thp").text();
+                            }
+                            if (week == "weekly fivedays") {
+                                price = $(".fp").text();
+                            }
+                            if (week == "only weekend") {
+                                price = $(".wp").text();
+                            }
+
+                            if (week == null) {
+                                toastr.error("Select Timing", "Empty")
+                            } else {
+
+                                var fd = new FormData();
+
+                                // fd.append('customer_id',customer_id);\
+                                fd.append("id", "29");
+                                fd.append('course_name', "Bharathanatyam");
+                                fd.append('age_grp', "kids");
+                                fd.append('timing', week);
+                                fd.append('price', price);
+                                fd.append('location', "trichy");
+
+                                $.ajax({
+                                    url: 'ajax',
+                                    type: 'post',
+                                    contentType: false,
+                                    processData: false,
+                                    data: fd,
+
+                                    success: function (response) {
+                                        var result = JSON.parse(response);
+
+                                        if (result.status == 'Success') {
+                                            toastr.success("Course Successfully Added ", "Success")
+                                        } else {
+                                            toastr.error("Unable to Add", "Error")
+
+                                        }
+                                    }
+                                })
+
+                            }
+
+                        }
 
 
 
-            });
-
+                    });
                 </script>
                 <script>
                     $(function () {

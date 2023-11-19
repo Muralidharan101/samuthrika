@@ -356,6 +356,7 @@
                         var fd = new FormData();
 
                         // fd.append('customer_id',customer_id);
+                        fd.append("id","28");
                         fd.append('course_name', "English Reading & Writing");
                         fd.append('age_grp', "adults");
                         fd.append('level', level);
