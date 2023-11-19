@@ -353,6 +353,7 @@
                         var fd = new FormData();
 
                         // fd.append('customer_id',customer_id);
+                        fd.append("id","22");
                         fd.append('course_name', "Hand Writing");
                         fd.append('age_grp', "adults");
                         fd.append('language', lang);

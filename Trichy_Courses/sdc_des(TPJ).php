@@ -11,7 +11,7 @@
     <meta name="description" content="description">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Title Of Site -->
-    <title>Samuthrika Academy Skill Development Trichy</title>
+    <title>Samuthrika Academy Aari Embroidery Trichy</title>
 
     <!--BootStrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -148,10 +148,10 @@
                                 <div class="product-price d-flex-center my-2 money">
                                    
                                     <span  class="price old-price basic-price" style="display:none;">₹7,000</span><span
-                                         class="price basic-price" style="display:none;">₹6000</span>
+                                         class="price basic-price bprice" style="display:none;">₹6000</span>
 
                                          <span  class="price old-price advance-price" style="display:none;">₹11000</span><span
-                                         class="price advance-price" style="display:none;">₹10000</span>
+                                         class="price advance-price aprice" style="display:none;">₹10000</span>
                                 </div>
                                 <!-- End Product Price -->
 
@@ -317,19 +317,54 @@
         }
 
           
+        function getCookie(cookieName) {
+                var name = cookieName + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var cookieArray = decodedCookie.split(';');
+
+                for (var i = 0; i < cookieArray.length; i++) {
+                    var cookie = cookieArray[i].trim();
+                    if (cookie.indexOf(name) == 0) {
+                        return cookie.substring(name.length, cookie.length);
+                    }
+                }
+                return null;
+            }
+            var cookieValue = getCookie('samuthrika_login_user_id');
+            console.log(cookieValue);
+
+
             $("#submit").click(function () {
-                var basic = $('input[name="level"]:checked').val();
-                var level = $('input[name="level"]:checked').val();
 
+                if(cookieValue === null){
+                    window.location.href("../register.php")
+                }
 
-                if (basic == null) {
+                else{
+                    var level = $('input[name="level"]:checked').val();
+
+                    var price;
+
+                    if(level == "Basic"){
+                        price = $(".bprice").text();
+                    }
+                    if(level == "Advance"){
+                        price = $(".aprice").text();
+
+                    }
+
+                  
+                if (level == null) {
                     toastr.error("Select Level", "Empty")
                 } else {
 
                     var fd = new FormData();
 
-                    fd.append('id', id);
-                    fd.append('name', name);
+                    fd.append('id', "65");
+                    fd.append('course_name', "Aari Embroidery");
+                    fd.append("level",level);
+                    fd.append("price",price);
+                    fd.append("location","trichy")
 
                     $.ajax({
                         url: 'ajax',
@@ -351,9 +386,11 @@
                     })
 
                 }
+               
+                }
 
 
-            })
+            });
 
 
 

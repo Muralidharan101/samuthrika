@@ -371,9 +371,10 @@
             }
 
             var fd = new FormData();
+            fd.append("id","21");
             fd.append('course_name', "Class 10");
             fd.append('age_grp', "kids");
-            fd.append('hour', hour);
+            fd.append('timing', hour);
             fd.append('sub', sub);
             fd.append('price', price);
             fd.append('location', "trichy");
