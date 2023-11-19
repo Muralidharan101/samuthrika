@@ -9,7 +9,7 @@
         <meta name="description" content="description">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Title Of Site -->
-        <title>Login - Hema Multipurpose eCommerce Bootstrap 5 Html Template</title>
+        <title>Samuthrika Login </title>
         <!-- Favicon -->
         <link rel="shortcut icon" href="../assets/images/favicon.png" />
         <!-- Plugins CSS -->

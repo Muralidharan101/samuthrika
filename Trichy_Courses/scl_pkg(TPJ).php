@@ -338,6 +338,7 @@
                         var fd = new FormData();
 
                         // fd.append('customer_id',customer_id);
+                        fd.append("id","9");
                         fd.append('course_name', "Pre KG");
                         fd.append('age_grp', "kids");
                         fd.append('hour', hour);

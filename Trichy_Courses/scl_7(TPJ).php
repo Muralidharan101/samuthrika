@@ -338,9 +338,11 @@
                         var fd = new FormData();
 
                         // fd.append('customer_id',customer_id);
+                        fd.append("id","18");
+
                         fd.append('course_name', "Class 7");
                         fd.append('age_grp', "kids");
-                        fd.append('hour', hour);
+                        fd.append('timing', hour);
                         fd.append('price', price);
                         fd.append('location', "trichy");
 

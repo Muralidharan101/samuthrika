@@ -356,7 +356,7 @@
                                             <div class="product-name-price">
                                                 <!-- Product Name -->
                                                 <div class="product-name">
-                                                    <a href="kids_curturals_des6(TPJ).php">Piano </a>
+                                                    <a href="kids_curturals_des6(TPJ).php">Keyboard </a>
                                                 </div>
                                                 <!-- End Product Name -->
                                                 
@@ -797,10 +797,10 @@
                                             <!-- Start Product Image -->
                                             <a href="kids_curturals_des15(TPJ).php" class="product-img">
                                                    <!-- Image -->
-                                                   <img class="primary blur-up lazyload" data-src="<?php echo $path; ?>assets/images/taekwa.jpg" src="<?php echo $path; ?>assets/images/taekwa.jpg" alt="Product" title="Product" width="625" height="781" />
+                                                   <img class="primary blur-up lazyload" data-src="<?php echo $path; ?>assets/images/taekwo.jpg" src="<?php echo $path; ?>assets/images/taekwo.jpg" alt="Product" title="Product" width="625" height="781" />
                                                             <!-- End Image -->
                                                             <!-- Hover Image -->
-                                                            <img class="hover blur-up lazyload" data-src="<?php echo $path; ?>assets/images/taekwa.jpg" src="<?php echo $path; ?>assets/images/taekwa.jpg" alt="Product" title="Product" width="625" height="781" />
+                                                            <img class="hover blur-up lazyload" data-src="<?php echo $path; ?>assets/images/taekwo.jpg" src="<?php echo $path; ?>assets/images/taekwo.jpg" alt="Product" title="Product" width="625" height="781" />
                                                             <!-- End Hover Image -->
                                             </a>
                                             <!-- End Product Image -->
