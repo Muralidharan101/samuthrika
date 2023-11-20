@@ -405,6 +405,7 @@
                     fd.append("phone", phone);
                     fd.append("enquiry", enquiry);
                     fd.append("address", address);
+                    fd.append("location", "trichy");
 
 
 

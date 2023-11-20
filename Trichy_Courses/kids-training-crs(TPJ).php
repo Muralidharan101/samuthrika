@@ -93,7 +93,7 @@
                                         <div class="product-name-price">
                                             <!-- Product Name -->
                                             <div class="product-name">
-                                                <a href="kids_training_des(TPJ).php">Hand Writing</a>
+                                                <a href="kids_training_des(TPJ).php">Handwriting</a>
                                             </div>
                                             <!-- End Product Name -->
 
@@ -108,6 +108,7 @@
                                                         Duration - 15 days</span></li>
                                                 <li style="font-size:11px;"><i class="bi bi-book"></i><span>
                                                         (English/Tamil/Hindi)</span></li>
+                                                       
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -160,7 +161,7 @@
                                         <div class="product-name-price">
                                             <!-- Product Name -->
                                             <div class="product-name">
-                                                <a href="kids_training_des2(TPJ).php">Speed Writing</a>
+                                                <a href="kids_training_des2(TPJ).php">Speedwriting</a>
                                             </div>
                                             <!-- End Product Name -->
 

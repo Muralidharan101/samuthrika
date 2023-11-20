@@ -13,7 +13,7 @@
     <!--BootStrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Title Of Site -->
-    <title>Samuthrika Academy | India</title>
+    <title>Samuthrika Academy Skill Development Certification Course India</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?php echo $path; ?>assets/images/favicon.png" />
     <!-- Plugins CSS -->
@@ -56,8 +56,8 @@
                     <div class="section-header">
                         <p class="mb-2 mt-0">Crafting careers, stitching success. [Samuthrika Academy] - Your Partner in
                             Skill Education.</p>
-                        <h1 style="font-size:2rem ; color:orange;" class="">CERTIFICATION COURSE IN
-                            INDIA</h1>
+                        <h1 style="font-size:2rem ; color:orange;" class="">CERTIFICATION COURSE -
+                            INDIA (online)</h1>
                     </div>
 
                     <!--Product Grid-->
@@ -336,46 +336,19 @@
                                     <!-- End product details -->
                                 </div>
                             </div>
-
-                           
-
-
-
-
                         </div>
                         <!--End Product Grid-->
                     </div>
-
-
-
-
-
-
-
             </section>
             <!--End Products section-->
-
-
-
         </div>
         <!-- End Body Container -->
-
         <!--Footer-->
         <?php include '../footer.php'?>
         <!--End Footer-->
-
         <!--Scoll Top-->
         <div id="site-scroll" style="background-color: orangered;"><i class="icon anm anm-arw-up"></i></div>
         <!--End Scoll Top-->
-
-
-
-
-
-
-
-
-
         <!-- Including Jquery/Javascript -->
         <!-- Plugins JS -->
         <script src="<?php echo $path; ?>assets/js/plugins.js"></script>

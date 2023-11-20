@@ -13,7 +13,7 @@
     <!--BootStrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Title Of Site -->
-    <title>Samuthrika Academy | Trichy</title>
+    <title>Samuthrika Academy Training Course For Adults Trichy</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?php echo $path; ?>assets/images/favicon.png" />
     <!-- Plugins CSS -->
@@ -93,7 +93,7 @@
                                         <div class="product-name-price">
                                             <!-- Product Name -->
                                             <div class="product-name">
-                                                <a href="adults_training_des(TPJ).php">Hand Writing</a>
+                                                <a href="adults_training_des(TPJ).php">Handwriting</a>
                                             </div>
                                             <!-- End Product Name -->
 
@@ -160,7 +160,7 @@
                                         <div class="product-name-price">
                                             <!-- Product Name -->
                                             <div class="product-name">
-                                                <a href="adults_training_des2(TPJ).php">Speed Writing</a>
+                                                <a href="adults_training_des2(TPJ).php">Speedwriting</a>
                                             </div>
                                             <!-- End Product Name -->
 

@@ -352,7 +352,7 @@
             });
 
             $("#submit").click(function () {
-    if (cookieValue == 0) {
+    if (cookieValue == null) {
         window.location.href = "../register.php";
     } else {
         var sub = $('input[name="sub"]:checked').val();
