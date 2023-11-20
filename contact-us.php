@@ -25,7 +25,9 @@
     /*.navigation{
         transform: translate(20%,-5%);
     }*/
-
+    #siteNav li{
+        padding-inline-start: 25px;
+    }
     .footer-img{
         margin-bottom: 14px;
     }
@@ -37,10 +39,6 @@
          
         
 
-
-            <!-- Body Container -->
-            <div id="page-content"> 
-                
             <!--Header-->
             <?php include 'header.php';?>
             <!--End Header-->
@@ -48,6 +46,9 @@
            <!--Mobile Menu-->
            <?php include 'sidebar.php';?>
             <!--End Mobile Menu-->
+
+            <!-- Body Container -->
+            <div id="page-content"> 
                 <!--Page Header-->
                 <div class="page-header text-center">
                     <div class="container">
@@ -79,18 +80,18 @@
                                         <p>You can contact us via fax or email.You can also use contact form below or visit our office personally.&nbsp;&nbsp;&nbsp;&nbsp; We would be happy to answer your questions.</p>
                                     </div>
 
-                                    <form action="https://www.annimexweb.com/items/hema/php/ajax_sendmail.php" name="contactus" method="post" id="contact-form" class="contact-form">	
+                                    <div name="contactus" id="contact-form" class="contact-form">	
                                         <div class="form-row">
                                             <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                                                 <div class="form-group">
                                                     <input type="text" id="ContactFormName" name="name" class="form-control" placeholder="Name" />
-                                                    <span class="error_msg" id="name_error"></span>
+                                        
                                                 </div>
                                             </div>
                                             <div class="col-12 col-sm-12 col-md-6 col-lg-6">                               
                                                 <div class="form-group">
                                                     <input type="email" id="ContactFormEmail" name="email" class="form-control" placeholder="Email" />
-                                                    <span class="error_msg" id="email_error"></span>
+                                            
                                                 </div>
                                             </div>
                                         </div>
@@ -103,7 +104,7 @@
                                             <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                                                 <div class="form-group">
                                                     <input type="text" id="ContactSubject" name="subject" class="form-control" placeholder="Subject" />
-                                                    <span class="error_msg" id="subject_error"></span>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -111,19 +112,18 @@
                                             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                                 <div class="form-group">
                                                     <textarea id="ContactFormMessage" name="message" class="form-control" rows="5" placeholder="Message"></textarea>
-                                                    <span class="error_msg" id="message_error"></span>
+                                                    
                                                 </div>
                                             </div>  
                                         </div>
                                         <div class="form-row">
                                             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                                 <div class="form-group mailsendbtn mb-0 w-100">	
-                                                    <input class="btn btn-lg" type="submit" name="contactus" value="Send Message" style="background-color:orangered;"/>
-                                                    <div class="loading"><img class="img-fluid" src="<?php echo $path;?>assets/images/icons/ajax-loader.gif" alt="loading" width="16" height="16"></div>
+                                                    <input class="btn btn-lg" type="submit" name="contactus" value="Send Message" style="background-color:orangered;" id="contact_submit"/>
                                                 </div>
                                             </div>
                                         </div>
-                                    </form>
+                                    </div>
                                     <div class="response-msg"></div>
                                 </div>
                                 <!-- End Contact Form -->
@@ -134,17 +134,43 @@
                                     <h3 class="mb-3 fs-5">Store information</h3>
                                     <ul class="list-unstyled">
                                         <li class="mb-2 address">
-                                            <strong class="d-block mb-2">Address :</strong>
-                                            <p><i class="icon anm anm-map-marker-al me-2 d-none"></i>10th Cross West Extension, Thillai Nagar, Trichy - 620018.</p>
+                                            <strong class="d-block mb-2">Address :<span class="slVariant ms-1 fw-bold" id="product_service"></span></strong>
+                                            <div class="product-item swatches-image w-100 mb-3 swatch-0 option1" data-option-index="0">
+                                            <ul class="d-flex-wrap pt-1 clearfix" id="serviceRadioContainer">
+                                                <li class="customRadio me-3 mb-3">
+                                                    <input name="swatch_service_radio" id="Tiruchirappalli" value="Tiruchirappalli" type="radio" onchange="updateAddress('Tiruchirappalli')" />
+                                                    <label for="Tiruchirappalli" class="mb-0">Tiruchirappalli</label>
+                                                </li>
+                                                <li class="customRadio me-3 mb-3">
+                                                    <input name="swatch_service_radio" id="Kumbakonam" value="Kumbakonam" type="radio" onchange="updateAddress('Kumbakonam')" />
+                                                    <label for="Kumbakonam" class="mb-0">Kumbakonam</label>
+                                                </li>  
+                                                <li class="customRadio me-3 mb-3">
+                                                    <input name="swatch_service_radio" id="Kelambakkam" value="Kelambakkam" type="radio" onchange="updateAddress('Kelambakkam')" />
+                                                    <label for="Kelambakkam" class="mb-0">Kelambakkam </label>
+                                                </li>  
+                                                <li class="customRadio me-3 mb-3">
+                                                    <input name="swatch_service_radio" id="Mogappair" value="Mogappair" type="radio" onchange="updateAddress('Mogappair')" />
+                                                    <label for="Mogappair" class="mb-0">Mogappair</label>
+                                                </li>
+                                            </ul>
+                                            </div>
                                         </li>
-                                        <li class="mb-2 phone"><strong>Phone :</strong><i class="icon anm anm-phone me-2 d-none"></i> <a href="tel:401234567890">07947336473</a></li>
-                                        <li class="mb-0 email"><strong>Email :</strong><i class="icon anm anm-envelope-l me-2 d-none"></i> <a href="mailto:contact@example.com">contact@example.com</a></li>
+
+                                  
+<div name="contactus" method="post" id="contact-form" class="contact-form" >
+    <p id="addressPlaceholder"><i class="icon anm anm-map-marker-al me-2 d-none"></i> </p>
+</div>
+<br>
+
+                                        <li class="mb-2 phone"><strong>Phone :</strong><i class="icon anm anm-phone me-2 d-none"></i> <a ><br>7904733124,<br>9843340141,<br>9361035207</a></li>
+                                        <li class="mb-0 email"><strong>Email :</strong><i class="icon anm anm-envelope-l me-2 d-none"></i> <a ><br>samuthrikaacademy@gmail.com<br>samuthrikaacademy2023@gmail.com</a></li>
                                     </ul>
                                     <hr>
                                     <div class="open-hours">
                                         <strong class="d-block mb-2">Opening Hours</strong>
                                         <p class="lh-lg">
-                                            Mon - Sat : 9:30 AM - 6:30 PM<br>
+                                            Mon - Sat : 9:30 AM - 8:30 PM<br>
                                             Sunday: 11:00 AM - 5:00 PM
                                         </p>
                                     </div>
@@ -172,8 +198,8 @@
                         <div class="row">
                             <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="map-section ratio ratio-16x9">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3918.8750032711987!2d78.6787772741734!3d10.820876558374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%20Samuthrika%20Academy%20%2010th%20Cross%20West%20Extension%2C%20Thillai%20Nagar%2C%20Trichy%20-%20620018%20(Next%20Green%20Trends)%20%20https%3A%2F%2Fjsdl.in%2FDT-57MYIIIQI2E!5e0!3m2!1sen!2sin!4v1696672140807!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      <div class="map-section-overlay-wrapper">
-                                       
+                                <iframe id="mapIframe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
                                     <!--<div class="map-section-overlay rounded-0">
                                             <h3>Our store</h3>
                                             <div class="content mb-3">
@@ -292,10 +318,109 @@
             <script src="<?php echo $path;?>assets/js/plugins.js"></script>
             <!-- Main JS -->
             <script src="<?php echo $path;?>assets/js/main.js"></script>
+<script>
+      
+        const ContactFormName = document.getElementById('ContactFormName').value;
+        const ContactFormEmail = document.getElementById('ContactFormEmail').value;
+        const ContactFormPhone = document.getElementById('ContactFormPhone').value;
+        const ContactSubject = document.getElementById('ContactSubject').value;
+        const ContactFormMessage = document.getElementById('ContactFormMessage').value;
 
-            <!-- Contact Form JS -->
-            <script src="<?php echo $path;?>assets/js/ajax_sendmail.js"></script>
+        var addressSmall = document.getElementById("product_service");
+        var addressElement = document.getElementById("addressPlaceholder");
+        var address = "";
+        var addressLite = "";
 
+        let addressValue;
+
+  function updateAddress(city) {
+        // Add logic to determine the address based on the selected city
+        if (city === "Tiruchirappalli") {
+            address = "Samuthrika Academy, 10th Cross West Extension, Thillai Nagar, Trichy - 620018 (Next Green Trends).";
+            addressLite='Tiruchirappalli';
+        } else if (city === "Kumbakonam") {
+            address = "Samuthrika Academy, No 20, New Railway Road, Kumbakonam Railway Station, Kumbakonam - 612001 (Opp).";
+            addressLite='Kumbakonam';
+        }else if (city === "Kelambakkam") {
+            address = "Samuthrika Academy,TVH Ouranya Bay, Padur, Kelambakkam, Chennai - 603103 (Kazhipattur).";
+            addressLite='Kelambakkam';
+        }else if (city === "Mogappair") {
+            address = "Samuthrika Academy,No 2, PC 7/B, 1st Floor, Bus Depo Main Road, Mogappair West, Chennai - 600037.";
+            addressLite='Mogappair';
+        }
+
+        // Update the address in the HTML
+        addressElement.textContent =  address;
+        addressSmall.textContent = addressLite;
+
+        addressValue=address;
+        
+        // Show the contact form
+        document.getElementById("contact-form").style.display = "block";updateMapIframe(addressValue);
+    }
+
+    
+    $(document).ready(function () {
+    $('#contact_submit').click(function (event) {
+        var ContactFormName = document.getElementById('ContactFormName').value;
+        var ContactFormEmail = document.getElementById('ContactFormEmail').value;
+        var ContactFormPhone = document.getElementById('ContactFormPhone').value;
+        var ContactSubject = document.getElementById('ContactSubject').value;
+        var ContactFormMessage = document.getElementById('ContactFormMessage').value;
+   
+        if (ContactFormName === '') {
+            toastr.error('Error!', 'Name is required!');
+        } else if (ContactFormEmail === '') {
+            toastr.error('Error!', 'Email is required!');
+        } else if (ContactFormPhone === '') {
+            toastr.error('Error!', 'Phone number is required!');
+        } else if (ContactSubject === '') {
+            toastr.error('Error!', 'Subject is required!');
+        } else if (ContactFormMessage === '') {
+            toastr.error('Error!', 'Message is required!');
+        } else {
+
+      
+            
+
+            // Call your updateAddress function here with the selected city
+            // Example: updateAddress('Tiruchirappalli');
+
+        
+            var fd = new FormData();
+
+            fd.append("ContactFormName", ContactFormName);
+            fd.append("ContactFormEmail", ContactFormEmail);
+            fd.append("ContactFormPhone", ContactFormPhone);
+            fd.append("ContactSubject", ContactSubject);
+            fd.append("ContactFormMessage", ContactFormMessage);
+            fd.append("ContactAddress", addressValue);
+
+            $.ajax({
+                url: 'ajax',
+                data: fd,
+                type: 'post',
+                contentType: false,
+                processData: false,
+                success: function (response) {
+                    var data = JSON.parse(response);
+                    console.log(data);
+                    if (data.status == 'Success') {
+                        toastr.success('Welcome!', 'Success');
+                    } else {
+                        toastr.error('Error!', 'Error Found!')
+                    }
+                }
+            });
+        }
+
+    });
+
+});
+
+
+
+</script>
         </div>
         <!--End Page Wrapper-->
     </body>
