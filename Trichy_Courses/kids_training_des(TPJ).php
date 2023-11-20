@@ -353,7 +353,7 @@
                         var fd = new FormData();
 
                         fd.append('id',"1");
-                        fd.append('course_name', "Hand Writing");
+                        fd.append('course_name', "Handwriting");
                         fd.append('age_grp', "kids");
                         fd.append('language', lang);
                         fd.append('price', price);

@@ -499,7 +499,6 @@
                         // fd.append('customer_id',customer_id);
                         fd.append("id","8");
                         fd.append('course_name', "Abacus");
-                        fd.append('age_grp', "kids");
                         fd.append('level', level);
                         fd.append('price', price);
                         fd.append('location', "trichy");

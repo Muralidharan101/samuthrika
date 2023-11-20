@@ -322,7 +322,7 @@
             $("#submit").click(function () {
 
 
-                if (cookieValue === 0) {
+                if (cookieValue === null) {
                     window.location.href = "../register.php";
                 } else {
 

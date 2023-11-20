@@ -304,19 +304,21 @@
                                 <div class="product-description">
                                     <div class="row">
                                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-0 mb-md-0">
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                                since the 1500s, when an unknown printer took a galley of type and
-                                                scrambled it to make a type specimen book. the majority have suffered
-                                                alteration in some form randomised words which don't look even slightly
-                                                believable.</p>
+                                            <p>Summer Camp mainly focused to engage students especially during holidays
+                                                and at the same time it should be fruitful by learning new things.
+                                                Summer camps offer a unique experience for children and teens,
+                                                Participants often create lasting memories, develop new friendships, and
+                                                gain valuable life skills in a fun and supportive environment. </p>
                                             <h4 class="mb-3">Features</h4>
                                             <ul class="checkmark-info">
-                                                <li>High quality fabric, very comfortable to touch and wear.</li>
-                                                <li>This cardigan sweater is cute for no reason,perfect for travel and
-                                                    casual.</li>
-                                                <li>It can tie in front-is forgiving to you belly or tie behind.</li>
-                                                <li>Light weight and perfect for layering.</li>
+                                                <li>Summer Camp includes courses which can be learnt and at the same time,
+                                                interesting for the kids according to their age groups</li>
+                                                <li> Variety of Courses available and can be chosen according to the
+                                                interests</li>
+                                                <li>Package of Courses at a very reasonable fees ensure good quality too ,
+                                                might be an initiative to get expertise in future</li>
+                                                <li>Throughout the year , Summer Camps are available , so that abroad
+                                                students who come for vacation to India also get benefited</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -407,7 +409,7 @@
         $("#submit").click(function () {
 
 
-            if (cookieValue === 0) {
+            if (cookieValue === null) {
                 window.location.href = "../register.php";
             } else {
 
@@ -454,6 +456,7 @@
                             var fd = new FormData();
 
                             // fd.append('customer_id',customer_id);
+                            fd.append("id","86")
                             fd.append('course_name', "Summer Camp");
                             fd.append('age_grp', "kids");
                             fd.append('hour', hour);
@@ -584,7 +587,7 @@
                     newSelectBox.change(function () {
                         var selectedOption = $(this).val();
                         $('.classes').not(this).find(`option[value="${selectedOption}"]`)
-                    .show();
+                            .show();
                         $(this).find(`option[value="${selectedOption}"]`).hide();
                     });
 

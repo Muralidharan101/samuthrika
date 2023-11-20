@@ -132,17 +132,17 @@
                                     <p class="product-cat"><i class="icon anm anm-clock-r"></i> Hours : <span>
                                             <div class="form-check hour">
 
-                                                <input id="one" name="hour" type="radio" value="one" />
+                                                <input id="one" name="hour" type="radio" value="1 hr/day" />
 
                                                 <label for="one" class="me-3">1 hr/day ( 1 Course For One Month
                                                     )</label>
                                                 <br>
-                                                <input id="two" name="hour" type="radio" value="two" />
+                                                <input id="two" name="hour" type="radio" value="2 hr/day" />
 
                                                 <label for="two" class="me-3">2 hrs/day ( 2 Course For One
                                                     Month)</label>
                                                 <br>
-                                                <input id="three" name="hour" type="radio" value="three" />
+                                                <input id="three" name="hour" type="radio" value="3 hr/day" />
 
                                                 <label for="three" class="me-3">3 hrs/day ( 3 Course For One Month
                                                     )</label>
@@ -160,13 +160,16 @@
                                     </script>
 
                                     <p class="product-cat"><i class="bi bi-book"></i> Classes :<button type="button"
-                                            class="btn btn-light btn-lg" data-bs-toggle="tooltip" data-bs-placement="right"
-                                            title="Select Courses Carefully">
-                                            <i style="color:red;"class="anm anm-info-circle"></i>
+                                            class="btn btn-light btn-lg" data-bs-toggle="tooltip"
+                                            data-bs-placement="right" title="Select Courses Carefully">
+                                            <i style="color:red;" class="anm anm-info-circle"></i>
                                         </button><span>
                                             <div class="sub">
 
-                                                <select style="display:none" class="form-select w-50" name="class"
+                                                <div id='select_box'>
+
+                                                </div>
+                                                <!-- <select style="display:none" class="form-select w-50 classes" name="class"
                                                     id="class1">
                                                     <option value="">---SELECT COURSE--</option>
                                                     <option value="bharathanatyam">Bharathanatyam</option>
@@ -183,9 +186,9 @@
                                                     <option value="Spoken Hindi">Spoken Hindi</option>
                                                     <option value="Calligraphy">Calligraphy</option>
                                                     <option value="Drawing / Painting">Drawing / Painting</option>
-                                                </select>
+                                                </select> -->
 
-                                                <select style="display:none" class="form-select w-50 mt-3" name="class"
+                                                <!-- <select style="display:none" class="form-select w-50 mt-3 classes" name="class"
                                                     id="class2">
                                                     <option value="">---SELECT COURSE--</option>
                                                     <option value="bharathanatyam">Bharathanatyam</option>
@@ -202,9 +205,9 @@
                                                     <option value="Spoken Hindi">Spoken Hindi</option>
                                                     <option value="Calligraphy">Calligraphy</option>
                                                     <option value="Drawing / Painting">Drawing / Painting</option>
-                                                </select>
+                                                </select> -->
 
-                                                <select style="display:none" class="form-select w-50 mt-3" name="class"
+                                                <!-- <select style="display:none" class="form-select w-50 mt-3 classes" name="class"
                                                     id="class3">
                                                     <option value="">---SELECT COURSE--</option>
                                                     <option value="bharathanatyam">Bharathanatyam</option>
@@ -221,16 +224,14 @@
                                                     <option value="Spoken Hindi">Spoken Hindi</option>
                                                     <option value="Calligraphy">Calligraphy</option>
                                                     <option value="Drawing / Painting">Drawing / Painting</option>
-                                                </select>
+                                                </select> -->
 
                                             </div>
                                         </span></p>
-                                    <p class="product-cat"><i class="icon anm anm-eye-r"></i> Mode :<span><a
-                                                href="#">Offline
-                                                Classes</a></span></p>
+
 
                                     <p class="product-cat"><i class="icon anm anm-calendar"></i> Days:<span><a
-                                                href="#">Monday</a> <a href="#">-</a> <a href="#">Friday</a> </span></p>
+                                                href="#">Monday</a> <a href="#">-</a> <a href="#">Sunday</a> </span></p>
 
 
 
@@ -239,12 +240,12 @@
                                     <!-- Product Price -->
                                     <div class="product-price d-flex-center my-2">
                                         <span style="display:none" class="price old-price one-price">₹2,000</span><span
-                                            style="display:none" class="price one-price">₹1500</span>
-                                        <span style="display:none" class="price old-price two-price">₹3,500</span><span
-                                            style="display:none" class="price two-price">₹3000</span>
+                                            style="display:none" class="price one-price oprice">₹1500</span>
+                                        <span style="display:none" class="price old-price two-price ">₹3,500</span><span
+                                            style="display:none" class="price two-price tprice">₹3000</span>
                                         <span style="display:none"
                                             class="price old-price three-price">₹4,500</span><span style="display:none"
-                                            class="price three-price">₹4000</span>
+                                            class="price three-price thprice">₹4000</span>
                                     </div>
                                     <!-- End Product Price -->
 
@@ -259,7 +260,7 @@
 
                                         <!-- Product Add -->
                                         <div class="product-form-submit addcart fl-1 ms-0 mt-0">
-                                            <button type="submit" name="add"
+                                            <button id="submit" name="add"
                                                 class="btn btn-secondary product-form-cart-submit"><span>Add to
                                                     cart</span></button>
                                         </div>
@@ -275,13 +276,14 @@
                                 <div class="social-sharing d-flex-center mt-2 lh-lg">
                                     <span class="sharing-lbl fw-600">Share :</span>
 
-                                    <a href="#" class="d-flex-center btn btn-link btn--share share-email"><i
-                                            class="icon anm anm-share"></i><span class="share-title">Email</span></a>
+                                    <!-- Copy to Clipboard Button -->
+                                    <button class="d-flex-center btn btn-link btn--share copy-to-clipboard"
+                                        onclick="copyToClipboard()">
+                                        <i class="icon anm anm-share"></i>
+                                    </button>
                                 </div>
                                 <!-- End Social Sharing -->
-                                <div class="trustseal-img mt-3 mt-md-4"><img
-                                        src="<?php echo $path;?>assets/images/icons/powerby-cards.jpg"
-                                        alt="powerby cards" width="470" /></div>
+
                             </div>
                         </div>
                     </div>
@@ -301,20 +303,22 @@
                             <div id="description" class="tab-content">
                                 <div class="product-description">
                                     <div class="row">
-                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-0 mb-md-0">
-                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                                since the 1500s, when an unknown printer took a galley of type and
-                                                scrambled it to make a type specimen book. the majority have suffered
-                                                alteration in some form randomised words which don't look even slightly
-                                                believable.</p>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-0 mb-md-0">
+                                            <p>Summer Camp mainly focused to engage students especially during holidays
+                                                and at the same time it should be fruitful by learning new things.
+                                                Summer camps offer a unique experience for children and teens,
+                                                Participants often create lasting memories, develop new friendships, and
+                                                gain valuable life skills in a fun and supportive environment. </p>
                                             <h4 class="mb-3">Features</h4>
                                             <ul class="checkmark-info">
-                                                <li>High quality fabric, very comfortable to touch and wear.</li>
-                                                <li>This cardigan sweater is cute for no reason,perfect for travel and
-                                                    casual.</li>
-                                                <li>It can tie in front-is forgiving to you belly or tie behind.</li>
-                                                <li>Light weight and perfect for layering.</li>
+                                                <li>Summer Camp includes courses which can be learnt and at the same time,
+                                                interesting for the kids according to their age groups</li>
+                                                <li> Variety of Courses available and can be chosen according to the
+                                                interests</li>
+                                                <li>Package of Courses at a very reasonable fees ensure good quality too ,
+                                                might be an initiative to get expertise in future</li>
+                                                <li>Throughout the year , Summer Camps are available , so that abroad
+                                                students who come for vacation to India also get benefited</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -352,66 +356,248 @@
 
     <!-- Elevatezoom Zoom -->
     <script src="<?php echo $path;?>assets/js/vendor/jquery.elevatezoom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+        integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"
+        integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <script>
+        function copyToClipboard() {
+            // Get the text you want to copy (replace with your actual URL or content)
+            var textToCopy = window.location.href;
+
+            // Create a temporary input element
+            var tempInput = document.createElement("input");
+            tempInput.setAttribute("value", textToCopy);
+            document.body.appendChild(tempInput);
+
+            // Select the text in the input element
+            tempInput.select();
+            tempInput.setSelectionRange(0, 99999); // For mobile devices
+
+            // Execute the "copy" command
+            document.execCommand("copy");
+
+            // Remove the temporary input element
+            document.body.removeChild(tempInput);
+
+            // Optionally, provide feedback to the user
+            toastr.info("Link copied ");
+        }
+
+
+
+        function getCookie(cookieName) {
+            var name = cookieName + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var cookieArray = decodedCookie.split(';');
+
+            for (var i = 0; i < cookieArray.length; i++) {
+                var cookie = cookieArray[i].trim();
+                if (cookie.indexOf(name) == 0) {
+                    return cookie.substring(name.length, cookie.length);
+                }
+            }
+            return null;
+        }
+        var cookieValue = getCookie('samuthrika_login_user_id');
+        console.log(cookieValue);
+
+        $("#submit").click(function () {
+
+
+            if (cookieValue === null ) {
+                window.location.href = "../register.php";
+            } else {
+
+
+                var hour = $('input[name="hour"]:checked').val();
+
+                if (hour == "1 hr/day") {
+                    price = $(".oprice").text();
+                }
+                if (hour == "2 hr/day") {
+                    price = $(".tprice").text();
+                }
+                if (hour == "3 hr/day") {
+                    price = $(".thprice").text();
+                }
+                if (hour == null) {
+                    toastr.error("Select hour", "Empty !")
+                } else if (classes === "") {
+                    toastr.error("Select Course", "Empty !")
+                } else {
+
+                    var selectedOptions = $('.classes option:selected').map(function () {
+                        return $(this).val();
+                    }).get();
+
+                    var classes = JSON.stringify(selectedOptions);
+
+                    // Check if any selected option has an empty value or is "---SELECT COURSE--"
+                    if (selectedOptions.some(function (option) {
+                            return option.trim() === '' || option === '---SELECT COURSE--';
+                        })) {
+                        toastr.error('Please select a valid course from all dropdowns.');
+                    } else {
+                        // Check for duplicate options
+                        var isDuplicate = selectedOptions.some(function (option, index) {
+                            return selectedOptions.indexOf(option) !== index;
+                        });
+
+                        if (isDuplicate) {
+                            toastr.error('Please ensure that each course is selected only once.');
+                        } else {
+                            console.log(classes);
+
+                            var fd = new FormData();
+
+                            // fd.append('customer_id',customer_id);
+                            fd.append("id","88")
+                            fd.append('course_name', "Summer Camp");
+                            fd.append('age_grp', "kids");
+                            fd.append('hour', hour);
+                            fd.append('price', price);
+                            fd.append('location', "kumbakonam");
+                            fd.append('classes', classes);
+
+
+                            $.ajax({
+                                url: 'ajax',
+                                type: 'post',
+                                contentType: false,
+                                processData: false,
+                                data: fd,
+
+                                success: function (response) {
+                                    var result = JSON.parse(response);
+
+                                    if (result.status == 'Success') {
+                                        toastr.success("Course Successfully Added ", "Success")
+                                    } else {
+                                        toastr.error("Unable to Add", "Error")
+
+                                    }
+                                }
+                            })
+                        }
+                    }
+
+
+
+                }
+            }
+
+
+
+        });
+
         $(document).ready(function () {
 
-            const one = $("#one");
-            const two = $("#two");
-            const three = $("#three");
+            var one = $("#one");
+            var two = $("#two");
+            var three = $("#three");
 
-            const class1 = $("#class1");
-            const class2 = $("#class2");
-            const class3 = $("#class3");
+            //     const class1 = $("#class1");
+            //     const class2 = $("#class2");
+            //     const class3 = $("#class3");
 
-            const op = $(".one-price");
-            const tp = $(".two-price");
-            const thp = $(".three-price");
+            var op = $(".one-price");
+            var tp = $(".two-price");
+            var thp = $(".three-price");
 
-            function resetSelections() {
-                class1.hide();
-                class2.hide();
-                class3.hide();
-                op.hide();
-                tp.hide();
-                thp.hide();
-            }
+            //     function resetSelections() {
+            //         class1.hide();
+            //         class2.hide();
+            //         class3.hide();
+            //         op.hide();
+            //         tp.hide();
+            //         thp.hide();
+            //     }
 
-            resetSelections();
+            //     resetSelections();
 
-            function hideSelectedOption(selectBox, selectedValue) {
-                selectBox.find('option').show();
-                selectBox.find(`option[value="${selectedValue}"]`).hide();
-            }
+            //     function hideSelectedOption(selectBox, selectedValue) {
+            //         selectBox.find('option').show();
+            //         selectBox.find(`option[value="${selectedValue}"]`).hide();
+            //     }
 
             $(one).change(function () {
                 if (one.is(":checked")) {
-                    resetSelections();
+
                     op.show();
-                    class1.show();
-                    hideSelectedOption(class2, class1.val());
-                    hideSelectedOption(class3, class1.val());
+                    tp.hide();
+                    thp.hide();
+
                 }
             });
 
             $(two).change(function () {
                 if (two.is(":checked")) {
-                    resetSelections();
+                    op.hide();
+                    thp.hide();
                     tp.show();
-                    class1.show();
-                    class2.show();
-                    hideSelectedOption(class3, class2.val());
+
                 }
             });
 
             $(three).change(function () {
                 if (three.is(":checked")) {
-                    resetSelections();
                     thp.show();
-                    class1.show();
-                    class2.show();
-                    class3.show();
+                    tp.hide();
+                    op.hide();
+
                 }
             });
+
+
+            $('.form-check input[name="hour"]').change(function () {
+                var selectedValue = $(this).val();
+                var selectBoxContainer = $('#select_box');
+
+                // Clear previous select boxes
+                selectBoxContainer.empty();
+
+                // Append new select boxes based on the selected radio button
+                for (var i = 1; i <= parseInt(selectedValue.charAt(0)); i++) {
+                    var newSelectBox = $(`
+                    <select class="form-select w-50 mt-3 classes" name="class" id="class${i}">
+                        <option value="">---SELECT COURSE--</option>
+                        <option value="bharathanatyam">Bharathanatyam</option>
+                        <option value="Western Dance">Western Dance</option>
+                        <option value="Keyboard">Keyboard</option>
+                        <option value="Guitar">Guitar</option>
+                        <option value="Drums">Drums</option>
+                        <option value="Carnatic Vocal">Carnatic Vocal</option>
+                        <option value="Violin">Violin</option>
+                        <option value="Hand Writing">Hand Writing</option>
+                        <option value="Speed Writing">Speed Writing</option>
+                        <option value="Abacus">Abacus</option>
+                        <option value="Spoken English">Spoken English</option>
+                        <option value="Spoken Hindi">Spoken Hindi</option>
+                        <option value="Calligraphy">Calligraphy</option>
+                        <option value="Drawing / Painting">Drawing / Painting</option>
+                    </select>
+                `);
+
+                    // Event handler for when an option is selected in any select box
+                    newSelectBox.change(function () {
+                        var selectedOption = $(this).val();
+                        $('.classes').not(this).find(`option[value="${selectedOption}"]`)
+                    .show();
+                        $(this).find(`option[value="${selectedOption}"]`).hide();
+                    });
+
+                    selectBoxContainer.append(newSelectBox);
+                }
+            });
+
+
+
+
 
         });
 
