@@ -13,7 +13,7 @@
     <!--BootStrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Title Of Site -->
-    <title>Samuthrika Academy | India</title>
+    <title>Samuthrika Academy Training Courses For Kids INDIA </title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?php echo $path; ?>assets/images/favicon.png" />
     <!-- Plugins CSS -->
@@ -53,11 +53,11 @@
             <!--Products section-->
             <section style="padding-top:10px" class="section product-slider">
                 <div class="container">
-                <div class="section-header">
+                    <div class="section-header">
                         <p class="mb-2 mt-0">Your life does not get better by chance, it gets better by change.</p>
-                        <h1 style="font-size:2rem ; color:orange;" class="">PERSONAL DEVELOPMENT COURSES FOR KIDS IN
-                            INDIA (ONLINE)</h1>
+                        <h1 style="font-size:2rem ; color:orange;" class="">TRAINING COURSES FOR KIDS - INDIA(online)</h1>
                     </div>
+
                     <!--Product Grid-->
                     <div class="grid-products grid-view-items pro-hover3">
                         <div
@@ -70,14 +70,14 @@
                                         <a href="kids_training_des(IND).php" class="product-img">
                                             <!-- Image -->
                                             <img class="primary blur-up lazyload"
-                                                data-src="<?php echo $path; ?>assets/images/handwriting-classes.webp"
-                                                src="<?php echo $path; ?>assets/images/handwriting-classes.webp"
+                                                data-src="<?php echo $path; ?>assets/images/handwriting-classes.jpg"
+                                                src="<?php echo $path; ?>assets/images/handwriting-classes.jpg"
                                                 alt="Product" title="Product" width="625" height="781" />
                                             <!-- End Image -->
                                             <!-- Hover Image -->
                                             <img class="hover blur-up lazyload"
-                                                data-src="<?php echo $path; ?>assets/images/handwriting-classes.webp"
-                                                src="<?php echo $path; ?>assets/images/handwriting-classes.webp"
+                                                data-src="<?php echo $path; ?>assets/images/handwriting-classes.jpg"
+                                                src="<?php echo $path; ?>assets/images/handwriting-classes.jpg"
                                                 alt="Product" title="Product" width="625" height="781" />
                                             <!-- End Hover Image -->
                                         </a>
@@ -88,12 +88,12 @@
                                     <!-- Start Product Details -->
                                     <div class="product-details text-left">
                                         <!--Product Vendor-->
-                                        <div class="product-vendor">Traditional Courses</div>
+                                        <div class="product-vendor">Training Courses</div>
                                         <!--End Product Vendor-->
                                         <div class="product-name-price">
                                             <!-- Product Name -->
                                             <div class="product-name">
-                                                <a href="kids_training_des(IND).php">Handwriting Classes</a>
+                                                <a href="kids_training_des(IND).php">Hand Writing</a>
                                             </div>
                                             <!-- End Product Name -->
 
@@ -105,7 +105,7 @@
                                                 class="publish-detail d-flex-wrap justify-content-between text-uppercase mb-2">
 
                                                 <li style="font-size:11px;"><i class="bi bi-calendar-check"></i><span>
-                                                        Basic - 15 days</span></li>
+                                                        Duration - 15 days</span></li>
                                                 <li style="font-size:11px;"><i class="bi bi-book"></i><span>
                                                         (English/Tamil/Hindi)</span></li>
                                             </ul>
@@ -117,7 +117,7 @@
                                             <ul
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri ( 1hrs or 2hrs )</time></li>
+                                                        datetime="">Mon - Sun ( 1 hr/Per day)</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -155,12 +155,12 @@
                                     <!-- Start Product Details -->
                                     <div class="product-details text-left">
                                         <!--Product Vendor-->
-                                        <div class="product-vendor">Traditional Courses</div>
+                                        <div class="product-vendor">Training Courses</div>
                                         <!--End Product Vendor-->
                                         <div class="product-name-price">
                                             <!-- Product Name -->
                                             <div class="product-name">
-                                                <a href="kids_training_des2(IND).php">Speed Writing Class</a>
+                                                <a href="kids_training_des2(IND).php">Speed Writing</a>
                                             </div>
                                             <!-- End Product Name -->
 
@@ -171,7 +171,7 @@
                                             <ul
                                                 class="publish-detail d-flex-wrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="bi bi-calendar-check"></i><span>
-                                                        Basic - 15 days</span></li>
+                                                        Duration - 15 days</span></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -181,7 +181,7 @@
                                             <ul
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri ( 1hrs or 2hrs )</time></li>
+                                                        datetime="">Mon - Sun (  1 hr/Per day)</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -219,12 +219,12 @@
                                     <!-- Start Product Details -->
                                     <div class="product-details text-left">
                                         <!--Product Vendor-->
-                                        <div class="product-vendor">Traditional Courses</div>
+                                        <div class="product-vendor">Training Courses</div>
                                         <!--End Product Vendor-->
                                         <div class="product-name-price">
                                             <!-- Product Name -->
                                             <div class="product-name">
-                                                <a href="kids_training_des3(IND).php">Calligraphy Class</a>
+                                                <a href="kids_training_des3(IND).php">Calligraphy</a>
                                             </div>
                                             <!-- End Product Name -->
 
@@ -235,7 +235,7 @@
                                             <ul
                                                 class="publish-detail d-flex-wrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="bi bi-calendar-check"></i><span>
-                                                        Basic - 15 days</span></li>
+                                                        Duration - 20 days</span></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -245,7 +245,7 @@
                                             <ul
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri ( 1hrs or 2hrs )</time></li>
+                                                        datetime="">Mon - Sun (  1 HR /PER day )</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -283,12 +283,12 @@
                                     <!-- Start Product Details -->
                                     <div class="product-details text-left">
                                         <!--Product Vendor-->
-                                        <div class="product-vendor">Traditional Courses</div>
+                                        <div class="product-vendor">Training Courses</div>
                                         <!--End Product Vendor-->
                                         <div class="product-name-price">
                                             <!-- Product Name -->
                                             <div class="product-name">
-                                                <a href="kids_training_des4(IND).php">Spoken English Class</a>
+                                                <a href="kids_training_des4(IND).php">Spoken English</a>
                                             </div>
                                             <!-- End Product Name -->
 
@@ -311,7 +311,7 @@
                                             <ul
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri ( 1hrs or 2hrs )</time></li>
+                                                        datetime="">Mon - Sun (  1 hr/Per day )</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -349,12 +349,12 @@
                                     <!-- Start Product Details -->
                                     <div class="product-details text-left">
                                         <!--Product Vendor-->
-                                        <div class="product-vendor">Traditional Courses</div>
+                                        <div class="product-vendor">Training Courses</div>
                                         <!--End Product Vendor-->
                                         <div class="product-name-price">
                                             <!-- Product Name -->
                                             <div class="product-name">
-                                                <a href="kids_training_des5(IND).php">Spoken Hindi Class</a>
+                                                <a href="kids_training_des5(IND).php">Spoken Hindi</a>
                                             </div>
                                             <!-- End Product Name -->
 
@@ -377,7 +377,7 @@
                                             <ul
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri ( 1hrs or 2hrs )</time></li>
+                                                        datetime="">Mon - Sun ( 1 hr/Per day )</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -415,13 +415,13 @@
                                     <!-- Start Product Details -->
                                     <div class="product-details text-left">
                                         <!--Product Vendor-->
-                                        <div class="product-vendor">Traditional Courses</div>
+                                        <div class="product-vendor">Training Courses</div>
                                         <!--End Product Vendor-->
                                         <div class="product-name-price">
                                             <!-- Product Name -->
                                             <div class="product-name">
                                                 <a href="kids_training_des6(IND).php">Hindi Reading & Writing
-                                                    Classes</a>
+                                                    </a>
                                             </div>
                                             <!-- End Product Name -->
 
@@ -444,7 +444,7 @@
                                             <ul
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri ( 1hrs or 2hrs )</time></li>
+                                                        datetime="">Mon - Sun ( 1 hr/Per day)</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -482,13 +482,13 @@
                                     <!-- Start Product Details -->
                                     <div class="product-details text-left">
                                         <!--Product Vendor-->
-                                        <div class="product-vendor">Traditional Courses</div>
+                                        <div class="product-vendor">Training Courses</div>
                                         <!--End Product Vendor-->
                                         <div class="product-name-price">
                                             <!-- Product Name -->
                                             <div class="product-name">
                                                 <a href="kids_training_des7(IND).php">English Reading & Writing
-                                                    Classes</a>
+                                                    </a>
                                             </div>
                                             <!-- End Product Name -->
 
@@ -511,7 +511,7 @@
                                             <ul
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri ( 1hrs or 2hrs )</time></li>
+                                                        datetime="">Mon - Sun (  1 hr/Per day )</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -549,12 +549,12 @@
                                     <!-- Start Product Details -->
                                     <div class="product-details text-left">
                                         <!--Product Vendor-->
-                                        <div class="product-vendor">Traditional Courses</div>
+                                        <div class="product-vendor">Training Courses</div>
                                         <!--End Product Vendor-->
 
                                         <!-- Product Name -->
                                         <div class="product-name">
-                                            <a href="abacus_kids(IND).php">Abacus Class</a>
+                                            <a href="abacus_kids(IND).php">Abacus</a>
 
                                         </div>
                                         <!-- End Product Name -->
@@ -588,11 +588,10 @@
                         <!--End Product Grid-->
                     </div>
 
-                    
                     <div class="section-header mt-5">
                         <p class="mb-2 mt-0">Education is the most powerful weapon which you can use to change the
                             world.</p>
-                        <h1 style="font-size:2rem ; color:orange;" class="">SCHOOL TUTION FOR LKG - XII IN INDIA (ONLINE)</h1>
+                        <h1 style="font-size:2rem ; color:orange;" class="">SCHOOL TUTION FOR (PRE KG - XII) - INDIA </h1>
                     </div>
 
                     <div class="grid-products grid-view-items mt-5 pt-2">
@@ -634,10 +633,9 @@
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="bi bi-book"></i> <span>All Subjects
                                                         </span></li>
-                                                <li style="font-size:11px;"><i class="icon anm anm-user-al"></i>
-                                                    <span>Online / Offline</span></li>
+                                               
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri (  2 hrs / Weekend Only )</time></li>
+                                                        datetime="">Mon - Sun (  2 hrs / Weekend Only )</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -690,10 +688,9 @@
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="bi bi-book"></i> <span>All Subjects
                                                         </span></li>
-                                                <li style="font-size:11px;"><i class="icon anm anm-user-al"></i>
-                                                    <span>Online / Offline</span></li>
+                                               
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri (  2 hrs / Weekend Only )</time></li>
+                                                        datetime="">Mon - Sun (  2 hrs / Weekend Only )</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -745,10 +742,9 @@
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="bi bi-book"></i> <span>All Subjects
                                                         </span></li>
-                                                <li style="font-size:11px;"><i class="icon anm anm-user-al"></i>
-                                                    <span>Online / Offline</span></li>
+                                               
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri (  2 hrs / Weekend Only )</time></li>
+                                                        datetime="">Mon - Sun (  2 hrs / Weekend Only )</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -800,10 +796,9 @@
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="bi bi-book"></i> <span>All Subjects
                                                         </span></li>
-                                                <li style="font-size:11px;"><i class="icon anm anm-user-al"></i>
-                                                    <span>Online / Offline</span></li>
+                                               
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri (  2 hrs / Weekend Only )</time></li>
+                                                        datetime="">Mon - Sun (  2 hrs / Weekend Only )</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -855,10 +850,9 @@
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="bi bi-book"></i> <span>All Subjects
                                                         </span></li>
-                                                <li style="font-size:11px;"><i class="icon anm anm-user-al"></i>
-                                                    <span>Online / Offline</span></li>
+                                               
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri (  2 hrs / Weekend Only )</time></li>
+                                                        datetime="">Mon - Sun (  2 hrs / Weekend Only )</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -911,10 +905,9 @@
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="bi bi-book"></i> <span>All Subjects
                                                         </span></li>
-                                                <li style="font-size:11px;"><i class="icon anm anm-user-al"></i>
-                                                    <span>Online / Offline</span></li>
+                                               
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri (  2 hrs / Weekend Only )</time></li>
+                                                        datetime="">Mon - Sun (  2 hrs / Weekend Only )</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -967,10 +960,9 @@
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="bi bi-book"></i> <span>All Subjects
                                                         </span></li>
-                                                <li style="font-size:11px;"><i class="icon anm anm-user-al"></i>
-                                                    <span>Online / Offline</span></li>
+                                               
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri (  2 hrs / Weekend Only )</time></li>
+                                                        datetime="">Mon - Sun (  2 hrs / Weekend Only )</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -1023,10 +1015,9 @@
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="bi bi-book"></i> <span>All Subjects
                                                         </span></li>
-                                                <li style="font-size:11px;"><i class="icon anm anm-user-al"></i>
-                                                    <span>Online / Offline</span></li>
+                                               
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri (  2 hrs / Weekend Only )</time></li>
+                                                        datetime="">Mon - Sun (  2 hrs / Weekend Only )</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -1078,10 +1069,9 @@
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="bi bi-book"></i> <span>All Subjects
                                                         </span></li>
-                                                <li style="font-size:11px;"><i class="icon anm anm-user-al"></i>
-                                                    <span>Online / Offline</span></li>
+                                               
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri (  2 hrs / Weekend Only )</time></li>
+                                                        datetime="">Mon - Sun (  2 hrs / Weekend Only )</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -1133,10 +1123,9 @@
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="bi bi-book"></i> <span>All Subjects
                                                         </span></li>
-                                                <li style="font-size:11px;"><i class="icon anm anm-user-al"></i>
-                                                    <span>Online / Offline</span></li>
+                                               
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri (  2 hrs / Weekend Only )</time></li>
+                                                        datetime="">Mon - Sun (  2 hrs / Weekend Only )</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -1188,10 +1177,9 @@
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="bi bi-book"></i> <span>All Subjects
                                                         </span></li>
-                                                <li style="font-size:11px;"><i class="icon anm anm-user-al"></i>
-                                                    <span>Online / Offline</span></li>
+                                               
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri (  2 hrs / Weekend Only )</time></li>
+                                                        datetime="">Mon - Sun (  2 hrs / Weekend Only )</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -1243,10 +1231,9 @@
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="bi bi-book"></i> <span>All Subjects
                                                         </span></li>
-                                                <li style="font-size:11px;"><i class="icon anm anm-user-al"></i>
-                                                    <span>Online / Offline</span></li>
+                                               
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri (  2 hrs / Weekend Only )</time></li>
+                                                        datetime="">Mon - Sun (  2 hrs / Weekend Only )</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -1298,10 +1285,9 @@
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="bi bi-book"></i> <span>All Subjects / Single Subjects
                                                         </span></li>
-                                                <li style="font-size:11px;"><i class="icon anm anm-user-al"></i>
-                                                    <span>Online / Offline</span></li>
+                                               
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri (  2 hrs / Weekend Only )</time></li>
+                                                        datetime="">Mon - Sun (  2 hrs / Weekend Only )</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -1435,7 +1421,7 @@
 
                     <div class="section-header mt-5">
                         <p class="mb-2 mt-0">Don't Waste Your Holidays Utilize By Growing Skills.</p>
-                        <h1 style="font-size:2rem ; color:orange;" class="">SUMMER CAMP FOR KIDS IN INDIA (ONLINE)</h1>
+                        <h1 style="font-size:2rem ; color:orange;" class="">SUMMER CAMP FOR KIDS - INDIA</h1>
                     </div>
 
                     <div class="grid-products grid-view-items mt-5 pt-2">
@@ -1479,7 +1465,7 @@
                                                 <li style="font-size:11px;"><i class="icon anm anm-user-al"></i>
                                                     <span>Offline</span></li>
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri ( 1 hrs / 2 hrs / 3 hrs )</time></li>
+                                                        datetime="">Mon - Sun ( 1 hrs / 2 hrs / 3 hrs )</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->

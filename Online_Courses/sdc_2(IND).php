@@ -2,9 +2,6 @@
 
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-
-<!-- Mirrored from www.annimexweb.com/items/hema/index5-tools-parts.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Oct 2023 07:12:57 GMT -->
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -13,7 +10,7 @@
     <!--BootStrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Title Of Site -->
-    <title>Samuthrika Academy | India</title>
+    <title>Samuthrika Academy One Day Workshop India</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?php echo $path; ?>assets/images/favicon.png" />
     <!-- Plugins CSS -->
@@ -46,18 +43,15 @@
         <!-- Body Container -->
         <div id="page-content">
             <!--Home Slideshow-->
-
             <!--End Home Slideshow-->
-
-
             <!--Products section-->
             <section style="padding-top:10px" class="section product-slider">
                 <div class="container">
                     <div class="section-header">
                         <p class="mb-2 mt-0">Crafting careers, stitching success. [Samuthrika Academy] - Your Partner in
                             Skill Education.</p>
-                        <h1 style="font-size:2rem ; color:orange;" class="">ONE DAY WORKSHOP IN
-                            INDIA</h1>
+                        <h1 style="font-size:2rem ; color:orange;" class="">ONE DAY WORKSHOP -
+                            INDIA (online)</h1>
                     </div>
 
                     <!--Product Grid-->
@@ -69,7 +63,7 @@
                                     <!-- Start Product Image -->
                                     <div class="product-image">
                                         <!-- Start Product Image -->
-                                        <a href="sdc_des5(IND).php" class="product-img">
+                                        <a href="sdc_des5(TPJ).php" class="product-img">
                                             <!-- Image -->
                                             <img class="primary blur-up lazyload"
                                                 data-src="<?php echo $path; ?>assets/images/ows.jpg"
@@ -95,25 +89,16 @@
                                         <div class="product-name-price">
                                             <!-- Product Name -->
                                             <div class="product-name">
-                                                <a href="sdc_des5(IND).php">One Day Workshop </a>
+                                                <a href="sdc_des5(TPJ).php">One Day Workshop </a>
                                             </div>
                                             <!-- End Product Name -->
-
-
                                         </div>
                                         <!-- Product Details -->
                                         <div class="product-duration py-2 pb-0">
                                             <ul
                                                 class="publish-detail d-flex-wrap justify-content-between text-uppercase mb-2">
-
-
-
                                                 <li style="font-size:11px;"><i class="bi bi-calendar-check"></i><span>
                                                         Direct Enquiry Only</span></li>
-
-
-
-
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -128,24 +113,9 @@
                                     <!-- End product details -->
                                 </div>
                             </div>
-
-                          
-
-                           
-
-
-
-
                         </div>
                         <!--End Product Grid-->
                     </div>
-
-
-
-
-
-
-
             </section>
             <!--End Products section-->
 
@@ -161,15 +131,6 @@
         <!--Scoll Top-->
         <div id="site-scroll" style="background-color: orangered;"><i class="icon anm anm-arw-up"></i></div>
         <!--End Scoll Top-->
-
-
-
-
-
-
-
-
-
         <!-- Including Jquery/Javascript -->
         <!-- Plugins JS -->
         <script src="<?php echo $path; ?>assets/js/plugins.js"></script>

@@ -11,7 +11,7 @@
     <meta name="description" content="description">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Title Of Site -->
-    <title>Samuthrika Academy Skill Development India</title>
+    <title>Samuthrika Academy Hand Embroidery India</title>
 
     <!--BootStrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -30,15 +30,13 @@
         margin-bottom: 14px;
     }
 
-    
+
 
     .level #basic,
     #adv {
         accent-color: black;
 
     }
-
-    
 </style>
 
 <body class="template-product prodcut-360-view">
@@ -62,7 +60,8 @@
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
 
                             <!--Breadcrumbs-->
-                            <div class="breadcrumbs"><span class="main-title fw-bold">Skill Development Courses</span></div>
+                            <div class="breadcrumbs"><span class="main-title fw-bold">Skill Development Courses</span>
+                            </div>
                             <!--End Breadcrumbs-->
 
                         </div>
@@ -117,41 +116,42 @@
                                 </h2>
                                 <!-- Product Info -->
                                 <div class="product-info">
-                                <p class="product-cat"><i class="bi bi-clock"></i> Level: <span>
-                                <div class="form-check level">
-                                                <input id="basic" name="level" type="radio" value="Basic"  />
+                                    <p class="product-cat"><i class="bi bi-clock"></i> Level: <span>
+                                            <div class="form-check level">
+                                                <input id="basic" name="level" type="radio" value="Basic" />
 
                                                 <label for="basic" class="me-3">Basic - 15 Hours</label>
-                                                <input id="adv" name="level" type="radio" value="Advance"  />
+                                                <input id="adv" name="level" type="radio" value="Advance" />
 
                                                 <label for="adv" class="me-3">Advance - 20 Hours</label>
-                                               
+
                                             </div>
                                         </span></p>
-                                    <p class="product-cat"><i class="bi bi-scissors"></i> Stiches: <span id="s1" style="display:none;">
-                                          40 Stiches
+                                    <p class="product-cat"><i class="bi bi-scissors"></i> Stiches: <span id="s1"
+                                            style="display:none;">
+                                            40 Stiches
                                         </span>
                                         <span id="s2" style="display:none;">
-                                          60 Stiches
+                                            60 Stiches
                                         </span></p>
-                                  
-                                   
-                                   
+
+
+
                                     <p class="product-cat"><i class="icon anm anm-calendar"></i> Course Duration: <span>
                                             1 Month
                                         </span></p>
-                                   
+
                                 </div>
                                 <!-- End Product Info -->
 
                                 <!-- Product Price -->
                                 <div class="product-price d-flex-center my-2 money">
-                                   
-                                    <span  class="price old-price basic-price" style="display:none;">₹6,500</span><span
-                                         class="price basic-price" style="display:none;">₹5500</span>
 
-                                         <span  class="price old-price advance-price" style="display:none;">₹8500</span><span
-                                         class="price advance-price" style="display:none;">₹7500</span>
+                                    <span class="price old-price basic-price" style="display:none;">₹6,500</span><span
+                                        class="price basic-price bprice" style="display:none;">₹5,500</span>
+
+                                    <span class="price old-price advance-price" style="display:none;">₹8,500</span><span
+                                        class="price advance-price aprice" style="display:none;">₹7,500</span>
                                 </div>
                                 <!-- End Product Price -->
 
@@ -186,7 +186,7 @@
                                 <!-- Copy to Clipboard Button -->
                                 <button class="d-flex-center btn btn-link btn--share copy-to-clipboard"
                                     onclick="copyToClipboard()">
-                                    <i class="icon anm anm-share"></i> 
+                                    <i class="icon anm anm-share"></i>
                                 </button>
                             </div>
                             <!-- End Social Sharing -->
@@ -293,62 +293,96 @@
             crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <script>
-           function copyToClipboard() {
-            // Get the text you want to copy (replace with your actual URL or content)
-            var textToCopy = window.location.href;
+            function copyToClipboard() {
+                // Get the text you want to copy (replace with your actual URL or content)
+                var textToCopy = window.location.href;
 
-            // Create a temporary input element
-            var tempInput = document.createElement("input");
-            tempInput.setAttribute("value", textToCopy);
-            document.body.appendChild(tempInput);
+                // Create a temporary input element
+                var tempInput = document.createElement("input");
+                tempInput.setAttribute("value", textToCopy);
+                document.body.appendChild(tempInput);
 
-            // Select the text in the input element
-            tempInput.select();
-            tempInput.setSelectionRange(0, 99999); // For mobile devices
+                // Select the text in the input element
+                tempInput.select();
+                tempInput.setSelectionRange(0, 99999); // For mobile devices
 
-            // Execute the "copy" command
-            document.execCommand("copy");
+                // Execute the "copy" command
+                document.execCommand("copy");
 
-            // Remove the temporary input element
-            document.body.removeChild(tempInput);
+                // Remove the temporary input element
+                document.body.removeChild(tempInput);
 
-            // Optionally, provide feedback to the user
-            toastr.info("Link copied ");
-        }
+                // Optionally, provide feedback to the user
+                toastr.info("Link copied ");
+            }
 
-          
+            function getCookie(cookieName) {
+                var name = cookieName + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var cookieArray = decodedCookie.split(';');
+
+                for (var i = 0; i < cookieArray.length; i++) {
+                    var cookie = cookieArray[i].trim();
+                    if (cookie.indexOf(name) == 0) {
+                        return cookie.substring(name.length, cookie.length);
+                    }
+                }
+                return null;
+            }
+            var cookieValue = getCookie('samuthrika_login_user_id');
+            console.log(cookieValue);
+
+
             $("#submit").click(function () {
-                var basic = $('input[name="level"]:checked').val();
-                var level = $('input[name="level"]:checked').val();
 
-
-                if (basic == null) {
-                    toastr.error("Select Level", "Empty")
+                if (cookieValue === null) {
+                    window.location.href("../register.php")
                 } else {
+                    var level = $('input[name="level"]:checked').val();
 
-                    var fd = new FormData();
+                    var price;
 
-                    fd.append('id', id);
-                    fd.append('name', name);
+                    if (level == "Basic") {
+                        price = $(".bprice").text();
+                    }
+                    if (level == "Advance") {
+                        price = $(".aprice").text();
 
-                    $.ajax({
-                        url: 'ajax',
-                        type: 'post',
-                        contentType: false,
-                        processData: false,
-                        data: fd,
+                    }
 
-                        success: function (response) {
-                            var result = JSON.parse(response);
 
-                            if (result.status == 'Success') {
-                                toastr.success("Course Successfully Added ", "Success")
-                            } else {
-                                toastr.error("Unable to Add", "Error")
+                    if (level == null) {
+                        toastr.error("Select Level", "Empty")
+                    } else {
 
+                        var fd = new FormData();
+
+                        fd.append('id', "521");
+                        fd.append('course_name', "Hand Embroidery");
+                        fd.append("level", level);
+                        fd.append("price", price);
+                        fd.append("location", "trichy")
+
+                        $.ajax({
+                            url: 'ajax',
+                            type: 'post',
+                            contentType: false,
+                            processData: false,
+                            data: fd,
+
+                            success: function (response) {
+                                var result = JSON.parse(response);
+
+                                if (result.status == 'Success') {
+                                    toastr.success("Course Successfully Added ", "Success")
+                                } else {
+                                    toastr.error("Unable to Add", "Error")
+
+                                }
                             }
-                        }
-                    })
+                        })
+
+                    }
 
                 }
 

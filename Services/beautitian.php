@@ -4,21 +4,26 @@
 <html class="no-js" lang="en">
     
 <!-- Mirrored from www.annimexweb.com/items/hema/faqs-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Sep 2023 19:37:47 GMT -->
+
 <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="description">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Title Of Site -->
-        <title>Faq's Page - Hema Multipurpose eCommerce Bootstrap 5 Html Template</title>
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="<?php echo $path ?>assets/images/favicon.png" />
-        <!-- Plugins CSS -->
-        <link rel="stylesheet" href="<?php echo $path ?>assets/css/plugins.css">
-        <!-- Main Style CSS -->
-        <link rel="stylesheet" href="<?php echo $path ?>assets/css/style-min.css">
-        <link rel="stylesheet" href="<?php echo $path ?>assets/css/responsive.css">
-    </head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Title Of Site -->
+    <title>Product Layout5 - Hema Multipurpose eCommerce Bootstrap 5 Html Template</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="<?php echo $path; ?>assets/images/favicon.png" />
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="<?php echo $path; ?>assets/css/plugins.css">
+    <!-- Photoswipe Gallery CSS -->
+    <link rel="stylesheet" href="<?php echo $path; ?>assets/css/vendor/photoswipe.min.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="<?php echo $path; ?>assets/css/style-min.css">
+    <link rel="stylesheet" href="<?php echo $path; ?>assets/css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
 <style>
            body {
             margin: 0;
@@ -29,11 +34,11 @@
         #sticky-button {
             position: fixed;
             top: 60%;
-            right: 0;
+            right:-11%;
             transform: translateY(-50%);
             background-color: #3498db;
             color: #fff;
-            padding: 10px 20px;
+            padding: 10px 16px;
             cursor: pointer;
             border: none;
             border-radius: 5px 0 0 5px;
@@ -84,10 +89,10 @@ textarea{
 .btn {
     width: 100%;
 }
-
+/* 
 #product-nav{
     display: block;
-}
+} */
         /* Add media query for responsiveness */
         /* @media screen and (max-width: 768px) {
             #sticky-button {
@@ -107,7 +112,7 @@ textarea{
         <!--Page Wrapper-->
         <div class="page-wrapper">
        
-        <?php include('../header.php'); ?>
+        <?php include '../header.php'; ?>
             <!-- Body Container -->
             <div id="page-content"> 
                 <!--Page Header-->
@@ -140,7 +145,7 @@ textarea{
                   
                     <!-- End Frequently Content -->
                     <a href="#" class="product-nav d-flex-center justify-content-between" title="Next Product">
-                    <button id="sticky-button">Click to Enquiry</button>
+                    <button id="sticky-button"><i class="bi bi-exclamation-triangle"></i>&nbsp;&nbsp;&nbsp;&nbsp;Click to Enquiry</button>
     <div id="form-container">
         <span id="close-form">X</span><br>
         <div name="contactus" method="post" id="contact-form" class="contact-form" style="display: block;">
@@ -339,7 +344,7 @@ textarea{
         });
 
         stickyButton.addEventListener('mouseleave', function () {
-            stickyButton.style.right = '0';
+            stickyButton.style.right = '-11%';
         });
 
         $(document).ready(function () {

@@ -11,7 +11,7 @@
     <meta name="description" content="description">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Title Of Site -->
-    <title>Samuthrika Academy Skill Development Courses India</title>
+    <title>Samuthrika Academy One Day Workshop India</title>
 
     <!--BootStrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -31,15 +31,28 @@
     }
 
 
-
-    .lang [id^="c"]:checked {
-        accent-color: orange;
+    textarea {
+        resize: none;
     }
 
-    .table tbody tr td input:checked {
-        color: orange;
-        /* Change this to your desired background color */
+    .contact-form {
+        max-width: 400px;
+        /* Adjust the max-width as needed */
+        margin: 0 auto;
     }
+
+    .form-row {
+        margin-bottom: 10px;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    .btn1 {
+        width: 100%;
+    }
+
 </style>
 
 
@@ -201,6 +214,75 @@
                             </div>
                             <!-- End Product Details -->
 
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">FILL FORM FOR
+                                                ENQUIRY</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div id="form-container">
+
+                                                <div name="contactus" method="post" id="contact-form"
+                                                    class="contact-form" style="display: block;">
+                                                    <div class="form-row">
+                                                        <div class="col-12 col-sm-12 col-md-6 col-lg-12">
+                                                            <div class="form-group">
+                                                                <input type="text" id="name" name="shoulder"
+                                                                    class="form-control" placeholder="Name">
+                                                                <span class="error_msg" id="name_error"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-sm-12 col-md-6 col-lg-12">
+                                                            <div class="form-group">
+                                                                <input type="email" id="email" name="weist"
+                                                                    class="form-control" placeholder="Email">
+                                                                <span class="error_msg" id="email_error"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="col-12 col-sm-12 col-md-6 col-lg-12">
+                                                            <div class="form-group">
+                                                                <input class="form-control" type="tel" id="phone"
+                                                                    name="neck" placeholder="phone">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-sm-12 col-md-6 col-lg-12">
+                                                            <div class="form-group">
+                                                                <input type="tel" id="enquiry" name="hand"
+                                                                    class="form-control" placeholder="Enquiry">
+                                                                <span class="error_msg" id="subject_error"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-12 col-md-6 col-lg-12">
+                                                        <div class="form-group">
+                                                            <textarea id="text_others" name="text_others"
+                                                                class="form-control" placeholder="Address"></textarea>
+                                                            <span class="error_msg" id="subject_error"></span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn1 btn-secondary"
+                                                id="submit-form">Submit</button>
+
+                                            <button type="button" class="btn btn1 btn-danger"
+                                                data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
 
                             <!-- Product Form -->
                             <!-- <form method="post" action="#" class="product-form product-form-border hidedropdown"> -->
@@ -209,11 +291,9 @@
 
 
                                 <!-- Product Add -->
-                                <!-- <div class="product-form-submit addcart fl-1 ms-0 mt-0">
-                                    <button id="submit" name="add"
-                                        class="btn btn-secondary product-form-cart-submit"><span>Add to
-                                            cart</span></button>
-                                </div> -->
+                                <button id="submit" type="button" class="btn btn-secondary btn1" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">Enquiry
+                                    Now</button>
                                 <!-- Product Add -->
 
                             </div>
@@ -359,51 +439,63 @@
                 toastr.info("Link copied ");
             }
 
-            $("#submit").click(function () {
-                var courses = $('input[name="course"]:checked');
+            $(document).ready(function () {
+                $("#submit-form").click(function () {
 
-                if (courses.length === 0) {
-                    toastr.error("Please Select at Least One Course Before Purchase");
-                } else {
-                    // Clear the existing list or container content
+                    var username = document.getElementById('name').value;
+                    var email = document.getElementById('email').value;
+                    var phone = document.getElementById('phone').value;
+                    var enquiry = document.getElementById('enquiry').value;
+                    var address = document.getElementById('text_others').value;
 
-                    // Array to store selected course values
-                    var selectedCourses = [];
-                    // Reset the table without adding the courses
-                    $("#product-table tbody").find("input[type='checkbox']").prop('checked', false);
+                    if (username === '') {
+                        toastr.error('Error!', 'Name is required!');
+                    } else if (email === '') {
+                        toastr.error('Error!', 'email is required!');
+                    } else if (enquiry === '') {
+                        toastr.error('Error!', 'phone is required!');
+                    } else if (phone === '') {
+                        toastr.error('Error!', 'phone is required!');
+                    } else if (address === '') {
+                        toastr.error('Error!', 'address is required!');
+                    } else {
 
-                    // Iterate through each selected course, append it to the list, and add to the array
-                    courses.each(function () {
-                        var course = $(this).val();
-                        $("#selected-courses-list tbody").append('<tr><td>' + course + '</td></tr>');
-                        selectedCourses.push(course);
-                    });
+                        var fd = new FormData();
+                        fd.append("username", username);
+                        fd.append("email", email);
+                        fd.append("phone", phone);
+                        fd.append("enquiry", enquiry);
+                        fd.append("address", address);
+                        fd.append("location","india")
 
-                    // Convert the array to a comma-separated string
-                    var coursesString = selectedCourses.join(', ');
 
-                    // Your existing code for AJAX request goes here
-                    var fd = new FormData();
-                    fd.append("courses", coursesString);
 
-                    $.ajax({
-                        url: 'ajax',
-                        type: 'post',
-                        processData: false,
-                        contentType: false,
-                        data: fd,
+                        $.ajax({
+                            url: 'ajax',
+                            type: 'post',
+                            processData: false,
+                            contentType: false,
+                            data: fd,
 
-                        success: function (response) {
-                            var result = JSON.parse(response);
+                            success: function (response) {
+                                var result = JSON.parse(response);
 
-                            if (result.status == 'Success') {
-                                toastr.success("Course Successfully Added ", "Success")
-                            } else {
-                                toastr.error("Unable to Add", "Error")
+                                if (result.status == 'Success') {
+                                    toastr.success("Course Successfully Added ",
+                                        "Success");
+
+                                    $(username).val("");
+                                    $(email).val("");
+                                    $(phone).val("");
+                                    $(enquiry).val("");
+                                    $(address).val("");
+                                } else {
+                                    toastr.error("Unable to Add", "Error")
+                                }
                             }
-                        }
-                    })
-                }
+                        })
+                    }
+                });
             });
         </script>
 
