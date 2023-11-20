@@ -11,7 +11,7 @@
     <meta name="description" content="description">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Title Of Site -->
-    <title>Samuthrika Academy Abacus Class In Trichy</title>
+    <title>Samuthrika Academy Abacus Kumbakonam</title>
     <!--BootStrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Favicon -->
@@ -66,7 +66,7 @@
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
 
                             <!--Breadcrumbs-->
-                            <div class="breadcrumbs"><span class="main-title fw-bold">School Tuition Assistant</span>
+                            <div class="breadcrumbs"><span class="main-title fw-bold">Training Course</span>
                             </div>
                             <!--End Breadcrumbs-->
 
@@ -126,37 +126,37 @@
                                             <div class="form-check lang">
 
                                                 <input id="zero" name="level" type="radio" value="zero" />
-                                                <label for="zero" class="me-3">0 - Level</label>
+                                                <label for="zero" class="me-3">Level 0</label>
 
                                                 <input id="first" name="level" type="radio" value="first" />
-                                                <label for="first" class="me-3">1 - Level</label>
+                                                <label for="first" class="me-3">Level 1</label>
 
                                                 <input id="second" name="level" type="radio" value="second" />
-                                                <label for="second" class="me-3">2 - Level</label>
-
+                                                <label for="second" class="me-3">Level 2</label>
+                                                <br>
                                                 <input id="third" name="level" type="radio" value="third" />
-                                                <label for="third" class="me-3">3 - Level</label>
+                                                <label for="third" class="me-3">Level 3</label>
 
                                                 <input id="four" name="level" type="radio" value="four" />
-                                                <label for="four" class="me-3">4 - Level</label>
+                                                <label for="four" class="me-3">Level 4</label>
 
                                                 <input id="five" name="level" type="radio" value="five" />
-                                                <label for="five" class="me-3">5 - Level</label>
-
+                                                <label for="five" class="me-3">Level 5</label>
+                                                <br>
                                                 <input id="six" name="level" type="radio" value="six" />
-                                                <label for="six" class="me-3">6 - Level</label>
+                                                <label for="six" class="me-3">Level 6</label>
 
                                                 <input id="seven" name="level" type="radio" value="seven" />
-                                                <label for="seven" class="me-3">7 - Level</label>
+                                                <label for="seven" class="me-3">Level 7</label>
 
                                                 <input id="eight" name="level" type="radio" value="eight" />
-                                                <label for="eight" class="me-3">8 - Level</label>
-
+                                                <label for="eight" class="me-3">Level 8</label>
+                                                <br>
                                                 <input id="nine" name="level" type="radio" value="nine" />
-                                                <label for="nine" class="me-3">9 - Level</label>
+                                                <label for="nine" class="me-3">Level 9</label>
 
                                                 <input id="ten" name="level" type="radio" value="ten" />
-                                                <label for="ten" class="me-3">10 - Level</label>
+                                                <label for="ten" class="me-3">Level 10</label>
 
 
 
@@ -164,28 +164,40 @@
 
                                             </div>
                                         </span></p>
-                                    <p class="product-cat"><i class="icon anm anm-eye-r"></i> Mode : <span><a
-                                                href="#">Online Classes</a> <a href="#">/</a> <a href="#">Offline
-                                                Classes</a></span></p>
+
+
                                     <p class="product-cat"><i class="icon anm anm-clock-r"></i> Course Duration :
-                                        <span><a href="#">3 months - 24 days (Per day 1 hour) </a></span></p>
+                                        <span><a href="#">3 months / 24 days </a></span></p>
+
+                                    <p class="product-cat"><i class="icon anm anm-calendar"></i> Days: <span>Per Month /
+                                            8 Days (Per day 1 hour)
+                                        </span></p>
+
                                     <!-- <p class="product-cat"><i class="icon anm anm-question-cil me-2"></i>Materials:<span> <a href="#">Kit </a> <a href="#">+</a> <a href="#">Books</a></span></p> -->
                                 </div>
                                 <!-- End Product Info -->
 
                                 <!-- Product Price -->
                                 <div class="product-price d-flex-center my-2">
-                                    <span style="display:none" class="price old-price zero_price">₹2,500</span><span style="display:none" class="price zero_price">₹2000<span>&nbsp;(for 3 months)</span></span>
-                                        <span style="display:none"  class="price old-price first_price">₹3,000</span><span style="display:none" class="price first_price">₹2500<span>&nbsp;(for 3 months)</span></span>
+                                    <span style="display:none" class="price old-price zero_price">₹3,000</span><span
+                                        style="display:none"
+                                        class="price zero_price zprice">₹2000<span>&nbsp;</span></span>
+                                    <span style="display:none" class="price old-price first_price">₹3,500</span><span
+                                        style="display:none"
+                                        class="price first_price fprice">₹2500<span>&nbsp;</span></span>
 
-                                        <span style="display:none" class="price old-price second_price">₹3,500</span><span style="display:none" class="price second_price">₹3000<span>&nbsp;(for 3 months)</span></span>
+                                    <span style="display:none" class="price old-price second_price">₹4,000</span><span
+                                        style="display:none"
+                                        class="price second_price sprice">₹3000<span>&nbsp;</span></span>
 
-                                        <span style="display:none" class="price old-price third_price">₹4,500</span><span style="display:none" class="price third_price">₹4000<span>&nbsp;(for 3 months)</span></span>
-                                        
+                                    <span style="display:none" class="price old-price third_price">₹5,000</span><span
+                                        style="display:none"
+                                        class="price third_price tprice">₹4000<span>&nbsp;</span></span>
 
-                                        
 
-                                        
+
+
+
                                 </div>
                                 <!-- End Product Price -->
 
@@ -193,36 +205,35 @@
                             <!-- End Product Details -->
 
                             <!-- Product Form -->
-                            <form method="post" action="#" class="product-form product-form-border hidedropdown">
-                                <!-- Product Action -->
-                                <div class="product-action w-100 d-flex-wrap mb-2">
+                            <!-- Product Action -->
+                            <div class="product-action w-100 d-flex-wrap mb-2">
 
 
-                                    <!-- Product Add -->
-                                    <div class="product-form-submit addcart fl-1 ms-0 mt-0">
-                                        <button type="submit" name="add"
-                                            class="btn btn-secondary product-form-cart-submit"><span>Add to
-                                                cart</span></button>
-                                    </div>
-                                    <!-- Product Add -->
-                                   
+                                <!-- Product Add -->
+                                <div class="product-form-submit addcart fl-1 ms-0 mt-0">
+                                    <button id="submit" name="add"
+                                        class="btn btn-secondary product-form-cart-submit"><span>Add to
+                                            cart</span></button>
                                 </div>
-                                <!-- End Product Action -->
+                                <!-- Product Add -->
 
-                            </form>
+                            </div>
+                            <!-- End Product Action -->
+
                             <!-- End Product Form -->
 
                             <!-- Social Sharing -->
                             <div class="social-sharing d-flex-center mt-2 lh-lg">
                                 <span class="sharing-lbl fw-600">Share :</span>
 
-                                <a href="#" class="d-flex-center btn btn-link btn--share share-email"><i
-                                        class="icon anm anm-share"></i><span class="share-title">Email</span></a>
+                                <!-- Copy to Clipboard Button -->
+                                <button class="d-flex-center btn btn-link btn--share copy-to-clipboard"
+                                    onclick="copyToClipboard()">
+                                    <i class="icon anm anm-share"></i>
+                                </button>
                             </div>
                             <!-- End Social Sharing -->
-                            <div class="trustseal-img mt-3 mt-md-4"><img
-                                    src="<?php echo $path;?>assets/images/icons/powerby-cards.jpg" alt="powerby cards"
-                                    width="470" /></div>
+
                         </div>
                     </div>
                 </div>
@@ -284,13 +295,45 @@
 
         <!-- Elevatezoom Zoom -->
         <script src="<?php echo $path;?>assets/js/vendor/jquery.elevatezoom.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+            integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"
+            integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <script>
+            function copyToClipboard() {
+                // Get the text you want to copy (replace with your actual URL or content)
+                var textToCopy = window.location.href;
+
+                // Create a temporary input element
+                var tempInput = document.createElement("input");
+                tempInput.setAttribute("value", textToCopy);
+                document.body.appendChild(tempInput);
+
+                // Select the text in the input element
+                tempInput.select();
+                tempInput.setSelectionRange(0, 99999); // For mobile devices
+
+                // Execute the "copy" command
+                document.execCommand("copy");
+
+                // Remove the temporary input element
+                document.body.removeChild(tempInput);
+
+                // Optionally, provide feedback to the user
+                toastr.info("Link copied ");
+            }
+
             $(document).ready(function () {
 
                 const zero = $("#zero");
                 const first = $("#first");
                 const second = $("#second");
-                const third =$("#third")
+                const third = $("#third")
                 const four = $("#four");
                 const five = $("#five");
                 const six = $("#six");
@@ -407,13 +450,83 @@
                     }
                 })
 
+            });
 
-                
+            function getCookie(cookieName) {
+                var name = cookieName + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var cookieArray = decodedCookie.split(';');
+
+                for (var i = 0; i < cookieArray.length; i++) {
+                    var cookie = cookieArray[i].trim();
+                    if (cookie.indexOf(name) == 0) {
+                        return cookie.substring(name.length, cookie.length);
+                    }
+                }
+                return null;
+            }
+            var cookieValue = getCookie('samuthrika_login_user_id');
+            console.log(cookieValue);
+
+            $("#submit").click(function () {
+
+
+                if (cookieValue === null ) {
+                    window.location.href = "../register.php";
+                } else {
+
+                    var level = $('input[name="level"]:checked').val();
+
+                    var price;
+
+                    if (level == "zero") {
+                        price = $(".zprice").text();
+                    } else if (["first", "second", "third"].indexOf(level) !== -1) {
+                        price = $(".fprice").text();
+                    } else if (["four", "five", "six", "seven"].indexOf(level) !== -1) {
+                        price = $(".sprice").text();
+                    } else if (["eight", "nine", "ten"].indexOf(level) !== -1) {
+                        price = $(".tprice").text();
+                    }
+
+
+                    if (level == null) {
+                        toastr.error("Select Level", "Empty")
+                    } else {
+
+                        var fd = new FormData();
+
+                        // fd.append('customer_id',customer_id);
+                        fd.append("id","85");
+                        fd.append('course_name', "Abacus");
+                        fd.append('level', level);
+                        fd.append('price', price);
+                        fd.append('location', "kumbakonam");
+
+                        $.ajax({
+                            url: 'ajax',
+                            type: 'post',
+                            contentType: false,
+                            processData: false,
+                            data: fd,
+
+                            success: function (response) {
+                                var result = JSON.parse(response);
+
+                                if (result.status == 'Success') {
+                                    toastr.success("Course Successfully Added ", "Success")
+                                } else {
+                                    toastr.error("Unable to Add", "Error")
+
+                                }
+                            }
+                        })
+
+                    }
+                }
 
 
 
-
-                
             });
 
             $(document).ready(function () {

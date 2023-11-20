@@ -107,7 +107,7 @@
                         <div class="col-lg-6 col-md-6 col-sm-12 col-12 product-layout-info">
                             <!-- Product Details -->
                             <div class="product-single-meta">
-                                <h2 class="product-main-title" style="text-transform: capitalize;">Speed Writing
+                                <h2 class="product-main-title" style="text-transform: capitalize;">Speedwriting
                                 </h2>
                                 <!-- Product Info -->
                                 <div class="product-info">
