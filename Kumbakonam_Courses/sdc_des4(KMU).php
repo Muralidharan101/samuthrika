@@ -11,7 +11,7 @@
     <meta name="description" content="description">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Title Of Site -->
-    <title>Samuthrika Academy Skill Development Kumbakonam</title>
+    <title>Samuthrika Academy Jewellery Making Kumbakonam</title>
 
     <!--BootStrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -33,7 +33,8 @@
 
 
     .level #basic,
-    #adv,#dip {
+    #adv,
+    #dip {
         accent-color: black;
 
     }
@@ -121,11 +122,11 @@
                                                 <input id="basic" name="level" type="radio" value="Basic" />
 
                                                 <label for="basic" class="me-3">Basic - 10 Hours</label>
-
+<br>
                                                 <input id="adv" name="level" type="radio" value="Advance" />
 
                                                 <label for="adv" class="me-3">Advance - 15 Hours</label>
-
+<br>
                                                 <input id="dip" name="level" type="radio" value="Diploma" />
 
                                                 <label for="dip" class="me-3">Diploma - 40 Hours</label>
@@ -133,7 +134,7 @@
 
                                             </div>
                                         </span></p>
-                                    
+
 
                                     <p class="product-cat"><i class="icon anm anm-calendar"></i> Course Duration: <span>
                                             1 Month
@@ -146,13 +147,13 @@
                                 <div class="product-price d-flex-center my-2 money">
 
                                     <span class="price old-price basic-price" style="display:none;">₹5,500</span><span
-                                        class="price basic-price" style="display:none;">₹4500</span>
+                                        class="price basic-price bprice" style="display:none;">₹4500</span>
 
                                     <span class="price old-price advance-price" style="display:none;">₹7500</span><span
-                                        class="price advance-price" style="display:none;">₹6500</span>
+                                        class="price advance-price aprice" style="display:none;">₹6500</span>
 
-                                        <span class="price old-price diploma-price" style="display:none;">₹21000</span><span
-                                        class="price diploma-price" style="display:none;">₹20000</span>
+                                    <span class="price old-price diploma-price" style="display:none;">₹21000</span><span
+                                        class="price diploma-price dprice" style="display:none;">₹20000</span>
                                 </div>
                                 <!-- End Product Price -->
 
@@ -317,39 +318,75 @@
                 toastr.info("Link copied ");
             }
 
+            function getCookie(cookieName) {
+                var name = cookieName + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var cookieArray = decodedCookie.split(';');
+
+                for (var i = 0; i < cookieArray.length; i++) {
+                    var cookie = cookieArray[i].trim();
+                    if (cookie.indexOf(name) == 0) {
+                        return cookie.substring(name.length, cookie.length);
+                    }
+                }
+                return null;
+            }
+            var cookieValue = getCookie('samuthrika_login_user_id');
+            console.log(cookieValue);
+
 
             $("#submit").click(function () {
-                var basic = $('input[name="level"]:checked').val();
-                var level = $('input[name="level"]:checked').val();
 
-
-                if (basic == null) {
-                    toastr.error("Select Level", "Empty")
+                if (cookieValue === null) {
+                    window.location.href = "../register.php";
                 } else {
+                    var level = $('input[name="level"]:checked').val();
 
-                    var fd = new FormData();
+                    var price;
 
-                    fd.append('id', id);
-                    fd.append('name', name);
+                    if (level == "Basic") {
+                        price = $(".bprice").text();
+                    }
+                    if (level == "Advance") {
+                        price = $(".aprice").text();
+                    }
+                    if(level == "Diploma"){
+                        price = $(".dprice").text();
+                    }
 
-                    $.ajax({
-                        url: 'ajax',
-                        type: 'post',
-                        contentType: false,
-                        processData: false,
-                        data: fd,
 
-                        success: function (response) {
-                            var result = JSON.parse(response);
+                    if (level == null) {
+                        toastr.error("Select Level", "Empty")
+                    } else {
 
-                            if (result.status == 'Success') {
-                                toastr.success("Course Successfully Added ", "Success")
-                            } else {
-                                toastr.error("Unable to Add", "Error")
+                        var fd = new FormData();
 
+                        fd.append('id', "142");
+                        fd.append('course_name', "Jewellery Making");
+                        fd.append("level", level);
+                        fd.append("price", price);
+                        fd.append("location", "kumbakonam")
+
+                        $.ajax({
+                            url: 'ajax',
+                            type: 'post',
+                            contentType: false,
+                            processData: false,
+                            data: fd,
+
+                            success: function (response) {
+                                var result = JSON.parse(response);
+
+                                if (result.status == 'Success') {
+                                    toastr.success("Course Successfully Added ", "Success")
+                                } else {
+                                    toastr.error("Unable to Add", "Error")
+
+                                }
                             }
-                        }
-                    })
+                        })
+
+                    }
 
                 }
 
