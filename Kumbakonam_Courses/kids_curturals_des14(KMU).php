@@ -10,9 +10,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="description">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Title Of Site -->
-    <title>Samuthrika Academy Cultural classes Kumbakonam</title>
-    
+    <title>Samuthrika Academy Kung Fu Kids Kumbakonam</title>
+
     <!--BootStrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Favicon -->
@@ -30,8 +29,9 @@
         margin-bottom: 14px;
     }
 
-    .basicAdvance #twice, #thrice , #fivedays, #weekend {
-       accent-color:black;
+    .basicAdvance #basic,
+    #advance {
+        accent-color: black;
     }
 </style>
 
@@ -56,7 +56,7 @@
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
 
                             <!--Breadcrumbs-->
-                            <div class="breadcrumbs"><span class="main-title fw-bold">MARTIAL ARTS CLASSES</span></div>
+                            <div class="breadcrumbs"><span class="main-title fw-bold">Training Course</span></div>
                             <!--End Breadcrumbs-->
 
                         </div>
@@ -79,9 +79,9 @@
 
                                     <!-- Product Image -->
                                     <div class="zoompro-span"><img id="zoompro" class="w-100"
-                                            src="<?php echo $path;?>assets/images/kungFu.jpeg"
-                                            data-zoom-image="<?php echo $path;?>assets/images/kungFu.jpeg" alt="product"
-                                            width="600" height="800" /></div>
+                                            src="<?php echo $path;?>assets/images/kungFu.jpeg "
+                                            data-zoom-image="<?php echo $path;?>assets/images/kungFu.jpeg"
+                                            alt="product" width="600" height="800" /></div>
                                     <!-- End Product Image -->
 
 
@@ -107,71 +107,67 @@
                         <div class="col-lg-6 col-md-6 col-sm-12 col-12 product-layout-info">
                             <!-- Product Details -->
                             <div class="product-single-meta">
-                                <h2 id="courseName" class="product-main-title" style="text-transform: capitalize;">Kung Fu Class
+                                <h2 class="product-main-title" style="text-transform: capitalize;">Kung fu
                                 </h2>
                                 <!-- Product Info -->
                                 <div class="product-info">
-                                    <p class="product-cat"><i class="icon anm anm-clock-r"></i> Hours : <span><a
-                                                href="#" id="hour">2 hour per day</a> </span></p>
-                                    <p class="product-cat"><i class="icon anm anm-clock-r"></i> Timing :
-                                        <span>
-                                        <div class="form-check basicAdvance">
-                                        <input id="twice" name="week" type="radio" value="twice" required />
+                                    
 
-                                                <label for="twice" class="me-3">Weekly - 2 hours</label>
-    
-<br>
-                                            </div>
+                                    <p class="product-cat"><i class="icon anm anm-clock-r"></i> Hours : <span><a
+                                                href="#">Weekly/2hr</a> </span></p>
+                                    <p class="product-cat"><i class="icon anm anm-clock-r"></i> Duration :
+                                        <span>
+                                            1 Month
                                         </span>
                                     </p>
-                                    
-                                    <p class="product-cat"><i class="icon anm anm-question-cil me-2"></i><a
-                                            href="#">Money Back Guarentee</a></p>
+                                    <p class="product-cat"><i class="icon anm anm-calendar"></i> Days: <span>
+                                            Monday - Sunday
+                                        </span></p>
+
                                 </div>
                                 <!-- End Product Info -->
 
                                 <!-- Product Price -->
                                 <div class="product-price d-flex-center my-2 money">
-                                    <span style="display:none" class="price old-price twice-price">₹1,000</span><span  style="display:none" class="price twice-price">₹500</span>
-
+                                    <span class="price old-price basic-price">₹1,000</span><span
+                                        class="price basic-price" id="price">₹500</span>
                                 </div>
                                 <!-- End Product Price -->
 
                             </div>
                             <!-- End Product Details -->
-                      
+
 
                             <!-- Product Form -->
-                            <div  class="product-form product-form-border hidedropdown">
-                                <!-- Product Action -->
-                                <div class="product-action w-100 d-flex-wrap mb-2">
+                            <!-- Product Action -->
+                            <div class="product-action w-100 d-flex-wrap mb-2">
 
 
-                                    <!-- Product Add -->
-                                    <div class="product-form-submit addcart fl-1 ms-0 mt-0">
-                                        <button type="submit" name="add"
-                                            class="btn btn-secondary product-form-cart-submit"><span>Add to
-                                                cart</span></button>
-                                    </div>
-                                    <!-- Product Add -->
-                                    
+                                <!-- Product Add -->
+                                <div class="product-form-submit addcart fl-1 ms-0 mt-0">
+                                    <button id="submit" name="add"
+                                        class="btn btn-secondary product-form-cart-submit"><span>Add to
+                                            cart</span></button>
                                 </div>
-                                <!-- End Product Action -->
+                                <!-- Product Add -->
 
                             </div>
+                            <!-- End Product Action -->
+
                             <!-- End Product Form -->
 
                             <!-- Social Sharing -->
                             <div class="social-sharing d-flex-center mt-2 lh-lg">
                                 <span class="sharing-lbl fw-600">Share :</span>
 
-                                <a href="#" class="d-flex-center btn btn-link btn--share share-email"><i
-                                        class="icon anm anm-share"></i><span class="share-title">Email</span></a>
+                                <!-- Copy to Clipboard Button -->
+                                <button class="d-flex-center btn btn-link btn--share copy-to-clipboard"
+                                    onclick="copyToClipboard()">
+                                    <i class="icon anm anm-share"></i>
+                                </button>
                             </div>
                             <!-- End Social Sharing -->
-                            <div class="trustseal-img mt-3 mt-md-4"><img
-                                    src="<?php echo $path;?>assets/images/icons/powerby-cards.jpg" alt="powerby cards"
-                                    width="470" /></div>
+
                         </div>
                     </div>
                 </div>
@@ -182,6 +178,7 @@
                     <ul
                         class="product-tabs style3 border-bottom list-unstyled d-flex-wrap d-flex-justify-center d-none d-md-flex">
                         <li rel="description" class="active"><a class="tablink">Description</a></li>
+
                     </ul>
 
                     <div class="tab-container">
@@ -190,19 +187,19 @@
                         <div id="description" class="tab-content">
                             <div class="product-description">
                                 <div class="row">
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-0 mb-md-0">
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the
-                                            1500s, when an unknown printer took a galley of type and scrambled it to
-                                            make a type specimen book. the majority have suffered alteration in some
-                                            form randomised words which don't look even slightly believable.</p>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-0 mb-md-0">
+                                        <p>
+                                            Karate, Kungfu and Taekwondo are few of the types of martial arts available
+                                            for learning . Especially we encourage kids amd ladies to learn martial arts
+                                            and become self defenders and protect themselves amd others too. We have a
+                                            special program FETTACK , Protection against Female Attacks for this. </p>
                                         <h4 class="mb-3">Features</h4>
                                         <ul class="checkmark-info">
-                                            <li>High quality fabric, very comfortable to touch and wear.</li>
-                                            <li>This cardigan sweater is cute for no reason,perfect for travel and
-                                                casual.</li>
-                                            <li>It can tie in front-is forgiving to you belly or tie behind.</li>
-                                            <li>Light weight and perfect for layering.</li>
+                                            <li>Available for both kids and adults</li>
+                                            <li>Weekly twice/thrice/5 days/ only weekends Batches are available</li>
+                                            <li>Outside Shows are available for participation on interests</li>
+                                            <li>Demo Class available every 4 months</li>
+                                            <li>Schedule for Classes given and followed</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -210,9 +207,23 @@
                         </div>
                         <!--End Description-->
 
+                    </div>
+                </div>
+                <!--End Product Tabs-->
+            </div>
+            <!--End Main Content-->
 
+        </div>
+        <!-- End Body Container -->
 
-                        
+        <!--Footer-->
+        <?php include '../footer.php';?>
+        <!--End Footer-->
+
+        <!--Scoll Top-->
+        <div id="site-scroll"><i class="icon anm anm-arw-up"></i></div>
+        <!--End Scoll Top-->
+
 
 
         <!-- Including Jquery/Javascript -->
@@ -221,6 +232,15 @@
 
         <!-- Elevatezoom Zoom -->
         <script src="<?php echo $path;?>assets/js/vendor/jquery.elevatezoom.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+            integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"
+            integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+            
         <script>
             $(document).ready(function () {
                 /* Product Zoom */
@@ -246,68 +266,91 @@
         <script src="<?php echo $path;?>assets/js/vendor/photoswipe.min.js"></script>
 
         <script>
+            function copyToClipboard() {
+                // Get the text you want to copy (replace with your actual URL or content)
+                var textToCopy = window.location.href;
 
-            $(document).ready(function(){
+                // Create a temporary input element
+                var tempInput = document.createElement("input");
+                tempInput.setAttribute("value", textToCopy);
+                document.body.appendChild(tempInput);
 
-                const twice = $("#twice");
-                const thrice = $("#thrice");
-                const fivedays = $("#fivedays");
-                const weekend = $("#weekend");
+                // Select the text in the input element
+                tempInput.select();
+                tempInput.setSelectionRange(0, 99999); // For mobile devices
 
-                const tw_price = $(".twice-price");
-                const th_price = $(".thrice-price");
-                const fi_price = $(".five-price");
-                const we_price = $(".weekend-price");
+                // Execute the "copy" command
+                document.execCommand("copy");
 
-                $(twice).change(function(){
-                    if(twice.is(":checked")){
-                        tw_price.show();
-                        th_price.hide();
-                        fi_price.hide();
-                        we_price.hide();
+                // Remove the temporary input element
+                document.body.removeChild(tempInput);
 
+                // Optionally, provide feedback to the user
+                toastr.info("Link copied ");
+            }
+
+
+            function getCookie(cookieName) {
+                var name = cookieName + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var cookieArray = decodedCookie.split(';');
+
+                for (var i = 0; i < cookieArray.length; i++) {
+                    var cookie = cookieArray[i].trim();
+                    if (cookie.indexOf(name) == 0) {
+                        return cookie.substring(name.length, cookie.length);
                     }
-                  
+                }
+                return null;
+            }
+            var cookieValue = getCookie('samuthrika_login_user_id');
+            console.log(cookieValue);
 
-                });
+            $("#submit").click(function () {
 
-                $(thrice).change(function(){
-                    if(thrice.is(":checked")){
-                        tw_price.hide();
-                        th_price.show();
-                        fi_price.hide();
-                        we_price.hide();
-                    }
-                })
+                if (cookieValue === null) {
+                    window.location.href = "../register.php";
+                } else {
+                    var price = $("#price").text().trim();
 
-                
-                $(fivedays).change(function(){
-                    if(fivedays.is(":checked")){
-                        tw_price.hide();
-                        th_price.hide();
-                        fi_price.show();
-                        we_price.hide();
-                    }
-                })
+                    var fd = new FormData();
 
-                $(weekend).change(function(){
-                    if(weekend.is(":checked")){
-                        tw_price.hide();
-                        th_price.hide();
-                        fi_price.hide();
-                        we_price.show();
-                    }
-                })
-            });
+                    // fd.append('customer_id',customer_id);
+                    fd.append('id',"116");
+                    fd.append('course_name', "Kung fu");
+                    fd.append('age_grp', "kids");
+                    fd.append('price', price);
+                    fd.append('location', "kumbakonam");
 
-            var courseName = $("#courseName").innerHTML;
-            var hour = $("#hour").innerHTML;
-            
-            
+                    $.ajax({
+                        url: 'ajax',
+                        type: 'post',
+                        contentType: false,
+                        processData: false,
+                        data: fd,
 
+                        success: function (response) {
+                            var result = JSON.parse(response);
+
+                            if (result.status == 'Success') {
+                                toastr.success("Course Successfully Added ", "Success")
+                            } else {
+                                toastr.error("Unable to Add", "Error")
+
+                            }
+                        }
+                    })
 
 
+
+                }
+
+
+
+            })
         </script>
+
+
         <script>
             $(function () {
                 var $pswp = $('.pswp')[0],
