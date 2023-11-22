@@ -253,18 +253,17 @@
                             <div class="product-description">
                                 <div class="row">
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-0 mb-md-0">
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the
-                                            1500s, when an unknown printer took a galley of type and scrambled it to
-                                            make a type specimen book. the majority have suffered alteration in some
-                                            form randomised words which don't look even slightly believable.</p>
+                                        <p>
+                                            Abacus is not meant to improve or score Maths subject , we ensure Speed,
+                                            Accuracy, Both brain development, good concentration and Visualisation
+                                            through Abacus learning, which naturally improves students learning ability.</p>
                                         <h4 class="mb-3">Features</h4>
                                         <ul class="checkmark-info">
-                                            <li>High quality fabric, very comfortable to touch and wear.</li>
-                                            <li>This cardigan sweater is cute for no reason,perfect for travel and
-                                                casual.</li>
-                                            <li>It can tie in front-is forgiving to you belly or tie behind.</li>
-                                            <li>Light weight and perfect for layering.</li>
+                                            <li> Available from zero level to level 10</li>
+                                            <li>weekly 2 hours sessions for 3 months is recommended.</li>
+                                            <li>Each level has exams and we certify each level</li>
+                                            <li>Continuous learning is recommended to enjoy benefits of learning Abacus</li>
+                                            <li>Interested students can be sent to Competitions</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -497,7 +496,7 @@
                         var fd = new FormData();
 
                         // fd.append('customer_id',customer_id);
-                        fd.append("id","8");
+                        fd.append("id", "8");
                         fd.append('course_name', "Abacus");
                         fd.append('level', level);
                         fd.append('price', price);

@@ -55,7 +55,7 @@
                 <div class="container">
                     <div class="section-header">
                         <p class="mb-2 mt-0">Transforming talents into triumphs – [Samuthrika Academy], where the art of beauty meets the skill.</p>
-                        <h1 style="font-size:2rem ; color:orange;" class="">BEAUTICIAN COURSE IN
+                        <h1 style="font-size:2rem ; color:orange;" class="">BEAUTICIAN COURSE -
                             KELAMBAKKAM</h1>
                     </div>
 

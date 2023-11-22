@@ -11,7 +11,7 @@
     <meta name="description" content="description">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Title Of Site -->
-    <title>Samuthrika Academy Cultural classes Abroad</title>
+    <title>Samuthrika Academy Bharathanatyam Kids Abroad</title>
 
     <!--BootStrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -111,7 +111,7 @@
                             <!-- Product Details -->
                             <div class="product-single-meta">
                                 <h2 id="courseName" class="product-main-title" style="text-transform: capitalize;">
-                                    Bharathanatyam Class
+                                    Bharathanatyam
                                 </h2>
                                 <!-- Product Info -->
                                 <div class="product-info">
@@ -120,46 +120,45 @@
                                     <p class="product-cat"><i class="icon anm anm-clock-r"></i> Timing :
                                         <span>
                                             <div class="form-check basicAdvance">
-                                                <input id="twice" name="week" type="radio" value="twice" required />
+                                                <input id="twice" name="week" type="radio" value="weekly twice" />
 
                                                 <label for="twice" class="me-3">Weekly - Twice</label>
-                                                <input id="thrice" name="week" class="ms-2" type="radio" value="thrice"
-                                                    required />
+                                                <input id="thrice" name="week" class="ms-2" type="radio"
+                                                    value="weekly thrice" />
 
                                                 <label for="thrice" class="me-5">Weekly - Thrice</label>
                                                 <br>
-                                                <input type="radio" name="week" id="fivedays" value="fivedays" required>
+                                                <input type="radio" name="week" id="fivedays" value="weekly fivedays">
                                                 <label for="fivedays" class="me-3">Weekly - 5 days</label>
 
-                                                <input type="radio" name="week" id="weekend" value="weekend" required>
+                                                <input type="radio" name="week" id="weekend" value="only weekend">
                                                 <label for="weekend">Only on Weekend</label>
                                             </div>
                                         </span>
                                     </p>
 
-                                    <p class="product-cat"><i class="icon anm anm-question-cil me-2"></i><a
-                                            href="#">Money Back Guarentee</a></p>
+
                                 </div>
                                 <!-- End Product Info -->
 
                                 <!-- Product Price -->
                                 <div class="product-price d-flex-center my-2 money">
                                     <span style="display:none" class="price old-price twice-price">₹3,000</span><span
-                                        style="display:none" class="price twice-price">₹2500</span>
+                                        style="display:none" class="price twice-price tp">₹2,500</span>
 
                                     <span style="display:none" class="price old-price thrice-price">₹3,200</span><span
-                                        style="display:none" class="price thrice-price">₹2700</span>
+                                        style="display:none" class="price thrice-price thp">₹2,700</span>
 
 
-                                    <span style="display:none" class="price old-price five-price">₹4,000</span><span
-                                        style="display:none" class="price five-price">₹3000</span>
+                                    <span style="display:none" class="price old-price five-price">₹3,500</span><span
+                                        style="display:none" class="price five-price fp">₹3,000</span>
 
 
                                     <span style="display:none" class="price old-price weekend-price">₹3,000</span><span
-                                        style="display:none" class="price weekend-price">₹2500</span>
+                                        style="display:none" class="price weekend-price wp">₹2,500</span>
                                 </div>
                                 <!-- End Product Price -->
-                                
+
                             </div>
                             <!-- End Product Details -->
 
@@ -172,7 +171,7 @@
 
                                     <!-- Product Add -->
                                     <div class="product-form-submit addcart fl-1 ms-0 mt-0">
-                                        <button type="submit" name="add"
+                                        <button id="submit" name="add"
                                             class="btn btn-secondary product-form-cart-submit"><span>Add to
                                                 cart</span></button>
                                     </div>
@@ -188,13 +187,14 @@
                             <div class="social-sharing d-flex-center mt-2 lh-lg">
                                 <span class="sharing-lbl fw-600">Share :</span>
 
-                                <a href="#" class="d-flex-center btn btn-link btn--share share-email"><i
-                                        class="icon anm anm-share"></i><span class="share-title">Email</span></a>
+                                <!-- Copy to Clipboard Button -->
+                                <button class="d-flex-center btn btn-link btn--share copy-to-clipboard"
+                                    onclick="copyToClipboard()">
+                                    <i class="icon anm anm-share"></i>
+                                </button>
                             </div>
                             <!-- End Social Sharing -->
-                            <div class="trustseal-img mt-3 mt-md-4"><img
-                                    src="<?php echo $path;?>assets/images/icons/powerby-cards.jpg" alt="powerby cards"
-                                    width="470" /></div>
+
                         </div>
                     </div>
                 </div>
@@ -214,18 +214,18 @@
                             <div class="product-description">
                                 <div class="row">
                                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-0 mb-md-0">
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the
-                                            1500s, when an unknown printer took a galley of type and scrambled it to
-                                            make a type specimen book. the majority have suffered alteration in some
-                                            form randomised words which don't look even slightly believable.</p>
+                                        <p>We encourage both kids and adults to learn bharatham and no age limits to
+                                            learn is our mantra. Both Mom and Daughter together can learn and we have
+                                            separate curriculum according to them.</p>
                                         <h4 class="mb-3">Features</h4>
                                         <ul class="checkmark-info">
-                                            <li>High quality fabric, very comfortable to touch and wear.</li>
-                                            <li>This cardigan sweater is cute for no reason,perfect for travel and
-                                                casual.</li>
-                                            <li>It can tie in front-is forgiving to you belly or tie behind.</li>
-                                            <li>Light weight and perfect for layering.</li>
+                                            <li>Available for both kids and adults</li>
+                                            <li>Weekly twice/thrice/5 days/ only weekends Batches are available</li>
+                                            <li>Salangai Pooja at the end of 2nd year and Arangetram at the end of 4th
+                                            year as per curriculum completion</li>
+                                            <li>Outside Shows are available for participation on interests</li>
+                                            <li>Demo Class available every 4 months</li>
+                                            <li>Schedule for Classes given and followed</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -233,14 +233,7 @@
                         </div>
                     </div>
                     <!--End Description-->
-
                 </div>
-
-               
-
-
-
-
                 <!-- Including Jquery/Javascript -->
                 <!-- Plugins JS -->
                 <script src="<?php echo $path;?>assets/js/plugins.js"></script>
@@ -271,7 +264,39 @@
                 <!-- Photoswipe Gallery JS -->
                 <script src="<?php echo $path;?>assets/js/vendor/photoswipe.min.js"></script>
 
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+                    integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+                    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css"
+                    integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g=="
+                    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
                 <script>
+                    function copyToClipboard() {
+                        // Get the text you want to copy (replace with your actual URL or content)
+                        var textToCopy = window.location.href;
+
+                        // Create a temporary input element
+                        var tempInput = document.createElement("input");
+                        tempInput.setAttribute("value", textToCopy);
+                        document.body.appendChild(tempInput);
+
+                        // Select the text in the input element
+                        tempInput.select();
+                        tempInput.setSelectionRange(0, 99999); // For mobile devices
+
+                        // Execute the "copy" command
+                        document.execCommand("copy");
+
+                        // Remove the temporary input element
+                        document.body.removeChild(tempInput);
+
+                        // Optionally, provide feedback to the user
+                        toastr.info("Link copied ");
+                    }
+
                     $(document).ready(function () {
 
                         const twice = $("#twice");
@@ -325,8 +350,84 @@
                         })
                     });
 
-                    var courseName = $("#courseName").innerHTML;
-                    var hour = $("#hour").innerHTML;
+
+
+                    function getCookie(cookieName) {
+                        var name = cookieName + "=";
+                        var decodedCookie = decodeURIComponent(document.cookie);
+                        var cookieArray = decodedCookie.split(';');
+
+                        for (var i = 0; i < cookieArray.length; i++) {
+                            var cookie = cookieArray[i].trim();
+                            if (cookie.indexOf(name) == 0) {
+                                return cookie.substring(name.length, cookie.length);
+                            }
+                        }
+                        return null;
+                    }
+                    var cookieValue = getCookie('samuthrika_login_user_id');
+                    console.log(cookieValue);
+
+                    $("#submit").click(function () {
+
+                        if (cookieValue === null) {
+                            window.location.href = "../register.php";
+                        } else {
+                            var week = $('input[name="week"]:checked').val();
+
+                            if (week == "weekly twice") {
+                                price = $(".tp").text();
+                            }
+                            if (week == "weekly thrice") {
+                                price = $(".thp").text();
+                            }
+                            if (week == "weekly fivedays") {
+                                price = $(".fp").text();
+                            }
+                            if (week == "only weekend") {
+                                price = $(".wp").text();
+                            }
+
+                            if (week == null) {
+                                toastr.error("Select Timing", "Empty")
+                            } else {
+
+                                var fd = new FormData();
+
+                                // fd.append('customer_id',customer_id);\
+                                fd.append("id", "552");
+                                fd.append('course_name', "Bharathanatyam");
+                                fd.append('age_grp', "kids");
+                                fd.append('timing', week);
+                                fd.append('price', price);
+                                fd.append('location', "abroad");
+
+                                $.ajax({
+                                    url: 'ajax',
+                                    type: 'post',
+                                    contentType: false,
+                                    processData: false,
+                                    data: fd,
+
+                                    success: function (response) {
+                                        var result = JSON.parse(response);
+
+                                        if (result.status == 'Success') {
+                                            toastr.success("Course Successfully Added ", "Success")
+                                        } else {
+                                            toastr.error("Unable to Add", "Error")
+
+                                        }
+                                    }
+                                })
+
+                            }
+
+                        }
+
+
+
+                    });
                 </script>
                 <script>
                     $(function () {
@@ -443,12 +544,13 @@
                     }
                 </script>
             </div>
-            </div>
-            <!--End Page Wrapper-->
+        </div>
+        <!--End Page Wrapper-->
 
-              <!--Footer-->
-           <?php include '../footer.php'?>
-            <!--End Footer-->
+        <!--Footer-->
+        <?php include '../footer.php'?>
+        <!--End Footer-->
 
 </body>
+
 </html>

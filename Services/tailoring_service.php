@@ -13,7 +13,7 @@ include '../dashboard/main/ajax/datab.php';
     <meta name="description" content="description">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Title Of Site -->
-    <title>Product Layout5 - Hema Multipurpose eCommerce Bootstrap 5 Html Template</title>
+    <title>Samuthrika Academy Tailoring Services</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?php echo $path; ?>assets/images/favicon.png" />
     <!-- Plugins CSS -->
@@ -48,6 +48,11 @@ include '../dashboard/main/ajax/datab.php';
     #text_others {
         resize: none;
     }
+
+    #first{
+        accent-color:orangered;
+    }
+    
 </style>
 
 <body class="template-product product-layout5">
@@ -92,8 +97,8 @@ include '../dashboard/main/ajax/datab.php';
                                         <div class="zoompro-wrap rounded-0">
                                             <!-- Product Image -->
                                             <div class="zoompro-span"><img id="zoompro" class="zoompro rounded-0"
-                                                    src="<?php echo $path; ?>assets/images/products/product1.jpg"
-                                                    data-zoom-image="<?php echo $path; ?>assets/images/products/product1.jpg"
+                                                    src="b1.jpg"
+                                                    data-zoom-image="b1.jpg"
                                                     alt="product" width="625" height="808" /></div>
                                             <!-- End Product Image -->
 
@@ -103,52 +108,52 @@ include '../dashboard/main/ajax/datab.php';
                                         <!-- Product Thumb -->
                                         <div class="product-thumb product-horizontal-thumb mt-3">
                                             <div id="gallery" class="product-thumb-horizontal">
-                                                <a data-image="<?php echo $path; ?>assets/images/products/product1.jpg"
-                                                    data-zoom-image="<?php echo $path; ?>assets/images/products/product1.jpg"
+                                                <a data-image="b1.jpg"
+                                                    data-zoom-image="b1.jpg"
                                                     class="slick-slide slick-cloned active">
                                                     <img class="blur-up lazyload rounded-0"
-                                                        data-src="<?php echo $path; ?>assets/images/products/product1.jpg"
-                                                        src="<?php echo $path; ?>assets/images/products/product1.jpg"
+                                                        data-src="b1.jpg"
+                                                        src="b1.jpg"
                                                         alt="product" width="625" height="808" />
                                                 </a>
-                                                <a data-image="<?php echo $path; ?>assets/images/products/product1-1.jpg"
-                                                    data-zoom-image="<?php echo $path; ?>assets/images/products/product1-1.jpg"
+                                                <a data-image="b2.jpg"
+                                                    data-zoom-image="b2.jpg"
                                                     class="slick-slide slick-cloned">
                                                     <img class="blur-up lazyload rounded-0"
-                                                        data-src="<?php echo $path; ?>assets/images/products/product1-1.jpg"
-                                                        src="<?php echo $path; ?>assets/images/products/product1-1.jpg"
+                                                        data-src="b2.jpg"
+                                                        src="b2.jpg"
                                                         alt="product" width="625" height="808" />
                                                 </a>
-                                                <a data-image="<?php echo $path; ?>assets/images/products/product1-2.jpg"
-                                                    data-zoom-image="<?php echo $path; ?>assets/images/products/product1-2.jpg"
+                                                <a data-image="b3.jpg"
+                                                    data-zoom-image="b3.jpg"
                                                     class="slick-slide slick-cloned">
                                                     <img class="blur-up lazyload rounded-0"
-                                                        data-src="<?php echo $path; ?>assets/images/products/product1-2.jpg"
-                                                        src="<?php echo $path; ?>assets/images/products/product1-2.jpg"
+                                                        data-src="b3.jpg"
+                                                        src="b3.jpg"
                                                         alt="product" width="625" height="808" />
                                                 </a>
-                                                <a data-image="<?php echo $path; ?>assets/images/products/product1-3.jpg"
-                                                    data-zoom-image="<?php echo $path; ?>assets/images/products/product1-3.jpg"
+                                                <a data-image="b4.jpg"
+                                                    data-zoom-image="b4.jpg"
                                                     class="slick-slide slick-cloned">
                                                     <img class="blur-up lazyload rounded-0"
-                                                        data-src="<?php echo $path; ?>assets/images/products/product1-3.jpg"
-                                                        src="<?php echo $path; ?>assets/images/products/product1-3.jpg"
+                                                        data-src="b4.jpg"
+                                                        src="b4.jpg"
                                                         alt="product" width="625" height="808" />
                                                 </a>
-                                                <a data-image="<?php echo $path; ?>assets/images/products/product1-4.jpg"
-                                                    data-zoom-image="<?php echo $path; ?>assets/images/products/product1-4.jpg"
+                                                <a data-image="b5.jpg"
+                                                    data-zoom-image="b5.jpg"
                                                     class="slick-slide slick-cloned">
                                                     <img class="blur-up lazyload rounded-0"
-                                                        data-src="<?php echo $path; ?>assets/images/products/product1-4.jpg"
-                                                        src="<?php echo $path; ?>assets/images/products/product1-4.jpg"
+                                                        data-src="b5.jpg"
+                                                        src="b5.jpg"
                                                         alt="product" width="625" height="808" />
                                                 </a>
-                                                <a data-image="<?php echo $path; ?>assets/images/products/product1-5.jpg"
-                                                    data-zoom-image="<?php echo $path; ?>assets/images/products/product1-5.jpg"
+                                                <a data-image="b6.jpg"
+                                                    data-zoom-image="b6.jpg"
                                                     class="slick-slide slick-cloned">
                                                     <img class="blur-up lazyload rounded-0"
-                                                        data-src="<?php echo $path; ?>assets/images/products/product1-5.jpg"
-                                                        src="<?php echo $path; ?>assets/images/products/product1-5.jpg"
+                                                        data-src="b6.jpg"
+                                                        src="b6.jpg"
                                                         alt="product" width="625" height="808" />
                                                 </a>
                                             </div>
@@ -197,9 +202,9 @@ include '../dashboard/main/ajax/datab.php';
                                                 </span>
                                             </p>
 
-                                            <p class="product-stock d-flex">size guide:
+                                            <p class="product-stock d-flex" style="text-transform:capitalize;">size guide:
                                                 <span class="pro-stockLbl ps-0">&nbsp;&nbsp;
-                                                    <button class="sharing-lbl fw-600" id="sizechart_overlay">Share
+                                                    <button class="sharing-lbl fw-600" id="sizechart_overlay">Size Chart
                                                         -></button>
                                                 </span>
                                             </p>
@@ -246,40 +251,40 @@ include '../dashboard/main/ajax/datab.php';
                                             <label class="label d-flex align-items-center">Size:
                                                 <span class="slVariant ms-1 fw-bold" id="product_size"></span></label>
                                             <ul class="d-flex-wrap pt-1 clearfix" id="sizeRadioContainer">
-                                                <li class="customRadio me-3 mb-0">
+                                                <li class="customRadio me-3 mb-2">
                                                     <input name="swatch_size_radio" id="xs" value="26" type="radio" />
-                                                    <label for="xs" class="mb-0">26</label>
+                                                    <label for="xs" class="mb-2">26</label>
                                                 </li>
-                                                <li class="customRadio me-3 mb-0">
+                                                <li class="customRadio me-3 mb-2">
                                                     <input name="swatch_size_radio" id="s" value="28" type="radio" />
-                                                    <label for="s" class="mb-0">28</label>
+                                                    <label for="s" class="mb-2">28</label>
                                                 </li>
-                                                <li class="customRadio me-3 mb-0">
+                                                <li class="customRadio me-3 mb-2">
                                                     <input name="swatch_size_radio" id="m" value="30" type="radio" />
-                                                    <label for="m" class="mb-0">30</label>
+                                                    <label for="m" class="mb-2">30</label>
                                                 </li>
-                                                <li class="customRadio me-3 mb-0">
+                                                <li class="customRadio me-3 mb-2">
                                                     <input name="swatch_size_radio" id="l" value="32" type="radio" />
-                                                    <label for="l" class="mb-0">32</label>
+                                                    <label for="l" class="mb-2">32</label>
                                                 </li>
-                                                <li class="customRadio me-3 mb-0">
+                                                <li class="customRadio me-3 mb-2">
                                                     <input name="swatch_size_radio" id="xl1" value="34" type="radio" />
-                                                    <label for="xl1" class="mb-0">34</label>
+                                                    <label for="xl1" class="mb-2">34</label>
                                                 </li>
-                                                <li class="customRadio me-3 mb-0">
+                                                <li class="customRadio me-3 mb-2">
                                                     <input name="swatch_size_radio" id="xl2" value="36" type="radio" />
-                                                    <label for="xl2" class="mb-0">36</label>
+                                                    <label for="xl2" class="mb-2">36</label>
                                                 </li>
-                                                <li class="customRadio me-3 mb-0">
-                                                    <input name="swatch_size_radio" id="xl2" value="38" type="radio" />
-                                                    <label for="xl2" class="mb-0">38</label>
+                                                <li class="customRadio me-3 mb-3">
+                                                    <input name="swatch_size_radio" id="xl3" value="38" type="radio" />
+                                                    <label for="xl3" class="mb-2">38</label>
                                                 </li>
-                                                 <li class="customRadio me-3 mb-0">
+                                                 <li class="customRadio me-3 mb-2">
                                                     <input name="swatch_size_radio" id="others" value="Other sizes" type="radio" />
-                                                    <label for="others" class="mb-0">Othersize</label>
+                                                    <label for="others" class="mb-2">Othersize</label>
                                                 </li>
                                                 <br><br>
-                                                <li class="customRadio me-3 mb-0" id="Othersizeform" style="display: none;">
+                                                <li class="customRadio me-3 mb-3" id="Othersizeform" style="display: none;">
                                                     <div class="input-group mb-3">
                                                         <input type="text" id="Othersize" name="hand"
                                                             class="form-control" placeholder=""
@@ -402,51 +407,65 @@ include '../dashboard/main/ajax/datab.php';
                                         <p class="product-cat"><i class="bi bi-book"></i> Processes : <span></span></p>
                                         <div class="form-check lang">
 
-
+                                        <div class="row">
+                                            <div class="col-sm-6 col-12">
                                             <input id="first" name="level" type="checkbox" value="Lining blouse"
                                                 data-price="100">
-                                            <label for="first" class="me-3">Lining blouse</label>
-
+                                            <label for="first" class="">Lining blouse</label>
+                                            </div>
+                                            <div class="col-sm-6 col-12">
                                             <input id="first" name="level" type="checkbox" value="Princess cut blouse"
                                                 data-price="50">
-                                            <label for="first" class="me-3">Princess cut blouse</label><br>
-
+                                            <label for="first" class="">Princess cut blouse</label>
+                                            </div>
+                                            <div class="col-sm-6 col-12">
                                             <input id="first" name="level" type="checkbox" value="Katori cut blouse"
                                                 data-price="50">
-                                            <label for="first" class="me-3">Katori cut blouse</label>
-
+                                            <label for="first" class="">Katori cut blouse</label>
+                                            </div>
+                                            <div class="col-sm-6 col-12">
                                             <input id="first" name="level" type="checkbox" value="Boar neck"
                                                 data-price="50">
-                                            <label for="first" class="me-3">Boar neck</label>
+                                            <label for="first" class="">Boar neck</label>
 
+                                            </div>
+                                            <div class="col-sm-6 col-12">
                                             <input id="first" name="level" type="checkbox" value="Piping"
                                                 data-price="50">
-                                            <label for="first" class="me-3">Piping</label>
-                                            <br>
+                                            <label for="first" class="">Piping</label>
+                                            </div>
+                                            <div class="col-sm-6 col-12">
                                             <input id="first" name="level" type="checkbox" value="Double piping"
                                                 data-price="75">
-                                            <label for="first" class="me-3">Double piping</label>
-
+                                            <label for="first" class="">Double piping</label>
+                                            </div>
+                                            <div class="col-sm-6 col-12">
                                             <input id="first" name="level" type="checkbox" value="Back open"
                                                 data-price="100">
-                                            <label for="first" class="me-3">Back open</label>
-
+                                            <label for="first" class="">Back open</label>
+                                            </div>
+                                            <div class="col-sm-6 col-12">
                                             <input id="first" name="level" type="checkbox" value="Knot"
                                                 data-price="100">
-                                            <label for="first" class="me-3">Knot</label>
-                                            <br>
+                                            <label for="first" class="">Knot</label>
+                                            </div>
+                                            <div class="col-sm-6 col-12">
                                             <input id="first" name="level" type="checkbox" value="Beads and knots"
                                                 data-price="120">
-                                            <label for="first" class="me-3">Beads and knots</label>
+                                            <label for="first" class="">Beads and knots</label>
 
+                                            </div>
+                                          </div>
+
+                                           
                                         </div>
                                     </div>
                                     <br>
                                    
                                     <div class="allow-cookies-section">
-                                        <p>The customization for all dresses should be ordered directly.</p>
-                                        <button class="btn btn-primary allow-cookies-button"
-                                            onclick="createLead()">Enquiry </button>
+                                        <p>The customization for all dresses should be ordered directly for blouse.</p>
+                                        <button id="enq" class="btn btn-primary allow-cookies-button"
+                                            onclick="createLeadForBlouse()">Enquiry </button>
                                     </div>
 
                                     <!-- Product Action -->
@@ -462,7 +481,7 @@ include '../dashboard/main/ajax/datab.php';
                                         </div>
                                         <!-- End Product Quantity -->
                                         <!-- Product Add -->
-                                        <div class="product-form-submit addcart fl-1 ms-3">
+                                        <div  class="product-form-submit addcart fl-1 ms-3">
                                             <button type="submit" name="add"
                                                 class="btn btn-secondary product-form-cart-submit"
                                                 id="placeOrderButton"><span>Add to
@@ -526,48 +545,59 @@ include '../dashboard/main/ajax/datab.php';
                                     <div class="widget-content">
                                         <div class="list list-sidebar-products">
                                             <div class="mini-list-item d-flex w-100 clearfix">
-                                                <div class="mini-image"><a class="item-link" href="#"><img
+                                                <div class="mini-image"><a class="item-link" href="#enq"><img
                                                             class="primary blur-up lazyload" data-src="lehenga.jpg"
                                                             src="lehenga.jpg" alt="image" title="product" width="120"
                                                             height="170"></a>
                                                 </div>
                                                 <div class="ms-3 details">
                                                     <div class="product-name"><a class="item-title"
-                                                            href="product-layout1.html">lehenga</a></div>
+                                                            href="#enq">lehenga</a></div>
                                                 </div>
                                             </div>
                                             <div class="mini-list-item d-flex w-100 clearfix">
                                                 <div class="mini-image"><a class="item-link"
-                                                        href="product-layout1.html"><img
+                                                        href="#enq"><img
                                                             class="primary blur-up lazyload"
                                                             data-src="pattu-pavadai.jpg" src="pattu-pavadai.jpg"
                                                             alt="image" title="product" width="120" height="170"></a>
                                                 </div>
                                                 <div class="ms-3 details">
                                                     <div class="product-name"><a class="item-title"
-                                                            href="product-layout1.html">pattu paavadai</a></div>
+                                                            href="#enq">pattu paavadai</a></div>
 
                                                 </div>
                                             </div>
                                             <div class="mini-list-item d-flex w-100 clearfix">
                                                 <div class="mini-image"><a class="item-link"
-                                                        href="product-layout1.html"><img
+                                                        href="#enq"><img
                                                             class="primary blur-up lazyload" data-src="saree.jpg"
                                                             src="saree.jpg" alt="image" title="product" width="120"
                                                             height="170"></a>
                                                 </div>
                                                 <div class="ms-3 details">
                                                     <div class="product-name"><a class="item-title"
-                                                            href="product-layout1.html">Readymade saree</a></div>
+                                                            href="#enq">Readymade saree</a></div>
 
                                                 </div>
-
-                                                
                                             </div>
-                                            <div class="allow-cookies-section">
+                                            <div class="mini-list-item d-flex w-100 clearfix">
+                                                <div class="mini-image"><a class="item-link"
+                                                        href="#enq"><img
+                                                            class="primary blur-up lazyload"
+                                                            data-src="alter.jpg" src="alter.jpg"
+                                                            alt="image" title="product" width="120" height="170"></a>
+                                                </div>
+                                                <div class="ms-3 details">
+                                                    <div class="product-name" ><a class="item-title"
+                                                            href="#enq">Saree Converted : Gowns, frocks, Chudi</a></div>
+
+                                                </div>
+                                            </div >
+                                            <div   class="allow-cookies-section">
                                         <p>The customization for all dresses should be ordered directly.</p>
-                                        <button class="btn btn-primary allow-cookies-button"
-                                            onclick="createLead()">Enquiry </button>
+                                        <button  class="btn btn-primary allow-cookies-button"
+                                            onclick="createLeadForCustomization()">Enquiry </button>
                                     </div>
                                         </div>
                                     </div>
@@ -577,7 +607,7 @@ include '../dashboard/main/ajax/datab.php';
                         </div>
                     </div>
                 </div>
-                <div class="tabs-listing section pb-0">
+            <!--<div class="tabs-listing section pb-0">
                     <ul
                         class="product-tabs style3 border-bottom list-unstyled d-flex-wrap d-flex-justify-center d-none d-md-flex">
                         <li rel="description" class="active"><a class="tablink">Description</a></li>
@@ -586,7 +616,7 @@ include '../dashboard/main/ajax/datab.php';
                     </ul>
 
                     <div class="tab-container">
-                        <!--Description-->
+                       
                         <h3 class="tabs-ac-style d-md-none active" rel="description">Description</h3>
                         <div id="description" class="tab-content" style="display: block;">
                             <div class="product-description">
@@ -609,11 +639,10 @@ include '../dashboard/main/ajax/datab.php';
                                 </div>
                             </div>
                         </div>
-                        <!--End Description-->
 
 
 
-                        <!--Shipping &amp; Return-->
+
                         <h3 class="tabs-ac-style d-md-none" rel="shipping-return">Shipping &amp; Return</h3>
                         <div id="shipping-return" class="tab-content" style="display: none;">
                             <h4 class="pb-1">Shipping &amp; Return</h4>
@@ -626,9 +655,7 @@ include '../dashboard/main/ajax/datab.php';
                                 <li>Easy 30 days returns and exchanges</li>
                             </ul>
                         </div>
-                        <!--End Shipping &amp; Return-->
 
-                        <!--Review-->
                         <h3 class="tabs-ac-style d-md-none" rel="reviews">Review</h3>
                         <div id="reviews" class="tab-content" style="display: none;">
                             <div class="row">
@@ -846,9 +873,9 @@ include '../dashboard/main/ajax/datab.php';
                                 </div>
                             </div>
                         </div>
-                        <!--End Review-->
+                       
                     </div>
-                </div>
+                </div> -->
             </div>
             <!--End Blouse Content-->
             <br><br><br>
@@ -1268,7 +1295,7 @@ include '../dashboard/main/ajax/datab.php';
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
-    let service_value, size_value, stich_value, price_value, leadValue, productQuantity,process_value, custom_shoulder,custom_neck,custom_waist,custom_hand,text_others,custom_others;
+    let service_value, size_value, stich_value, price_value, leadValue1,leadValue2, productQuantity,process_value, custom_shoulder,custom_neck,custom_waist,custom_hand,text_others,custom_others;
 
     var modal = document.getElementById('quickview_modal');
     var overlay = document.getElementsByClassName('modal-backdrop');
@@ -1397,11 +1424,20 @@ submitButton.addEventListener('click', function (event) {
         });
     });
 
-    function createLead() {
-        leadValue = "Lead created for direct contact";
+    function createLeadForBlouse() {
+        leadValue1 = "Lead created, Direct contact for Blouse";
 
         // You can perform additional actions here, such as storing the value in a variable, sending it to a server, etc.
-        console.log(leadValue);
+        console.log(leadValue1);
+        toastr.success('Lead generated! Thank you for your attention!', 'Success');
+
+    }
+
+    function createLeadForCustomization() {
+        leadValue2 = "Lead created, Direct contact for dress customization";
+
+        // You can perform additional actions here, such as storing the value in a variable, sending it to a server, etc.
+        console.log(leadValue2);
         toastr.success('Lead generated! Thank you for your attention!', 'Success');
 
     }
@@ -1462,7 +1498,9 @@ submitButton.addEventListener('click', function (event) {
             toastr.error('Error!', 'Hand value is required!');
         } else if (others === '') {
             toastr.error('Error!', 'Others value is required!');
-        } else {
+        } 
+      
+        else {
             custom_shoulder = shoulder,
             custom_neck = neck,
             custom_waist = weist,
@@ -1475,9 +1513,20 @@ submitButton.addEventListener('click', function (event) {
     $('#placeOrderButton').click(function (event) {
     event.preventDefault(); // Prevent the default form submission behavior
     
-    
 
+        if (service_value === undefined || service_value === '') {
+            toastr.error('Error!', 'Select Service, value is required!');
+        } else if (size_value === undefined || size_value === '') {
+            toastr.error('Error!', 'Select Size, value is required!');
+        } else if (stich_value === undefined || stich_value === '') {
+            toastr.error('Error!', 'Select Stiching type, value is required!');
+        }  else if (process_value === undefined || process_value === '') {
+            toastr.error('Error!', 'Select Processes, value is required!');
+        }  
+        // A
+        else{
     
+            toastr.success('Order Recieved !', 'Success');
         var fd = new FormData();
         
         fd.append("Custom shoulder", custom_shoulder);
@@ -1490,9 +1539,10 @@ submitButton.addEventListener('click', function (event) {
         fd.append("Stiching", stich_value);
         fd.append("Size", size_value);
         fd.append("Price", price_value);
-        fd.append("Quantity", productQuantity);
+        fd.append("Quantity", currentValue);
         fd.append("Processes",process_value)
-        fd.append("Lead", leadValue);
+        fd.append("Lead for Blouse", leadValue1);
+        fd.append("Lead for Customisation", leadValue2);
     
         $.ajax({
            
@@ -1514,7 +1564,7 @@ submitButton.addEventListener('click', function (event) {
                 }
             }
         });
-    
+        }
     })
     // $('#sizechart_overlay').click(function(){
 

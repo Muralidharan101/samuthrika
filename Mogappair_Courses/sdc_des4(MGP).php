@@ -11,7 +11,7 @@
     <meta name="description" content="description">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Title Of Site -->
-    <title>Samuthrika Academy Skill Development Kumbakonam</title>
+    <title>Samuthrika Academy Hand Embroidery mogappair</title>
 
     <!--BootStrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -33,7 +33,7 @@
 
 
     .level #basic,
-    #adv,#dip {
+    #adv {
         accent-color: black;
 
     }
@@ -84,8 +84,8 @@
 
                                     <!-- Product Image -->
                                     <div class="zoompro-span"><img id="zoompro" class="w-100"
-                                            src="<?php echo $path;?>assets/images/jewel.jpg"
-                                            data-zoom-image="<?php echo $path;?>assets/images/jewel.jpg" alt="product"
+                                            src="<?php echo $path;?>assets/images/hand.jpg"
+                                            data-zoom-image="<?php echo $path;?>assets/images/hand.jpg" alt="product"
                                             width="600" height="800" /></div>
                                     <!-- End Product Image -->
 
@@ -112,7 +112,7 @@
                         <div class="col-lg-6 col-md-6 col-sm-12 col-12 product-layout-info">
                             <!-- Product Details -->
                             <div class="product-single-meta">
-                                <h2 class="product-main-title" style="text-transform: capitalize;">Jewellery Making
+                                <h2 class="product-main-title" style="text-transform: capitalize;">Hand Embroidery
                                 </h2>
                                 <!-- Product Info -->
                                 <div class="product-info">
@@ -120,20 +120,22 @@
                                             <div class="form-check level">
                                                 <input id="basic" name="level" type="radio" value="Basic" />
 
-                                                <label for="basic" class="me-3">Basic - 10 Hours</label>
-
+                                                <label for="basic" class="me-3">Basic - 15 Hours</label>
                                                 <input id="adv" name="level" type="radio" value="Advance" />
 
-                                                <label for="adv" class="me-3">Advance - 15 Hours</label>
-
-                                                <input id="dip" name="level" type="radio" value="Diploma" />
-
-                                                <label for="dip" class="me-3">Diploma - 40 Hours</label>
-
+                                                <label for="adv" class="me-3">Advance - 20 Hours</label>
 
                                             </div>
                                         </span></p>
-                                    
+                                    <p class="product-cat"><i class="bi bi-scissors"></i> Stiches: <span id="s1"
+                                            style="display:none;">
+                                            40 Stiches
+                                        </span>
+                                        <span id="s2" style="display:none;">
+                                            60 Stiches
+                                        </span></p>
+
+
 
                                     <p class="product-cat"><i class="icon anm anm-calendar"></i> Course Duration: <span>
                                             1 Month
@@ -146,13 +148,10 @@
                                 <div class="product-price d-flex-center my-2 money">
 
                                     <span class="price old-price basic-price" style="display:none;">₹5,500</span><span
-                                        class="price basic-price" style="display:none;">₹4500</span>
+                                        class="price basic-price bprice" style="display:none;">₹4500</span>
 
                                     <span class="price old-price advance-price" style="display:none;">₹7500</span><span
-                                        class="price advance-price" style="display:none;">₹6500</span>
-
-                                        <span class="price old-price diploma-price" style="display:none;">₹21000</span><span
-                                        class="price diploma-price" style="display:none;">₹20000</span>
+                                        class="price advance-price aprice" style="display:none;">₹6500</span>
                                 </div>
                                 <!-- End Product Price -->
 
@@ -317,39 +316,73 @@
                 toastr.info("Link copied ");
             }
 
+            function getCookie(cookieName) {
+                var name = cookieName + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var cookieArray = decodedCookie.split(';');
+
+                for (var i = 0; i < cookieArray.length; i++) {
+                    var cookie = cookieArray[i].trim();
+                    if (cookie.indexOf(name) == 0) {
+                        return cookie.substring(name.length, cookie.length);
+                    }
+                }
+                return null;
+            }
+            var cookieValue = getCookie('samuthrika_login_user_id');
+            console.log(cookieValue);
+
 
             $("#submit").click(function () {
-                var basic = $('input[name="level"]:checked').val();
-                var level = $('input[name="level"]:checked').val();
 
-
-                if (basic == null) {
-                    toastr.error("Select Level", "Empty")
+                if (cookieValue === 0) {
+                    window.location.href = "../register.php";
                 } else {
+                    var level = $('input[name="level"]:checked').val();
 
-                    var fd = new FormData();
+                    var price;
 
-                    fd.append('id', id);
-                    fd.append('name', name);
+                    if (level == "Basic") {
+                        price = $(".bprice").text();
+                    }
+                    if (level == "Advance") {
+                        price = $(".aprice").text();
 
-                    $.ajax({
-                        url: 'ajax',
-                        type: 'post',
-                        contentType: false,
-                        processData: false,
-                        data: fd,
+                    }
 
-                        success: function (response) {
-                            var result = JSON.parse(response);
 
-                            if (result.status == 'Success') {
-                                toastr.success("Course Successfully Added ", "Success")
-                            } else {
-                                toastr.error("Unable to Add", "Error")
+                    if (level == null) {
+                        toastr.error("Select Level", "Empty")
+                    } else {
 
+                        var fd = new FormData();
+
+                        fd.append('id', "865");
+                        fd.append('course_name', "Hand Embroidery");
+                        fd.append("level", level);
+                        fd.append("price", price);
+                        fd.append("location", "mogappair")
+
+                        $.ajax({
+                            url: 'ajax',
+                            type: 'post',
+                            contentType: false,
+                            processData: false,
+                            data: fd,
+
+                            success: function (response) {
+                                var result = JSON.parse(response);
+
+                                if (result.status == 'Success') {
+                                    toastr.success("Course Successfully Added ", "Success")
+                                } else {
+                                    toastr.error("Unable to Add", "Error")
+
+                                }
                             }
-                        }
-                    })
+                        })
+
+                    }
 
                 }
 
@@ -362,32 +395,26 @@
             $(document).ready(function () {
                 const basicBtn = $("#basic");
                 const advBtn = $("#adv");
-                const dipBtn = $("#dip");
+                const s1 = $("#s1");
+                const s2 = $("#s2");
                 const basicMoney = $(".basic-price");
                 const advMoney = $(".advance-price");
-                const dipMoney = $(".diploma-price");
 
                 basicBtn.change(function () {
                     if (basicBtn.is(":checked")) {
                         basicMoney.show();
+                        s1.show();
                         advMoney.hide();
-                        dipMoney.hide();
+                        s2.hide();
                     }
                 });
 
                 advBtn.change(function () {
                     if (advBtn.is(":checked")) {
                         basicMoney.hide();
+                        s1.hide();
                         advMoney.show();
-                        dipMoney.hide();
-                    }
-                });
-
-                dipBtn.change(function () {
-                    if (dipBtn.is(":checked")) {
-                        basicMoney.hide();
-                        advMoney.hide();
-                        dipMoney.show();
+                        s2.show();
                     }
                 });
 

@@ -55,8 +55,8 @@
                 <div class="container">
                     <div class="section-header">
                         <p class="mb-2 mt-0">Transforming talents into triumphs – [Samuthrika Academy], where the art of beauty meets the skill.</p>
-                        <h1 style="font-size:2rem ; color:orange;" class="">BEAUTICIAN COURSE IN
-                            ABROAD (ONLINE)</h1>
+                        <h1 style="font-size:2rem ; color:orange;" class="">BEAUTICIAN COURSE -
+                            ABROAED(online)</h1>
                     </div>
 
                     <!--Product Grid-->

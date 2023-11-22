@@ -336,7 +336,7 @@
             $("#submit").click(function () {
 
                 if (cookieValue === null) {
-                    window.location.href("../register.php")
+                    window.location.href = "../register.php";
                 } else {
                     var level = $('input[name="level"]:checked').val();
 
@@ -361,7 +361,7 @@
                         fd.append('course_name', "Hand Embroidery");
                         fd.append("level", level);
                         fd.append("price", price);
-                        fd.append("location", "trichy")
+                        fd.append("location", "india");
 
                         $.ajax({
                             url: 'ajax',
