@@ -13,7 +13,7 @@
     <!--BootStrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Title Of Site -->
-    <title>Samuthrika Academy Training Courses For Kids Trichy</title>
+    <title>Samuthrika Academy Training Courses For Kids Mogappair</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?php echo $path; ?>assets/images/favicon.png" />
     <!-- Plugins CSS -->
@@ -55,7 +55,7 @@
                 <div class="container">
                     <div class="section-header">
                         <p class="mb-2 mt-0">Your life does not get better by chance, it gets better by change.</p>
-                        <h1 style="font-size:2rem ; color:orange;" class="">TRAINING COURSES FOR KIDS - TRICHY</h1>
+                        <h1 style="font-size:2rem ; color:orange;" class="">TRAINING COURSES FOR KIDS - MOGAPPAIR</h1>
                     </div>
 
                     <!--Product Grid-->
@@ -67,7 +67,7 @@
                                     <!-- Start Product Image -->
                                     <div class="product-image">
                                         <!-- Start Product Image -->
-                                        <a href="kids_training_des(MGP).php" class="product-img">
+                                        <a href="kids_des(MGP).php" class="product-img">
                                             <!-- Image -->
                                             <img class="primary blur-up lazyload"
                                                 data-src="<?php echo $path; ?>assets/images/handwriting-classes.jpg"
@@ -93,7 +93,7 @@
                                         <div class="product-name-price">
                                             <!-- Product Name -->
                                             <div class="product-name">
-                                                <a href="kids_training_des(MGP).php">Handwriting</a>
+                                                <a href="kids_des(MGP).php">Hand Writing</a>
                                             </div>
                                             <!-- End Product Name -->
 
@@ -108,7 +108,6 @@
                                                         Duration - 15 days</span></li>
                                                 <li style="font-size:11px;"><i class="bi bi-book"></i><span>
                                                         (English/Tamil/Hindi)</span></li>
-                                                       
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -135,7 +134,7 @@
                                     <!-- Start Product Image -->
                                     <div class="product-image">
                                         <!-- Start Product Image -->
-                                        <a href="kids_training_des2(MGP).php" class="product-img">
+                                        <a href="kids_des2(MGP).php" class="product-img">
                                             <!-- Image -->
                                             <img class="primary blur-up lazyload"
                                                 data-src="<?php echo $path; ?>assets/images/speed-write.jpg"
@@ -161,7 +160,7 @@
                                         <div class="product-name-price">
                                             <!-- Product Name -->
                                             <div class="product-name">
-                                                <a href="kids_training_des2(MGP).php">Speedwriting</a>
+                                                <a href="kids_training_des2(MGP).php">Speed Writing</a>
                                             </div>
                                             <!-- End Product Name -->
 
@@ -199,7 +198,7 @@
                                     <!-- Start Product Image -->
                                     <div class="product-image">
                                         <!-- Start Product Image -->
-                                        <a href="kids_training_des3(MGP).php" class="product-img">
+                                        <a href="kids_des3(MGP).php" class="product-img">
                                             <!-- Image -->
                                             <img class="primary blur-up lazyload"
                                                 data-src="<?php echo $path; ?>assets/images/hindi class.jpg"
@@ -263,7 +262,7 @@
                                     <!-- Start Product Image -->
                                     <div class="product-image">
                                         <!-- Start Product Image -->
-                                        <a href="kids_training_des4(MGP).php" class="product-img">
+                                        <a href="kids_des4(MGP).php" class="product-img">
                                             <!-- Image -->
                                             <img class="primary blur-up lazyload"
                                                 data-src="<?php echo $path; ?>assets/images/spk-eng.jpg"
@@ -329,7 +328,7 @@
                                     <!-- Start Product Image -->
                                     <div class="product-image">
                                         <!-- Start Product Image -->
-                                        <a href="kids_training_des5(MGP).php" class="product-img">
+                                        <a href="kids_des5(MGP).php" class="product-img">
                                             <!-- Image -->
                                             <img class="primary blur-up lazyload"
                                                 data-src="<?php echo $path; ?>assets/images/spk-hin.jpg"
@@ -395,7 +394,7 @@
                                     <!-- Start Product Image -->
                                     <div class="product-image">
                                         <!-- Start Product Image -->
-                                        <a href="kids_training_des6(MGP).php" class="product-img">
+                                        <a href="kids_des6(MGP).php" class="product-img">
                                             <!-- Image -->
                                             <img class="primary blur-up lazyload"
                                                 data-src="<?php echo $path; ?>assets/images/english class.jpg"
@@ -462,7 +461,7 @@
                                     <!-- Start Product Image -->
                                     <div class="product-image">
                                         <!-- Start Product Image -->
-                                        <a href="kids_training_des7(MGP).php" class="product-img">
+                                        <a href="kids_des7(MGP).php" class="product-img">
                                             <!-- Image -->
                                             <img class="primary blur-up lazyload"
                                                 data-src="<?php echo $path; ?>assets/images/class-10.jpg"

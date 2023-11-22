@@ -26,23 +26,21 @@
 <body class="aboutus-page aboutus-style1-page">
     <!--Page Wrapper-->
     <div class="page-wrapper">
+
+        <!--Header-->
+        <?php include('header.php'); ?>
+        <!--End Header-->
+
+
         <!-- Body Container -->
         <div id="page-content">
-            
-             <!--Header-->
-            <?php include 'header.php';?>
-            <!--End Header-->
-
-            <!--Mobile Menu-->
-            <?php include 'sidebar.php';?>
-            <!--End Mobile Menu-->
 
             <!-- Meet Our Team section-->
             <div class="team-section section">
                 <div class="container">
                     <div class="section-header">
                         <p class="mb-2 mt-0"></p>
-                        <h2>Founder & MD</h2>
+                        <h2>CEO & Founder</h2>
                     </div>
 
                     <div
@@ -50,8 +48,8 @@
                         <div class="team-item col-item">
                             <div class="team-img zoom-scal rounded-0">
                                 <img class="rounded-0 blur-up lazyload w-100"
-                                    data-src="<?php echo $path ?>assets/img/aboutUs/contact 11.jpg"
-                                    src="<?php echo $path ?>assets/img/aboutUs/contact 11.jpg" alt="team" />
+                                    data-src="imgs/IMG_5699.JPG"
+                                    src="imgs/IMG_5699.JPG" alt="team" />
                                 <ul class="list-inline social-icons d-flex-justify-center">
                                     <li class="list-inline-item"><a class="clr-none" href="#" data-bs-toggle="tooltip"
                                             data-bs-placement="top" title="Facebook"><i
@@ -68,8 +66,8 @@
                                 </ul>
                             </div>
                             <div class="team-bio pt-3">
-                                <h3 class="mb-2">Priya</h3>
-                                <p>Founder - Managing Director</p>
+                                <h3 class="mb-2">Priya Govindaraj</h3>
+                                <p>Founder - Samuthrika Academy</p>
                             </div>
                         </div>
 
@@ -88,15 +86,15 @@
                             <div class="about-images mb-4 mb-md-0">
                                 <div class="row g-3">
                                     <img class="rounded-0 blur-up lazyload"
-                                        data-src="<?php echo $path ?>assets/img/aboutUs/about 1.jpg"
-                                        src="<?php echo $path ?>assets/img/aboutUs/about 1.jpg" alt="about"
+                                        data-src="imgs/IMG_5678.JPG"
+                                        src="imgs/IMG_5678.JPG" alt="about"
                                         style="width: 80%;border-radius: 10px !important; " />
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-sm-12 col-md-6">
                             <div class="about-details px-50 py-5">
-                                <p class="text-muted fs-6 mb-3">Wholesale and Supply shop </p>
+                                <p class="text-muted fs-6 mb-3"></p>
                                 <h2 class="fs-4 mb-4"> Empowering Dreams</h2>
                                 <h5>The Journey of Rtn Thamizhachi Priya Govindaraj, From a Zero-Investment Beginning to
                                     a Trailblazing Entrepreneur with Over 50 Awards</h5>
@@ -262,8 +260,8 @@
                             <div class="about-images mt-4 mt-md-0">
                                 <div class="row g-3">
                                     <img class="rounded-0 blur-up lazyload"
-                                        data-src="<?php echo $path ?>assets/img/aboutUs/about 2.jpg"
-                                        src="<?php echo $path ?>assets/img/aboutUs/about 2.jpg" alt="about"
+                                        data-src="imgs/IMG_5750.JPG"
+                                        src="imgs/IMG_5750.JPG" alt="about"
                                         style="width: 80%;border-radius: 10px !important;" />
                                 </div>
                             </div>

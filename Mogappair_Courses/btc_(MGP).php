@@ -13,7 +13,7 @@
     <!--BootStrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Title Of Site -->
-    <title>Samuthrika Academy Beautician Courses Mgappair</title>
+    <title>Samuthrika Academy Beautician Courses Mogappair</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?php echo $path; ?>assets/images/favicon.png" />
     <!-- Plugins CSS -->
@@ -55,7 +55,7 @@
                 <div class="container">
                     <div class="section-header">
                         <p class="mb-2 mt-0">Transforming talents into triumphs – [Samuthrika Academy], where the art of beauty meets the skill.</p>
-                        <h1 style="font-size:2rem ; color:orange;" class="">BEAUTICIAN COURSE IN
+                        <h1 style="font-size:2rem ; color:orange;" class="">BEAUTICIAN COURSE -
                             MOGAPPAIR</h1>
                     </div>
 
@@ -94,7 +94,7 @@
                                         <div class="product-name-price">
                                             <!-- Product Name -->
                                             <div class="product-name">
-                                                <a href="btc_des(MGP).php">All Beautician Courses</a>
+                                                <a href="btc_des(TPJ).php">All Beautician Courses</a>
                                             </div>
                                             <!-- End Product Name -->
 

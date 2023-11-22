@@ -11,7 +11,7 @@
     <meta name="description" content="description">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Title Of Site -->
-    <title>Samuthrika Academy Skill Development Abroad</title>
+    <title>Samuthrika Academy Tailoring Abroad</title>
 
     <!--BootStrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -140,8 +140,8 @@
                                 <!-- Product Price -->
                                 <div class="product-price d-flex-center my-2 money">
 
-                                    <span class="price old-price basic-price" >₹8,000</span><span
-                                        class="price basic-price" >₹7000</span>
+                                    <span class="price old-price basic-price" >₹7,500</span><span
+                                        class="price basic-price" id="price" >₹6,500</span>
 
                                   
                                 </div>
@@ -309,19 +309,39 @@
             }
 
 
+            function getCookie(cookieName) {
+                var name = cookieName + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var cookieArray = decodedCookie.split(';');
+
+                for (var i = 0; i < cookieArray.length; i++) {
+                    var cookie = cookieArray[i].trim();
+                    if (cookie.indexOf(name) == 0) {
+                        return cookie.substring(name.length, cookie.length);
+                    }
+                }
+                return null;
+            }
+            var cookieValue = getCookie('samuthrika_login_user_id');
+            console.log(cookieValue);
+
+
             $("#submit").click(function () {
-                var basic = $('input[name="level"]:checked').val();
-                var level = $('input[name="level"]:checked').val();
+             
+                if(cookieValue === null){
+                    window.location.href = "../register.php";
+                }
+                else{
 
-
-                if (basic == null) {
-                    toastr.error("Select Level", "Empty")
-                } else {
+                    var price = $("#price").text();
+                 {
 
                     var fd = new FormData();
 
-                    fd.append('id', id);
-                    fd.append('name', name);
+                    fd.append('id', "592");
+                    fd.append('course_name', "tailoring");
+                    fd.append("price",price);
+                    fd.append("location","abroad")
 
                     $.ajax({
                         url: 'ajax',
@@ -341,6 +361,9 @@
                             }
                         }
                     })
+
+                }
+               
 
                 }
 

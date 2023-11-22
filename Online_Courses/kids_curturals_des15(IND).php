@@ -56,7 +56,7 @@
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
 
                             <!--Breadcrumbs-->
-                            <div class="breadcrumbs"><span class="main-title fw-bold">Training Course</span></div>
+                            <div class="breadcrumbs"><span class="main-title fw-bold">Martial Arts</span></div>
                             <!--End Breadcrumbs-->
 
                         </div>

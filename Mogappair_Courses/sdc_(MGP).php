@@ -13,7 +13,7 @@
     <!--BootStrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Title Of Site -->
-    <title>Samuthrika Academy | Mogappair</title>
+    <title>Samuthrika Academy Skill Development Certification Course Mogappair</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?php echo $path; ?>assets/images/favicon.png" />
     <!-- Plugins CSS -->
@@ -56,8 +56,8 @@
                     <div class="section-header">
                         <p class="mb-2 mt-0">Crafting careers, stitching success. [Samuthrika Academy] - Your Partner in
                             Skill Education.</p>
-                        <h1 style="font-size:2rem ; color:orange;" class="">CERTIFICATION COURSE IN
-                            MOGAPPAIR</h1>
+                        <h1 style="font-size:2rem ; color:orange;" class="">CERTIFICATION COURSE -
+                            Mogappair</h1>
                     </div>
 
                     <!--Product Grid-->
