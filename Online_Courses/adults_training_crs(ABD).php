@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
-<!-- Mirrored from www.annimexweb.com/items/hema/ABDex5-tools-parts.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Oct 2023 07:12:57 GMT -->
+<!-- Mirrored from www.annimexweb.com/items/hema/index5-tools-parts.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Oct 2023 07:12:57 GMT -->
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -32,7 +32,7 @@
     .btn-hover {}
 </style>
 
-<body class="template-ABDex ABDex-demo5">
+<body class="template-index index-demo5">
     <!--Page Wrapper-->
     <div class="page-wrapper">
         <!--Header-->
@@ -55,9 +55,9 @@
                 <div class="container">
                 <div class="section-header">
                         <p class="mb-2 mt-0">Your life does not get better by chance, it gets better by change.</p>
-                        <h1 style="font-size:2rem ; color:orange;" class="">PERSONAL DEVELOPMENT COURSES FOR ADULTS IN
-                            ABROAD (ONLINE)</h1>
+                        <h1 style="font-size:2rem ; color:orange;" class="">TRAINING COURSES FOR ADULTS - ABROAD(online)</h1>
                     </div>
+
                     <!--Product Grid-->
                     <div class="grid-products grid-view-items pro-hover3">
                         <div
@@ -70,14 +70,14 @@
                                         <a href="adults_training_des(ABD).php" class="product-img">
                                             <!-- Image -->
                                             <img class="primary blur-up lazyload"
-                                                data-src="<?php echo $path; ?>assets/images/handwriting-classes.webp"
-                                                src="<?php echo $path; ?>assets/images/handwriting-classes.webp"
+                                                data-src="<?php echo $path; ?>assets/images/handwriting-classes.jpg"
+                                                src="<?php echo $path; ?>assets/images/handwriting-classes.jpg"
                                                 alt="Product" title="Product" width="625" height="781" />
                                             <!-- End Image -->
                                             <!-- Hover Image -->
                                             <img class="hover blur-up lazyload"
-                                                data-src="<?php echo $path; ?>assets/images/handwriting-classes.webp"
-                                                src="<?php echo $path; ?>assets/images/handwriting-classes.webp"
+                                                data-src="<?php echo $path; ?>assets/images/handwriting-classes.jpg"
+                                                src="<?php echo $path; ?>assets/images/handwriting-classes.jpg"
                                                 alt="Product" title="Product" width="625" height="781" />
                                             <!-- End Hover Image -->
                                         </a>
@@ -88,12 +88,12 @@
                                     <!-- Start Product Details -->
                                     <div class="product-details text-left">
                                         <!--Product Vendor-->
-                                        <div class="product-vendor">Traditional Courses</div>
+                                        <div class="product-vendor">Training Courses</div>
                                         <!--End Product Vendor-->
                                         <div class="product-name-price">
                                             <!-- Product Name -->
                                             <div class="product-name">
-                                                <a href="adults_training_des(ABD).php">Handwriting Classes</a>
+                                                <a href="adults_training_des(ABD).php">Hand Writing</a>
                                             </div>
                                             <!-- End Product Name -->
 
@@ -105,7 +105,7 @@
                                                 class="publish-detail d-flex-wrap justify-content-between text-uppercase mb-2">
 
                                                 <li style="font-size:11px;"><i class="bi bi-calendar-check"></i><span>
-                                                        Basic - 15 days</span></li>
+                                                        Duration - 15 days</span></li>
                                                 <li style="font-size:11px;"><i class="bi bi-book"></i><span>
                                                         (English/Tamil/Hindi)</span></li>
                                             </ul>
@@ -117,7 +117,7 @@
                                             <ul
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri ( 1hrs or 2hrs )</time></li>
+                                                        datetime="">Mon - Sun ( 1 hr/Per day)</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -155,12 +155,12 @@
                                     <!-- Start Product Details -->
                                     <div class="product-details text-left">
                                         <!--Product Vendor-->
-                                        <div class="product-vendor">Traditional Courses</div>
+                                        <div class="product-vendor">Training Courses</div>
                                         <!--End Product Vendor-->
                                         <div class="product-name-price">
                                             <!-- Product Name -->
                                             <div class="product-name">
-                                                <a href="adults_training_des2(ABD).php">Speed Writing Class</a>
+                                                <a href="adults_training_des2(ABD).php">Speed Writing</a>
                                             </div>
                                             <!-- End Product Name -->
 
@@ -171,7 +171,7 @@
                                             <ul
                                                 class="publish-detail d-flex-wrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="bi bi-calendar-check"></i><span>
-                                                        Basic - 15 days</span></li>
+                                                        Duration - 15 days</span></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -181,7 +181,7 @@
                                             <ul
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri ( 1hrs or 2hrs )</time></li>
+                                                        datetime="">Mon - Sun (  1 hr/Per day)</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -207,8 +207,8 @@
                                             <!-- End Image -->
                                             <!-- Hover Image -->
                                             <img class="hover blur-up lazyload"
-                                                data-src="<?php echo $path; ?>assets/images/hABDi class.jpg"
-                                                src="<?php echo $path; ?>assets/images/hABDi class.jpg" alt="Product"
+                                                data-src="<?php echo $path; ?>assets/images/hindi class.jpg"
+                                                src="<?php echo $path; ?>assets/images/hindi class.jpg" alt="Product"
                                                 title="Product" width="625" height="781" />
                                             <!-- End Hover Image -->
                                         </a>
@@ -219,12 +219,12 @@
                                     <!-- Start Product Details -->
                                     <div class="product-details text-left">
                                         <!--Product Vendor-->
-                                        <div class="product-vendor">Traditional Courses</div>
+                                        <div class="product-vendor">Training Courses</div>
                                         <!--End Product Vendor-->
                                         <div class="product-name-price">
                                             <!-- Product Name -->
                                             <div class="product-name">
-                                                <a href="adults_training_des3(ABD).php">Calligraphy Class</a>
+                                                <a href="adults_training_des3(ABD).php">Calligraphy</a>
                                             </div>
                                             <!-- End Product Name -->
 
@@ -235,7 +235,7 @@
                                             <ul
                                                 class="publish-detail d-flex-wrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="bi bi-calendar-check"></i><span>
-                                                        Basic - 15 days</span></li>
+                                                        Duration - 20 days</span></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -245,7 +245,7 @@
                                             <ul
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri ( 1hrs or 2hrs )</time></li>
+                                                        datetime="">Mon - Sun (  1 HR /PER day )</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -283,12 +283,12 @@
                                     <!-- Start Product Details -->
                                     <div class="product-details text-left">
                                         <!--Product Vendor-->
-                                        <div class="product-vendor">Traditional Courses</div>
+                                        <div class="product-vendor">Training Courses</div>
                                         <!--End Product Vendor-->
                                         <div class="product-name-price">
                                             <!-- Product Name -->
                                             <div class="product-name">
-                                                <a href="adults_training_des4(ABD).php">Spoken English Class</a>
+                                                <a href="adults_training_des4(ABD).php">Spoken English</a>
                                             </div>
                                             <!-- End Product Name -->
 
@@ -311,7 +311,7 @@
                                             <ul
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri ( 1hrs or 2hrs )</time></li>
+                                                        datetime="">Mon - Sun (  1 hr/Per day )</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -349,12 +349,12 @@
                                     <!-- Start Product Details -->
                                     <div class="product-details text-left">
                                         <!--Product Vendor-->
-                                        <div class="product-vendor">Traditional Courses</div>
+                                        <div class="product-vendor">Training Courses</div>
                                         <!--End Product Vendor-->
                                         <div class="product-name-price">
                                             <!-- Product Name -->
                                             <div class="product-name">
-                                                <a href="adults_training_des5(ABD).php">Spoken Hindi Class</a>
+                                                <a href="adults_training_des5(ABD).php">Spoken Hindi</a>
                                             </div>
                                             <!-- End Product Name -->
 
@@ -377,7 +377,7 @@
                                             <ul
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri ( 1hrs or 2hrs )</time></li>
+                                                        datetime="">Mon - Sun ( 1 hr/Per day )</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -415,13 +415,13 @@
                                     <!-- Start Product Details -->
                                     <div class="product-details text-left">
                                         <!--Product Vendor-->
-                                        <div class="product-vendor">Traditional Courses</div>
+                                        <div class="product-vendor">Training Courses</div>
                                         <!--End Product Vendor-->
                                         <div class="product-name-price">
                                             <!-- Product Name -->
                                             <div class="product-name">
                                                 <a href="adults_training_des6(ABD).php">Hindi Reading & Writing
-                                                    Classes</a>
+                                                    </a>
                                             </div>
                                             <!-- End Product Name -->
 
@@ -444,7 +444,7 @@
                                             <ul
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri ( 1hrs or 2hrs )</time></li>
+                                                        datetime="">Mon - Sun ( 1 hr/Per day)</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -482,13 +482,13 @@
                                     <!-- Start Product Details -->
                                     <div class="product-details text-left">
                                         <!--Product Vendor-->
-                                        <div class="product-vendor">Traditional Courses</div>
+                                        <div class="product-vendor">Training Courses</div>
                                         <!--End Product Vendor-->
                                         <div class="product-name-price">
                                             <!-- Product Name -->
                                             <div class="product-name">
                                                 <a href="adults_training_des7(ABD).php">English Reading & Writing
-                                                    Classes</a>
+                                                    </a>
                                             </div>
                                             <!-- End Product Name -->
 
@@ -511,7 +511,7 @@
                                             <ul
                                                 class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
                                                 <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">Mon - Fri ( 1hrs or 2hrs )</time></li>
+                                                        datetime="">Mon - Sun (  1 hr/Per day )</time></li>
                                             </ul>
                                         </div>
                                         <!-- End Product Details -->
@@ -523,67 +523,7 @@
                                 </div>
                             </div>
 
-                            <div class="item col-item">
-                                <div class="product-box">
-                                    <!-- Start Product Image -->
-                                    <div class="product-image">
-                                        <!-- Start Product Image -->
-                                        <a href="abacus_adults(ABD).php" class="product-img">
-                                            <!-- Image -->
-                                            <img class="primary blur-up lazyload"
-                                                data-src="<?php echo $path; ?>assets/images/abacus.jpg"
-                                                src="<?php echo $path; ?>assets/images/abacus.jpg" alt="Product"
-                                                title="Product" width="625" height="781" />
-                                            <!-- End Image -->
-                                            <!-- Hover Image -->
-                                            <img class="hover blur-up lazyload"
-                                                data-src="<?php echo $path; ?>assets/images/abacus.jpg"
-                                                src="<?php echo $path; ?>assets/images/abacus.jpg" alt="Product"
-                                                title="Product" width="625" height="781" />
-                                            <!-- End Hover Image -->
-                                        </a>
-                                        <!-- End Product Image -->
-
-                                    </div>
-                                    <!-- End Product Image -->
-                                    <!-- Start Product Details -->
-                                    <div class="product-details text-left">
-                                        <!--Product Vendor-->
-                                        <div class="product-vendor">Traditional Courses</div>
-                                        <!--End Product Vendor-->
-
-                                        <!-- Product Name -->
-                                        <div class="product-name">
-                                            <a href="abacus_adults(ABD).php">Abacus Class</a>
-
-                                        </div>
-                                        <!-- End Product Name -->
-                                        <!-- Product Details -->
-                                        <div class="product-duration py-2 pb-0">
-                                            <ul
-                                                class="publish-detail d-flex-wrap justify-content-between text-uppercase mb-2">
-                                                <li style="font-size:11px;"><i class="bi bi-calendar-check"></i><span>
-                                                        Levels: 0 - 10 Levels </span></li>
-                                            </ul>
-                                        </div>
-                                        <!-- End Product Details -->
-                                        <div class="blog-content py-2 pb-0">
-                                            <ul
-                                                class="publish-detail d-flex-nowrap justify-content-between text-uppercase mb-2">
-                                                <!-- <li style="font-size:11px;"><i class="icon anm anm-user-al"></i> <span>Online / Offline</span></li>           -->
-                                                <li style="font-size:11px;"><i class="icon anm anm-calendar"></i> <time
-                                                        datetime="">3 months - 24 days ( per day 1hr )</time></li>
-                                            </ul>
-                                        </div>
-                                        <!-- End Product Details -->
-
-
-                                    </div>
-                                    <!-- End product details -->
-                                </div>
-                            </div>
-
-
+                         
                         </div>
                         <!--End Product Grid-->
                     </div>
@@ -591,7 +531,7 @@
 
                     <div class="section-header mt-5">
                         <p class="mb-2 mt-0">Don't Waste Your Holidays Utilize By Growing Skills.</p>
-                        <h1 style="font-size:2rem ; color:orange;" class="">SUMMER CAMP FOR ADULTS IN ABROAD (ONLINE)</h1>
+                        <h1 style="font-size:2rem ; color:orange;" class="">SUMMER CAMP FOR ADULTS - ABROAD(online)</h1>
                     </div>
 
                     <div class="grid-products grid-view-items mt-5 pt-2">
@@ -604,7 +544,7 @@
                                     <!-- Start Product Image -->
                                     <div class="product-image">
                                         <!-- Start Product Image -->
-                                        <a href="summer_camp(ABD).php" class="product-img">
+                                        <a href="summer_camp_adults(ABD).php" class="product-img">
                                             <!-- Image -->
                                             <img class="primary blur-up lazyload"
                                                 data-src="<?php echo $path; ?>assets/images/summer.jpg"
@@ -642,7 +582,7 @@
 
                                         <!-- Product Name -->
                                         <div class="product-name-price d-flex-nowrap justify-content-between">
-                                            <a href="summer_camp(ABD).php">SUMMER CAMP FOR ADULTS</a>
+                                            <a href="summer_camp_adults(ABD).php">SUMMER CAMP FOR ADULTS</a>
 
                                         </div>
                                         <!-- End Product Name -->
@@ -663,50 +603,56 @@
                                         </div>-->
 
                     </div>
-            </section>
-            <!--End Products section-->
-
+                
+                </div>
+                <!--End Product Grid-->
 
 
         </div>
-        <!-- End Body Container -->
-
-        <!--Footer-->
-        <?php include '../footer.php'?>
-        <!--End Footer-->
-
-        <!--Scoll Top-->
-        <div id="site-scroll" style="background-color: orangered;"><i class="icon anm anm-arw-up"></i></div>
-        <!--End Scoll Top-->
+        </section>
+        <!--End Products section-->
 
 
 
+    </div>
+    <!-- End Body Container -->
+
+    <!--Footer-->
+    <?php include '../footer.php'?>
+    <!--End Footer-->
+
+    <!--Scoll Top-->
+    <div id="site-scroll" style="background-color: orangered;"><i class="icon anm anm-arw-up"></i></div>
+    <!--End Scoll Top-->
 
 
 
 
 
 
-        <!-- Including Jquery/Javascript -->
-        <!-- Plugins JS -->
-        <script src="<?php echo $path; ?>assets/js/plugins.js"></script>
-        <!-- Main JS -->
-        <script src="<?php echo $path; ?>assets/js/main.js"></script>
 
-        <!--Newsletter Modal Cookies-->
-        <script>
-            $(wABDow).ready(function () {
-                setTimeout(function () {
-                    $('#newsletter_modal').modal("show");
-                }, 7000);
-            });
-        </script>
-        <!--End Newsletter Modal Cookies-->
+
+
+    <!-- Including Jquery/Javascript -->
+    <!-- Plugins JS -->
+    <script src="<?php echo $path; ?>assets/js/plugins.js"></script>
+    <!-- Main JS -->
+    <script src="<?php echo $path; ?>assets/js/main.js"></script>
+
+    <!--Newsletter Modal Cookies-->
+    <script>
+        $(window).ready(function () {
+            setTimeout(function () {
+                $('#newsletter_modal').modal("show");
+            }, 7000);
+        });
+    </script>
+    <!--End Newsletter Modal Cookies-->
 
     </div>
     <!--End Page Wrapper-->
 </body>
 
-<!-- Mirrored from www.annimexweb.com/items/hema/ABDex5-tools-parts.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Oct 2023 07:16:17 GMT -->
+<!-- Mirrored from www.annimexweb.com/items/hema/index5-tools-parts.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Oct 2023 07:16:17 GMT -->
 
 </html>

@@ -49,8 +49,9 @@
                             <div class="about-images mb-4 mb-md-0">
                                 <div class="row g-3">
                                     <img class="rounded-0 blur-up lazyload"
-                                        data-src="imgs/IMG_5928.JPG"
+                               data-src="imgs/IMG_5928.JPG"
                                         src="imgs/IMG_5928.JPG" alt="about"
+
                                         style="width: 80%;border-radius: 10px !important; " />
                                 </div>
                             </div>

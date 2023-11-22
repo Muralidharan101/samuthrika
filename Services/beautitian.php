@@ -4,21 +4,26 @@
 <html class="no-js" lang="en">
     
 <!-- Mirrored from www.annimexweb.com/items/hema/faqs-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Sep 2023 19:37:47 GMT -->
+
 <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="description">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Title Of Site -->
-        <title>Faq's Page - Hema Multipurpose eCommerce Bootstrap 5 Html Template</title>
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="<?php echo $path ?>assets/images/favicon.png" />
-        <!-- Plugins CSS -->
-        <link rel="stylesheet" href="<?php echo $path ?>assets/css/plugins.css">
-        <!-- Main Style CSS -->
-        <link rel="stylesheet" href="<?php echo $path ?>assets/css/style-min.css">
-        <link rel="stylesheet" href="<?php echo $path ?>assets/css/responsive.css">
-    </head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="description">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title Of Site -->
+    <title>Product Layout5 - Hema Multipurpose eCommerce Bootstrap 5 Html Template</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="<?php echo $path; ?>assets/images/favicon.png" />
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="<?php echo $path; ?>assets/css/plugins.css">
+    <!-- Photoswipe Gallery CSS -->
+    <link rel="stylesheet" href="<?php echo $path; ?>assets/css/vendor/photoswipe.min.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="<?php echo $path; ?>assets/css/style-min.css">
+    <link rel="stylesheet" href="<?php echo $path; ?>assets/css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
 <style>
            body {
             margin: 0;
@@ -27,16 +32,12 @@
         }
 
         #sticky-button {
-            position: fixed;
-            top: 60%;
-            right: 0;
-            transform: translateY(-50%);
             background-color: #3498db;
             color: #fff;
-            padding: 10px 20px;
+            padding: 10px 16px;
             cursor: pointer;
             border: none;
-            border-radius: 5px 0 0 5px;
+            border-radius: 5px;
             font-size: 16px;
             transition: right 0.3s ease;
         }
@@ -57,6 +58,7 @@
             border-radius: 5px;
             max-width: 300px;
             width: 100%;
+            z-index: 500;
         }
 
         #close-form {
@@ -85,29 +87,72 @@ textarea{
     width: 100%;
 }
 
-#product-nav{
-    display: block;
-}
-        /* Add media query for responsiveness */
-        /* @media screen and (max-width: 768px) {
-            #sticky-button {
-                display: block;
-            }
 
-            #form-container {
-                width: 100%;
-                left: 0;
-                right: unset;
-                border-radius: 0;
-            }
-        } */
+
+    #sticky-button i {
+        margin-right: 5px; /* Adjust the spacing between the icon and text as needed */
+    }
+
+    .contact-form {
+    max-width: 400px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+}
+
+.form-row {
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.btn {
+    width: 100%;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 767px) {
+    #sticky-button {
+        right: -41%;
+        width: auto;
+        white-space: nowrap; /* Prevent button text from wrapping */
+    }
+
+    #form-container {
+        right: 10px;
+        max-width: none;
+        width: auto;
+    }
+
+    #close-form {
+        top: 5px;
+        right: 5px;
+    }
+
+    .form-row,
+    .form-group,
+    .btn {
+        width: 100%;
+    }
+}
+    /* @media only screen and (max-width:430px) {
+
+  #sticky-button  {
+    position: fixed;
+            top: 60%;
+            right:-35%;
+}
+} */
+
+
+
 
 </style>
     <body class="faq-page">
         <!--Page Wrapper-->
         <div class="page-wrapper">
        
-        <?php include('../header.php'); ?>
+        <?php include '../header.php'; ?>
             <!-- Body Container -->
             <div id="page-content"> 
                 <!--Page Header-->
@@ -115,8 +160,9 @@ textarea{
                     <div class="container">
                         <div class="row">
                             <div class="col-12 col-sm-12 col-md-12 col-lg-12 d-flex justify-content-between align-items-center">
-                                <div class="page-title"><h1>Beautitian Service</h1></div>
-                              
+                                <div class="page-title"><h1>Beautician Service</h1></div>
+                                <button id="sticky-button"><i class="bi bi-exclamation-triangle"></i>&nbsp;&nbsp;&nbsp;&nbsp;Click to Enquiry</button>
+
                             </div>
                         </div>
                     </div>
@@ -139,9 +185,7 @@ textarea{
                     </div> -->
                   
                     <!-- End Frequently Content -->
-                    <a href="#" class="product-nav d-flex-center justify-content-between" title="Next Product">
-                    <button id="sticky-button">Click to Enquiry</button>
-    <div id="form-container">
+                        <div id="form-container">
         <span id="close-form">X</span><br>
         <div name="contactus" method="post" id="contact-form" class="contact-form" style="display: block;">
                                         <div class="form-row">
@@ -188,7 +232,6 @@ textarea{
     </div>
 
 
-                    </a>
                     <!-- Faq's Style -->
                     <div class="row faqs-style mt-4 mt-md-0">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-10 mx-auto">
@@ -339,7 +382,7 @@ textarea{
         });
 
         stickyButton.addEventListener('mouseleave', function () {
-            stickyButton.style.right = '0';
+            stickyButton.style.right = '-11%';
         });
 
         $(document).ready(function () {

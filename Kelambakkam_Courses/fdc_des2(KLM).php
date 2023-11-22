@@ -11,7 +11,7 @@
     <meta name="description" content="description">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Title Of Site -->
-    <title>Samuthrika Academy Fashion Designing Kelambakkam</title>
+    <title>Samuthrika Academy Advanced Diploma In Fashion Designing Kelambakkam</title>
 
     <!--BootStrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -133,15 +133,13 @@
                                             <li  class="ps-2">➤ Fashion Communication & Boutique Management</li>
                                            </ul>
                                         </span></p>
-                                    <p class="product-cat"><i class="icon anm anm-eye-r"></i> Mode : <span><a href="#">Offline
-                                                Classes</a></span></p>
+                                   
                                    
                                    
                                     <p class="product-cat"><i class="icon anm anm-calendar"></i> Course Duration: <span>
                                             3 Months
                                         </span></p>
-                                    <p class="product-cat"><i class="icon anm anm-question-cil me-2"></i><a
-                                            href="#">Money Back Guarentee</a></p>
+                                 
                                 </div>
                                 <!-- End Product Info -->
 
@@ -149,7 +147,7 @@
                                 <div class="product-price d-flex-center my-2 money">
                                    
                                     <span  class="price old-price ">₹50,000</span><span
-                                         class="price ">₹35000</span>
+                                         class="price tprice">₹35000</span>
                                 </div>
                                 <!-- End Product Price -->
 
@@ -207,19 +205,17 @@
                         <div id="description" class="tab-content">
                             <div class="product-description">
                                 <div class="row">
-                                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-0 mb-md-0">
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the
-                                            1500s, when an unknown printer took a galley of type and scrambled it to
-                                            make a type specimen book. the majority have suffered alteration in some
-                                            form randomised words which don't look even slightly believable.</p>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-0 mb-md-0">
+                                        <p>We encourage students from different age groups including School/College
+                                            students, Homemakers, Working Women to engage themselves by learning Fashion
+                                            Designing available in different curriculum based courses at convenient
+                                            batches</p>
                                         <h4 class="mb-3">Features</h4>
                                         <ul class="checkmark-info">
-                                            <li>High quality fabric, very comfortable to touch and wear.</li>
-                                            <li>This cardigan sweater is cute for no reason,perfect for travel and
-                                                casual.</li>
-                                            <li>It can tie in front-is forgiving to you belly or tie behind.</li>
-                                            <li>Light weight and perfect for layering.</li>
+                                            <li>Available for ladies and adults at all ages</li>
+                                            <li>Weekly twice/thrice/5 days/ only weekends Batches are available</li>
+                                            <li>Outside Shows / rampwalks are available for participation on interests.</li>
+                                            <li> Schedule for Classes given and followed</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -314,76 +310,65 @@
             toastr.info("Link copied ");
         }
 
-          
-            $("#submit").click(function () {
-                var basic = $('input[name="basic"]:checked').val();
-                var lang = $('input[name="lang"]:checked').val();
+        function getCookie(cookieName) {
+                var name = cookieName + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var cookieArray = decodedCookie.split(';');
 
-
-                if (basic == null) {
-                    toastr.error("Select Level", "Empty")
-                } else if (lang == null) {
-                    toastr.error("Select Language", "Empty")
-
-                } else {
-
-                    var fd = new FormData();
-
-                    fd.append('id', id);
-                    fd.append('name', name);
-
-                    $.ajax({
-                        url: 'ajax',
-                        type: 'post',
-                        contentType: false,
-                        processData: false,
-                        data: fd,
-
-                        success: function (response) {
-                            var result = JSON.parse(response);
-
-                            if (result.status == 'Success') {
-                                toastr.success("Course Successfully Added ", "Success")
-                            } else {
-                                toastr.error("Unable to Add", "Error")
-
-                            }
-                        }
-                    })
-
+                for (var i = 0; i < cookieArray.length; i++) {
+                    var cookie = cookieArray[i].trim();
+                    if (cookie.indexOf(name) == 0) {
+                        return cookie.substring(name.length, cookie.length);
+                    }
                 }
+                return null;
+            }
+            var cookieValue = getCookie('samuthrika_login_user_id');
+            console.log(cookieValue);
 
+          
+           $("#submit").click(function(){
 
-            })
+            var price = $(".tprice").text();
 
+            if(cookieValue === null){
+                window.location.href = "../register.php";
+            }
 
-            $("#submit").click(function () {
+            else{
+                var fd = new FormData();
+                fd.append("id","183");
+                fd.append("course_name","Advanced Diploma In Fashion Designing");
+                fd.append("price",price);
+                fd.append("location","kelambakkam");
 
-            });
+                $.ajax({
 
+                    url:'ajax',
+                    type:"post",
+                    contentType:false,
+                    processData:false,
+                    data:fd,
 
-            $(document).ready(function () {
-                const basicBtn = $("#basic");
-                const advBtn = $("#advance");
-                const basicMoney = $(".basic-price");
-                const advMoney = $(".advance-price");
+                    success:function(response){
+                        var result = JSON.parse(response);
 
-                basicBtn.change(function () {
-                    if (basicBtn.is(":checked")) {
-                        basicMoney.show();
-                        advMoney.hide();
+                        if(result.status == "Success"){
+                            toastr.success("Course Successfully Added ", "Success");
+                        }
+
+                        else{
+                            toastr.error("Unable to Add", "Error");
+                        }
                     }
                 });
+            }
 
-                advBtn.change(function () {
-                    if (advBtn.is(":checked")) {
-                        basicMoney.hide();
-                        advMoney.show();
-                    }
-                });
+           });
 
+          
 
-            });
+            
         </script>
         <script>
             $(function () {

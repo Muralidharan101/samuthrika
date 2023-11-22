@@ -554,7 +554,7 @@
             $("#submit").click(function () {
                 var courses = $('input[name="course"]:checked');
 
-                if (courses.length === 0) {
+                if (courses.length === null) {
                     toastr.error("Please Select at Least One Course Before Purchase");
                 } else {
                     // Clear the existing list or container content
@@ -576,7 +576,9 @@
 
                     // Your existing code for AJAX request goes here
                     var fd = new FormData();
+                    fd.append("id", "858");
                     fd.append("courses", coursesString);
+                    fd.append("Location", "mogappair");
 
                     $.ajax({
                         url: 'ajax',

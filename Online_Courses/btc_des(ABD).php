@@ -11,7 +11,7 @@
     <meta name="description" content="description">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Title Of Site -->
-    <title>Samuthrika Academy Beautician Courses Abroad</title>
+    <title>Samuthrika Academy Beautician Courses Trichy</title>
 
     <!--BootStrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -141,8 +141,8 @@
                                             </td>
                                             <td>Basic Certificate Course in Skin & Beauty</td>
                                             <td>360 hrs</td>
-                                            <td>22000</td>
-                                            <td>17000</td>
+                                            <td>21,500</td>
+                                            <td>16,500</td>
 
                                         </tr>
                                         <tr>
@@ -157,8 +157,8 @@
                                             </td>
                                             <td>Advanced Certificate Course in Skin & Beauty</td>
                                             <td>240 hrs</td>
-                                            <td>22000</td>
-                                            <td>17000</td>
+                                            <td>21,500</td>
+                                            <td>16,500</td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -172,8 +172,8 @@
                                             </td>
                                             <td>Diploma Course in Skin & Beauty</td>
                                             <td>600 hrs</td>
-                                            <td>35000</td>
-                                            <td>30000</td>
+                                            <td>34,500</td>
+                                            <td>29,500</td>
                                         </tr>
 
 
@@ -189,8 +189,8 @@
                                             </td>
                                             <td>Basic Certificate in Course in Hair</td>
                                             <td>360 hrs</td>
-                                            <td>28000</td>
-                                            <td>23000</td>
+                                            <td>27,500</td>
+                                            <td>22,500</td>
                                         </tr>
 
                                         <tr>
@@ -205,8 +205,8 @@
                                             </td>
                                             <td>Advance Certificate in Course in Hair</td>
                                             <td>480 hrs</td>
-                                            <td>28000</td>
-                                            <td>23000</td>
+                                            <td>27,500</td>
+                                            <td>22,500</td>
                                         </tr>
 
                                         <tr>
@@ -221,8 +221,8 @@
                                             </td>
                                             <td>Diploma Course in Hair</td>
                                             <td>720 hrs</td>
-                                            <td>47500</td>
-                                            <td>43500</td>
+                                            <td>48,000</td>
+                                            <td>43,000</td>
                                         </tr>
 
                                         <tr>
@@ -237,8 +237,8 @@
                                             </td>
                                             <td>Diploma in Skin, Beauty and Hair</td>
                                             <td>720 hrs</td>
-                                            <td>42000</td>
-                                            <td>37000</td>
+                                            <td>41,500</td>
+                                            <td>36,500</td>
                                         </tr>
 
                                         <tr>
@@ -253,8 +253,8 @@
                                             </td>
                                             <td>Advance Diploma Course in Skin, Beauty and Hair</td>
                                             <td>720 hrs</td>
-                                            <td>42000</td>
-                                            <td>37000</td>
+                                            <td>41,500</td>
+                                            <td>36,500</td>
                                         </tr>
 
                                         <tr>
@@ -269,8 +269,8 @@
                                             </td>
                                             <td>Professional Course in Grooming</td>
                                             <td>1320 hrs</td>
-                                            <td>75000</td>
-                                            <td>70000</td>
+                                            <td>74,500</td>
+                                            <td>69,500</td>
                                         </tr>
 
                                         <tr>
@@ -285,8 +285,8 @@
                                             </td>
                                             <td>Master Diploma in Grooming</td>
                                             <td>1560 hrs</td>
-                                            <td>88000</td>
-                                            <td>83000</td>
+                                            <td>87,500</td>
+                                            <td>82,500</td>
                                         </tr>
 
                                         <tr>
@@ -301,8 +301,8 @@
                                             </td>
                                             <td>Certificate Course in Make-Up Artistry</td>
                                             <td>240 hrs</td>
-                                            <td>28500</td>
-                                            <td>23500</td>
+                                            <td>28,000</td>
+                                            <td>23,000</td>
                                         </tr>
 
                                         <tr>
@@ -317,8 +317,8 @@
                                             </td>
                                             <td>Certificate Course in Bridal Make Over</td>
                                             <td>360 hrs</td>
-                                            <td>48500</td>
-                                            <td>43500</td>
+                                            <td>48,000</td>
+                                            <td>43,000</td>
                                         </tr>
 
                                         <tr>
@@ -333,8 +333,8 @@
                                             </td>
                                             <td>Certificate Course in Hair Dressing</td>
                                             <td>160 hrs</td>
-                                            <td>12000</td>
-                                            <td>7000</td>
+                                            <td>11,500</td>
+                                            <td>6,500</td>
                                         </tr>
 
                                         <tr>
@@ -349,8 +349,8 @@
                                             </td>
                                             <td>Certificate Course in Personal Grooming</td>
                                             <td>80 hrs</td>
-                                            <td>12000</td>
-                                            <td>7000</td>
+                                            <td>11,500</td>
+                                            <td>6,500</td>
                                         </tr>
 
                                         <tr>
@@ -365,8 +365,8 @@
                                             </td>
                                             <td>Certificate Course in Mehandi</td>
                                             <td>80 hrs</td>
-                                            <td>12000</td>
-                                            <td>7000</td>
+                                            <td>11,500</td>
+                                            <td>6,500</td>
                                         </tr>
 
                                         <tr>
@@ -381,8 +381,8 @@
                                             </td>
                                             <td>Certificate Course in Nail Art</td>
                                             <td>80 hrs</td>
-                                            <td>12000</td>
-                                            <td>7000</td>
+                                            <td>11,500</td>
+                                            <td>6,500</td>
                                         </tr>
 
                                     </tbody>
@@ -551,52 +551,90 @@
                 toastr.info("Link copied ");
             }
 
-            $("#submit").click(function () {
-                var courses = $('input[name="course"]:checked');
+            function getCookie(cookieName) {
+                var name = cookieName + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var cookieArray = decodedCookie.split(';');
 
-                if (courses.length === 0) {
-                    toastr.error("Please Select at Least One Course Before Purchase");
-                } else {
-                    // Clear the existing list or container content
-
-                    // Array to store selected course values
-                    var selectedCourses = [];
-                    // Reset the table without adding the courses
-                    $("#product-table tbody").find("input[type='checkbox']").prop('checked', false);
-
-                    // Iterate through each selected course, append it to the list, and add to the array
-                    courses.each(function () {
-                        var course = $(this).val();
-                        $("#selected-courses-list tbody").append('<tr><td>' + course + '</td></tr>');
-                        selectedCourses.push(course);
-                    });
-
-                    // Convert the array to a comma-separated string
-                    var coursesString = selectedCourses.join(', ');
-
-                    // Your existing code for AJAX request goes here
-                    var fd = new FormData();
-                    fd.append("courses", coursesString);
-
-                    $.ajax({
-                        url: 'ajax',
-                        type: 'post',
-                        processData: false,
-                        contentType: false,
-                        data: fd,
-
-                        success: function (response) {
-                            var result = JSON.parse(response);
-
-                            if (result.status == 'Success') {
-                                toastr.success("Course Successfully Added ", "Success")
-                            } else {
-                                toastr.error("Unable to Add", "Error")
-                            }
-                        }
-                    })
+                for (var i = 0; i < cookieArray.length; i++) {
+                    var cookie = cookieArray[i].trim();
+                    if (cookie.indexOf(name) == 0) {
+                        return cookie.substring(name.length, cookie.length);
+                    }
                 }
-            });
+                return null;
+            }
+            var cookieValue = getCookie('samuthrika_login_user_id');
+            console.log(cookieValue);
+
+            $("#submit").click(function ()
+{
+    if (cookieValue === null ) {
+                    window.location.href = "../register.php";
+                } else {
+                    var courses = $('input[name="course"]:checked');
+
+                    if (courses.length === 0) {
+                        toastr.error("Please Select at Least One Course Before Purchase");
+                    } else {
+                        // Clear the existing list or container content
+                        $("#selected-courses-list tbody").empty();
+
+                        // Arrays to store selected course details
+                        var selectedCourseNames = [];
+                        var selectedTimings = [];
+                        var selectedPrices = [];
+
+                        // Iterate through each selected course
+                        courses.each(function () {
+                            var courseCheckbox = $(this);
+                            var courseTitle = courseCheckbox.closest('tr').find('td:nth-child(2)')
+                                .text();
+                            var duration = courseCheckbox.closest('tr').find('td:nth-child(3)').text();
+                            var discountedPrice = parseInt(courseCheckbox.closest('tr').find(
+                                'td:nth-child(5)').text());
+
+                            // Append the course details to the list
+                            $("#selected-courses-list tbody").append('<tr><td>' + courseTitle +
+                                '</td><td>' + duration + '</td><td>' + discountedPrice +
+                                '</td></tr>');
+
+                            // Store the course details in respective arrays
+                            selectedCourseNames.push(courseTitle);
+                            selectedTimings.push(duration);
+                            selectedPrices.push(discountedPrice);
+                        });
+
+                        // Display a message or perform any other action with the selected course details
+
+                        // Your existing code for AJAX request goes here
+                        var fd = new FormData();
+                        fd.append("id", "548");
+                        fd.append("course_name", JSON.stringify(selectedCourseNames));
+                        fd.append("timing", JSON.stringify(selectedTimings));
+                        fd.append("price", JSON.stringify(selectedPrices));
+                        fd.append("location", "abroad")
+
+                        $.ajax({
+                            url: 'ajax',
+                            type: 'post',
+                            processData: false,
+                            contentType: false,
+                            data: fd,
+                            success: function (response) {
+                                var result = JSON.parse(response);
+
+                                if (result.status == 'Success') {
+                                    toastr.success("Course Successfully Added ", "Success");
+                                } else {
+                                    toastr.error("Unable to Add", "Error");
+                                }
+                            }
+                        });
+                    }
+}
+               
+                });
         </script>
 
 

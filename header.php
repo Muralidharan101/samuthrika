@@ -40,15 +40,18 @@
                                 href="<?php echo $path; ?>main/index.php">Home
                                 <!--<i class="icon anm anm-angle-down-l"></i>--></a></li>
 
-                        <li class="lvl1 parent dropdown" id="list-texts"><a href="#">About Samuthrika<i
+                        <li class="lvl1 parent dropdown" id="list-texts"><a href="about_samuthrika_ceo.php">About Samuthrika<i
                                     class="icon anm anm-angle-down-l"></i></a>
                             <ul class="dropdown">
                                 <li><a href="about_academy.php" class="site-nav">About Academy</a></li>
+
+
                                 <li><a href="<?php echo $path; ?>main/about_samuthrika_ceo.php" class="site-nav">About CEO & Founder</a></li>
                                 <li><a href="Javascript:void(0)" class="site-nav">Awards & Achievements</a></li>
                                 <li><a href="Javascript:void(0)" class="site-nav">Recognitions</a></li>
                                 <li><a href="Javascript:void(0)" class="site-nav">Our Special Events</a></li>
                                 <li><a href="Javascript:void(0)" class="site-nav">Testimonials</a></li>
+
                             </ul>
                         </li>
 
@@ -590,7 +593,7 @@
                     <!-- <li class="lvl1 parent dropdown" id="list-texts"><a href="contact-us.php">Contact Us</a></li> -->
 
 
-                    <li class="lvl1 parent dropdown"><a href="contact-us.php">Contact Us</a></li>
+                    <li class="lvl1 parent dropdown"><a href="../contact-us.php">Contact Us</a></li>
 
 
 

@@ -1,0 +1,68 @@
+
+      $(document).ready(function () {
+    $('#contact_submit').click(function (event) {
+        var ContactFormName = document.getElementById('ContactFormName').value;
+        var ContactFormEmail = document.getElementById('ContactFormEmail').value;
+        var ContactFormPhone = document.getElementById('ContactFormPhone').value;
+        var ContactSubject = document.getElementById('ContactSubject').value;
+        var ContactFormMessage = document.getElementById('ContactFormMessage').value;
+        
+        var addressSmall = document.getElementById("product_service");
+        var addressElement = document.getElementById("addressPlaceholder");
+        var address = "";
+        var addressLite = "";
+
+        let addressValue;
+
+     
+
+        if (ContactFormName === '') {
+            toastr.error('Error!', 'Name is required!');
+        } else if (ContactFormEmail === '') {
+            toastr.error('Error!', 'Email is required!');
+        } else if (ContactFormPhone === '') {
+            toastr.error('Error!', 'Phone number is required!');
+        } else if (ContactSubject === '') {
+            toastr.error('Error!', 'Subject is required!');
+        } else if (ContactFormMessage === '') {
+            toastr.error('Error!', 'Message is required!');
+        } else {
+
+      
+            
+
+            // Call your updateAddress function here with the selected city
+            // Example: updateAddress('Tiruchirappalli');
+
+            console.log(ContactFormName, ContactFormEmail, ContactFormPhone, ContactSubject, ContactFormMessage);
+
+            var fd = new FormData();
+
+            fd.append("ContactFormName", ContactFormName);
+            fd.append("ContactFormEmail", ContactFormEmail);
+            fd.append("ContactFormPhone", ContactFormPhone);
+            fd.append("ContactSubject", ContactSubject);
+            fd.append("ContactFormMessage", ContactFormMessage);
+            fd.append("ContactAddress", address);
+
+            $.ajax({
+                url: 'ajax',
+                data: fd,
+                type: 'post',
+                contentType: false,
+                processData: false,
+                success: function (response) {
+                    var data = JSON.parse(response);
+                    console.log(data);
+                    if (data.status == 'Success') {
+                        toastr.success('Welcome!', 'Success');
+                    } else {
+                        toastr.error('Error!', 'Error Found!')
+                    }
+                }
+            });
+        }
+
+    });
+
+});

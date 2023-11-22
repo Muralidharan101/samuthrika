@@ -13,7 +13,7 @@
     <!--BootStrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Title Of Site -->
-    <title>Samuthrika Academy Fashion Designing Abroad</title>
+    <title>Samuthrika Academy Fashion Designing Courses Abroad</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?php echo $path; ?>assets/images/favicon.png" />
     <!-- Plugins CSS -->
@@ -55,8 +55,8 @@
                 <div class="container">
                     <div class="section-header">
                         <p class="mb-2 mt-0">Crafting careers, stitching success. [Samuthrika Academy] - Your Partner in Fashion Education.</p>
-                        <h1 style="font-size:2rem ; color:orange;" class="">FASHION DESIGNING COURSE IN
-                            ABROAD</h1>
+                        <h1 style="font-size:2rem ; color:orange;" class="">FASHION DESIGNING COURSE -
+                            ABROAD (Online)</h1>
                     </div>
 
                     <!--Product Grid-->
@@ -243,125 +243,9 @@
                                 </div>
                             </div>
 
-                            <div class="item col-item">
-                                <div class="product-box">
-                                    <!-- Start Product Image -->
-                                    <div class="product-image">
-                                        <!-- Start Product Image -->
-                                        <a href="fdc_des4(ABD).php" class="product-img">
-                                            <!-- Image -->
-                                            <img class="primary blur-up lazyload"
-                                                data-src="<?php echo $path; ?>assets/images/odfd.jpg"
-                                                src="<?php echo $path; ?>assets/images/odfd.jpg"
-                                                alt="Product" title="Product" width="625" height="781" />
-                                            <!-- End Image -->
-                                            <!-- Hover Image -->
-                                            <img class="hover blur-up lazyload"
-                                                data-src="<?php echo $path; ?>assets/images/odfd.jpg"
-                                                src="<?php echo $path; ?>assets/images/odfd.jpg"
-                                                alt="Product" title="Product" width="625" height="781" />
-                                            <!-- End Hover Image -->
-                                        </a>
-                                        <!-- End Product Image -->
+                        
 
-                                    </div>
-                                    <!-- End Product Image -->
-                                    <!-- Start Product Details -->
-                                    <div class="product-details text-left">
-                                        <!--Product Vendor-->
-                                        <div class="product-vendor">Fashion Designing</div>
-                                        <!--End Product Vendor-->
-                                        <div class="product-name-price">
-                                            <!-- Product Name -->
-                                            <div class="product-name">
-                                                <a href="fdc_des4(ABD).php">One Month Diploma In Fashion Designing</a>
-                                            </div>
-                                            <!-- End Product Name -->
-
-
-                                        </div>
-                                        <!-- Product Details -->
-                                        <div class="product-duration py-2 pb-0">
-                                            <ul
-                                                class="publish-detail d-flex-wrap justify-content-between text-uppercase mb-2">
-
-                                                <li style="font-size:11px;"><i class="bi bi-calendar-check"></i><span>
-                                                        Course - 1 Month</span></li>
-                                               
-                                            </ul>
-                                        </div>
-                                        <!-- End Product Details -->
-
-                                        <!--End Product Details -->
-                                       
-                                        <!-- End Product Details -->
-                                        <!--Product Button-->
-
-                                        <!--End Product Button-->
-                                    </div>
-                                    <!-- End product details -->
-                                </div>
-                            </div>
-
-                            <div class="item col-item">
-                                <div class="product-box">
-                                    <!-- Start Product Image -->
-                                    <div class="product-image">
-                                        <!-- Start Product Image -->
-                                        <a href="fdc_des5(ABD).php" class="product-img">
-                                            <!-- Image -->
-                                            <img class="primary blur-up lazyload"
-                                                data-src="<?php echo $path; ?>assets/images/cdfd.jpg"
-                                                src="<?php echo $path; ?>assets/images/cdfd.jpg"
-                                                alt="Product" title="Product" width="625" height="781" />
-                                            <!-- End Image -->
-                                            <!-- Hover Image -->
-                                            <img class="hover blur-up lazyload"
-                                                data-src="<?php echo $path; ?>assets/images/cdfd.jpg"
-                                                src="<?php echo $path; ?>assets/images/cdfd.jpg"
-                                                alt="Product" title="Product" width="625" height="781" />
-                                            <!-- End Hover Image -->
-                                        </a>
-                                        <!-- End Product Image -->
-
-                                    </div>
-                                    <!-- End Product Image -->
-                                    <!-- Start Product Details -->
-                                    <div class="product-details text-left">
-                                        <!--Product Vendor-->
-                                        <div class="product-vendor">Fashion Designing</div>
-                                        <!--End Product Vendor-->
-                                        <div class="product-name-price">
-                                            <!-- Product Name -->
-                                            <div class="product-name">
-                                                <a href="fdc_des5(ABD).php">Certificate Course Specially for <br> Home Makes & Students</a>
-                                            </div>
-                                            <!-- End Product Name -->
-
-
-                                        </div>
-                                        <!-- Product Details -->
-                                        <div class="product-duration py-2 pb-0">
-                                            <ul
-                                                class="publish-detail d-flex-wrap justify-content-between text-uppercase mb-2">
-
-                                                <li style="font-size:11px;"><i class="bi bi-calendar-check"></i><span>
-                                                        Course - 1 Month</span></li>
-                                               
-                                            </ul>
-                                        </div>
-                                        <!-- End Product Details -->
-
-                                        <!--End Product Details -->
-                                       
-                                        <!-- End Product Details -->
-                                        <!--Product Button-->
-
-                                        <!--End Product Button-->
-                                    </div>
-                                    <!-- End product details -->
-                                </div>
-                            </div>
+                         
 
                            
 
