@@ -551,52 +551,90 @@
                 toastr.info("Link copied ");
             }
 
-            $("#submit").click(function () {
-                var courses = $('input[name="course"]:checked');
+            function getCookie(cookieName) {
+                var name = cookieName + "=";
+                var decodedCookie = decodeURIComponent(document.cookie);
+                var cookieArray = decodedCookie.split(';');
 
-                if (courses.length === 0) {
-                    toastr.error("Please Select at Least One Course Before Purchase");
-                } else {
-                    // Clear the existing list or container content
-
-                    // Array to store selected course values
-                    var selectedCourses = [];
-                    // Reset the table without adding the courses
-                    $("#product-table tbody").find("input[type='checkbox']").prop('checked', false);
-
-                    // Iterate through each selected course, append it to the list, and add to the array
-                    courses.each(function () {
-                        var course = $(this).val();
-                        $("#selected-courses-list tbody").append('<tr><td>' + course + '</td></tr>');
-                        selectedCourses.push(course);
-                    });
-
-                    // Convert the array to a comma-separated string
-                    var coursesString = selectedCourses.join(', ');
-
-                    // Your existing code for AJAX request goes here
-                    var fd = new FormData();
-                    fd.append("courses", coursesString);
-
-                    $.ajax({
-                        url: 'ajax',
-                        type: 'post',
-                        processData: false,
-                        contentType: false,
-                        data: fd,
-
-                        success: function (response) {
-                            var result = JSON.parse(response);
-
-                            if (result.status == 'Success') {
-                                toastr.success("Course Successfully Added ", "Success")
-                            } else {
-                                toastr.error("Unable to Add", "Error")
-                            }
-                        }
-                    })
+                for (var i = 0; i < cookieArray.length; i++) {
+                    var cookie = cookieArray[i].trim();
+                    if (cookie.indexOf(name) == 0) {
+                        return cookie.substring(name.length, cookie.length);
+                    }
                 }
-            });
+                return null;
+            }
+            var cookieValue = getCookie('samuthrika_login_user_id');
+            console.log(cookieValue);
+
+            $("#submit").click(function ()
+{
+    if (cookieValue === null ) {
+                    window.location.href = "../register.php";
+                } else {
+                    var courses = $('input[name="course"]:checked');
+
+                    if (courses.length === 0) {
+                        toastr.error("Please Select at Least One Course Before Purchase");
+                    } else {
+                        // Clear the existing list or container content
+                        $("#selected-courses-list tbody").empty();
+
+                        // Arrays to store selected course details
+                        var selectedCourseNames = [];
+                        var selectedTimings = [];
+                        var selectedPrices = [];
+
+                        // Iterate through each selected course
+                        courses.each(function () {
+                            var courseCheckbox = $(this);
+                            var courseTitle = courseCheckbox.closest('tr').find('td:nth-child(2)')
+                                .text();
+                            var duration = courseCheckbox.closest('tr').find('td:nth-child(3)').text();
+                            var discountedPrice = parseInt(courseCheckbox.closest('tr').find(
+                                'td:nth-child(5)').text());
+
+                            // Append the course details to the list
+                            $("#selected-courses-list tbody").append('<tr><td>' + courseTitle +
+                                '</td><td>' + duration + '</td><td>' + discountedPrice +
+                                '</td></tr>');
+
+                            // Store the course details in respective arrays
+                            selectedCourseNames.push(courseTitle);
+                            selectedTimings.push(duration);
+                            selectedPrices.push(discountedPrice);
+                        });
+
+                        // Display a message or perform any other action with the selected course details
+
+                        // Your existing code for AJAX request goes here
+                        var fd = new FormData();
+                        fd.append("id", "135");
+                        fd.append("course_name", JSON.stringify(selectedCourseNames));
+                        fd.append("timing", JSON.stringify(selectedTimings));
+                        fd.append("price", JSON.stringify(selectedPrices));
+                        fd.append("location", "kumbakonam")
+
+                        $.ajax({
+                            url: 'ajax',
+                            type: 'post',
+                            processData: false,
+                            contentType: false,
+                            data: fd,
+                            success: function (response) {
+                                var result = JSON.parse(response);
+
+                                if (result.status == 'Success') {
+                                    toastr.success("Course Successfully Added ", "Success");
+                                } else {
+                                    toastr.error("Unable to Add", "Error");
+                                }
+                            }
+                        });
+                    }
+}
+               
+                });
         </script>
 
 

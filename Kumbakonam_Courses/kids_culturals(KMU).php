@@ -12,7 +12,7 @@
         <!--BootStrap icons-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
         <!-- Title Of Site -->
-        <title>Samuthrika Academy Cultural Classes For Kids In Kumbakonam </title>
+        <title>Samuthrika Academy Cultural Classes For Kids In Kumbakonam</title>
         <!-- Favicon -->
         <link rel="shortcut icon" href="<?php echo $path; ?>assets/images/favicon.png" />
         <!-- Plugins CSS -->
@@ -53,7 +53,7 @@
                 <!--End Home Slideshow-->
 
                 <div class="section-header">
-                            <h1 style="font-size:2.3rem" class="pt-4">CULTURAL CLASSES FOR KIDS IN KUMBAKONAM</h1>
+                            <h1 style="font-size:2.3rem" class="pt-4">CULTURAL CLASSES FOR KIDS - KUMBAKONAM</h1>
                         </div>
         
                 <!--Products section-->
@@ -109,7 +109,7 @@
                                                        
                                                        
                                             <!--Product Button-->
-                                         
+                                          
                                             <!--End Product Button-->
                                         </div>
                                         <!-- End product details -->
@@ -158,7 +158,7 @@
                                                        
                                                        
                                             <!--Product Button-->
-                                         
+                                          
                                             <!--End Product Button-->
                                         </div>
                                         <!-- End product details -->
@@ -208,7 +208,7 @@
                                                        
                                                        
                                             <!--Product Button-->
-                                         
+                                          
                                             <!--End Product Button-->
                                         </div>
                                         <!-- End product details -->
@@ -257,7 +257,7 @@
                                                        
                                                        
                                             <!--Product Button-->
-                                         
+                                          
                                             <!--End Product Button-->
                                         </div>
                                         <!-- End product details -->
@@ -324,7 +324,7 @@
                                                        
                                                        
                                             <!--Product Button-->
-                                         
+                                          
                                             <!--End Product Button-->
                                         </div>
                                         <!-- End product details -->
@@ -356,7 +356,7 @@
                                             <div class="product-name-price">
                                                 <!-- Product Name -->
                                                 <div class="product-name">
-                                                    <a href="kids_curturals_des6(KMU).php">Piano </a>
+                                                    <a href="kids_curturals_des6(KMU).php">Keyboard </a>
                                                 </div>
                                                 <!-- End Product Name -->
                                                 
@@ -373,7 +373,7 @@
                                                        
                                                        
                                             <!--Product Button-->
-                                         
+                                          
                                             <!--End Product Button-->
                                         </div>
                                         <!-- End product details -->
@@ -423,7 +423,7 @@
                                                        
                                                        
                                             <!--Product Button-->
-                                         
+                                          
                                             <!--End Product Button-->
                                         </div>
                                         <!-- End product details -->
@@ -472,7 +472,7 @@
                                                        
                                                        
                                             <!--Product Button-->
-                                         
+                                          
                                             <!--End Product Button-->
                                         </div>
                                         <!-- End product details -->
@@ -521,7 +521,7 @@
                                                        
                                                        
                                             <!--Product Button-->
-                                         
+                                          
                                             <!--End Product Button-->
                                         </div>
                                         <!-- End product details -->
@@ -570,7 +570,7 @@
                                                        
                                                        
                                             <!--Product Button-->
-                                         
+                                          
                                             <!--End Product Button-->
                                         </div>
                                         <!-- End product details -->
@@ -619,7 +619,7 @@
                                                        
                                                        
                                             <!--Product Button-->
-                                         
+                                          
                                             <!--End Product Button-->
                                         </div>
                                         <!-- End product details -->
@@ -684,7 +684,7 @@
                                                        
                                                        
                                             <!--Product Button-->
-                                         
+                                          
                                             <!--End Product Button-->
                                         </div>
                                         <!-- End product details -->
@@ -733,7 +733,7 @@
                                                        
                                                        
                                             <!--Product Button-->
-                                         
+                                          
                                             <!--End Product Button-->
                                         </div>
                                         <!-- End product details -->
@@ -783,7 +783,7 @@
                                                        
                                                        
                                             <!--Product Button-->
-                                         
+                                          
                                             <!--End Product Button-->
                                         </div>
                                         <!-- End product details -->
@@ -797,10 +797,10 @@
                                             <!-- Start Product Image -->
                                             <a href="kids_curturals_des15(KMU).php" class="product-img">
                                                    <!-- Image -->
-                                                   <img class="primary blur-up lazyload" data-src="<?php echo $path; ?>assets/images/taekwa.jpg" src="<?php echo $path; ?>assets/images/taekwa.jpg" alt="Product" title="Product" width="625" height="781" />
+                                                   <img class="primary blur-up lazyload" data-src="<?php echo $path; ?>assets/images/taekwo.jpg" src="<?php echo $path; ?>assets/images/taekwo.jpg" alt="Product" title="Product" width="625" height="781" />
                                                             <!-- End Image -->
                                                             <!-- Hover Image -->
-                                                            <img class="hover blur-up lazyload" data-src="<?php echo $path; ?>assets/images/taekwa.jpg" src="<?php echo $path; ?>assets/images/taekwa.jpg" alt="Product" title="Product" width="625" height="781" />
+                                                            <img class="hover blur-up lazyload" data-src="<?php echo $path; ?>assets/images/taekwo.jpg" src="<?php echo $path; ?>assets/images/taekwo.jpg" alt="Product" title="Product" width="625" height="781" />
                                                             <!-- End Hover Image -->
                                             </a>
                                             <!-- End Product Image -->
@@ -832,7 +832,7 @@
                                                        
                                                        
                                             <!--Product Button-->
-                                         
+                                          
                                             <!--End Product Button-->
                                         </div>
                                         <!-- End product details -->
@@ -882,7 +882,7 @@
                                                        
                                                        
                                             <!--Product Button-->
-                                         
+                                          
                                             <!--End Product Button-->
                                         </div>
                                         <!-- End product details -->

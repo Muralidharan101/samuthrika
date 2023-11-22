@@ -336,7 +336,7 @@
             $("#submit").click(function () {
 
                 if (cookieValue === null) {
-                    window.location.href("../register.php")
+                    window.location.href = "../register.php";
                 } else {
                     var level = $('input[name="level"]:checked').val();
 
