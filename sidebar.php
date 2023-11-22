@@ -6,19 +6,17 @@
                  <!--<i class="icon anm anm-angle-down-l"></i>--></a>
 
          </li>
-         <li class="lvl1 parent dropdown" id="list-texts"><a href="#">About Samuthrika<i
+        <li class="lvl1 parent dropdown" id="list-texts"><a href="#">About Samuthrika<i
                      class="icon anm anm-angle-down-l"></i></a>
              <ul class="dropdown">
-                 <li><a href="lookbook-grid.html" class="site-nav">About Academy</a></li>
-                 <li><a href="<?php echo $path; ?>main/about_samuthrika_ceo.php" class="site-nav">About CEO &
-                         Founder</a>
-                 </li>
-                 <li><a href="lookbook-shop.html" class="site-nav">Awards & Achievements</a></li>
-                 <li><a href="lookbook-shop.html" class="site-nav">Recognitions</a></li>
-                 <li><a href="lookbook-shop.html" class="site-nav">Our Special Events</a></li>
-                 <li><a href="lookbook-shop.html" class="site-nav">Testimonials</a></li>
+                 <li><a href="about_academy.php" class="site-nav">About Academy</a></li>
+                 <li><a href="<?php echo $path; ?>main/about_samuthrika_ceo.php" class="site-nav">About CEO & Founder</a></li>
+                 <li><a href="Javascript:void(0)" class="site-nav">Awards & Achievements</a></li>
+                 <li><a href="Javascript:void(0)" class="site-nav">Recognitions</a></li>
+                 <li><a href="Javascript:void(0)" class="site-nav">Our Special Events</a></li>
+                 <li><a href="Javascript:void(0)" class="site-nav">Testimonials</a></li>
              </ul>
-         </li>
+        </li>
 
 
          <li class="lvl1 parent dropdown" id="list-texts"><a href="#">Courses <i
@@ -399,6 +397,16 @@
             </li>
         </ul>
      </li>
+
+     <li class="lvl1 parent dropdown" id="list-texts"><a href="#">Services<i
+                     class="icon anm anm-angle-down-l"></i></a>
+             <ul class="dropdown">
+                 <li><a href="<?php echo $path ; ?>main/Services/tailoring_service.php" class="site-nav">Tailoring service</a></li>
+                 <li><a href="<?php echo $path ; ?>main/Services/beautitian.php" class="site-nav">Beautitian service</a></li>
+                 <li><a href="<?php echo $path ; ?>main/Services/Event_management.php" class="site-nav">Event management</a></li>
+                 <li><a href="<?php echo $path ; ?>main/Services/sch_&_clg_managemaent.php" class="site-nav">School/College Tie-ups</a></li>
+             </ul>
+        </li>
 
      <li class="lvl1 parent dropdown"><a href="">Accessories <i class="icon anm anm-angle-down-l"></i></a>
          <ul class="lvl-2">
